@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxation Services - NEXA Advisory & Consulting | Tax Planning & Advisory Experts</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="NEXA Advisory's comprehensive taxation services in Nepal: Tax planning, tax advisory, and tax support for individuals and businesses. Optimize your tax position with expert guidance.">
+    <meta name="keywords" content="taxation services Nepal, tax planning, tax advisory, tax support, income tax, VAT, TDS, tax consultant Kathmandu">
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Move to Top Button -->
+    <button class="move-to-top" id="moveToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info-top">
+                <span><i class="fas fa-envelope"></i> info@nexaadvisory.com.np</span>
+                <span><i class="fas fa-phone-alt"></i> +977 9869553322</span>
+            </div>
+            <div class="social-icons-top">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-banner">
+                <a href="index.html">
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="banner-logo-img">
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="outsourcing-portal.html" class="nav-link">Outsourcing</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                
+                <!-- Search Icon -->
+                <div class="search-wrapper">
+                    <button class="search-icon-btn" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-dropdown" id="searchDropdown">
+                        <div class="search-input-wrapper">
+                            <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="search-results" id="searchResults"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Service Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div data-aos="fade-right">
+                    <span class="service-hero-badge">Tax Optimization Experts</span>
+                    <h1 class="service-hero-title">Comprehensive <span>Taxation</span> Services</h1>
+                    <p class="service-hero-description">
+                        NEXA Advisory provides comprehensive tax planning, advisory, and support services to help individuals and businesses optimize their tax position, ensure compliance, and make informed financial decisions.
+                    </p>
+                    
+                </div>
+                <div class="service-hero-image" data-aos="fade-left">
+                    <img src="https://i.ibb.co/bgM5kkqC/Reviewing-tax-documents-in-focus.png?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Taxation Services">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Stats -->
+    <div class="container">
+        <div class="service-stats">
+            <div class="service-stat" data-aos="fade-up">
+                <div class="number">500+</div>
+                <div class="label">Happy Clients</div>
+            </div>
+            <div class="service-stat" data-aos="fade-up" data-aos-delay="100">
+                <div class="number">15+</div>
+                <div class="label">Years Experience</div>
+            </div>
+            <div class="service-stat" data-aos="fade-up" data-aos-delay="200">
+                <div class="number">98%</div>
+                <div class="label">Client Satisfaction</div>
+            </div>
+            <div class="service-stat" data-aos="fade-up" data-aos-delay="300">
+                <div class="number">25+</div>
+                <div class="label">Tax Experts</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Description Section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="product-container">
+                <div class="product-content" data-aos="fade-right">
+                    <h2>Strategic <span>Tax Solutions</span></h2>
+                    <p>At NEXA Advisory, we understand that taxes are a significant consideration for any business or individual. Our comprehensive taxation services are designed to help you navigate the complex tax landscape, optimize your tax position, and ensure full compliance with all regulations.</p>
+                    
+                    <h3>Why Choose Our Taxation Services?</h3>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> <strong>Expert Guidance:</strong> Work with experienced tax professionals who understand Nepal's tax laws</li>
+                        <li><i class="fas fa-check"></i> <strong>Strategic Planning:</strong> Proactive tax planning to minimize liability and maximize savings</li>
+                        <li><i class="fas fa-check"></i> <strong>Comprehensive Support:</strong> End-to-end assistance for all your tax needs</li>
+                        <li><i class="fas fa-check"></i> <strong>Peace of Mind:</strong> Rest easy knowing your tax matters are in expert hands</li>
+                    </ul>
+                    
+                    <a href="javascript:void(0);" onclick="emailForPricing('Taxation Services')" class="pricing-contact">
+                        <i class="fas fa-envelope"></i> Contact for Pricing
+                    </a>
+                </div>
+                <div class="product-image" data-aos="fade-left">
+                    <div class="badge">Tax Optimization</div>
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tax Planning">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section id="core-services" class="product-section" style="background: var(--gray-50);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Core <span>Tax Services</span></h2>
+                <p class="section-subtitle">Three pillars of our comprehensive tax solutions</p>
+            </div>
+            
+            <div class="core-services-grid">
+                <!-- Tax Planning -->
+                <div class="core-service-card" data-aos="fade-up">
+                    <div class="core-service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Tax Planning</h3>
+                    <p>Proactive strategic planning to minimize your tax liability while ensuring full compliance with all applicable laws and regulations.</p>
+                    <ul class="core-service-features">
+                        <li><i class="fas fa-check-circle"></i> Strategic tax positioning</li>
+                        <li><i class="fas fa-check-circle"></i> Year-round planning</li>
+                        <li><i class="fas fa-check-circle"></i> Deduction optimization</li>
+                        <li><i class="fas fa-check-circle"></i> Investment structuring</li>
+                        <li><i class="fas fa-check-circle"></i> Business entity selection</li>
+                    </ul>
+                    <a href="javascript:void(0);" onclick="emailForPricing('Tax Planning')" class="pricing-contact" style="margin-top: 1rem; padding: 10px 20px; font-size: 0.9rem;">
+                        <i class="fas fa-envelope"></i> Inquire
+                    </a>
+                </div>
+                
+                <!-- Tax Advisory -->
+                <div class="core-service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="core-service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Tax Advisory</h3>
+                    <p>Expert guidance on complex tax matters, helping you understand the implications of business decisions and navigate regulatory changes.</p>
+                    <ul class="core-service-features">
+                        <li><i class="fas fa-check-circle"></i> Transaction advisory</li>
+                        <li><i class="fas fa-check-circle"></i> Cross-border taxation</li>
+                        <li><i class="fas fa-check-circle"></i> Regulatory interpretation</li>
+                        <li><i class="fas fa-check-circle"></i> Risk assessment</li>
+                        <li><i class="fas fa-check-circle"></i> Tax-efficient structuring</li>
+                    </ul>
+                    <a href="javascript:void(0);" onclick="emailForPricing('Tax Advisory')" class="pricing-contact" style="margin-top: 1rem; padding: 10px 20px; font-size: 0.9rem;">
+                        <i class="fas fa-envelope"></i> Inquire
+                    </a>
+                </div>
+                
+                <!-- Tax Support -->
+                <div class="core-service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="core-service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Tax Support</h3>
+                    <p>Ongoing assistance with tax calculations, documentation, and preparation to ensure accuracy and timely compliance.</p>
+                    <ul class="core-service-features">
+                        <li><i class="fas fa-check-circle"></i> Tax calculation assistance</li>
+                        <li><i class="fas fa-check-circle"></i> Document preparation</li>
+                        <li><i class="fas fa-check-circle"></i> Filing support</li>
+                        <li><i class="fas fa-check-circle"></i> Record keeping guidance</li>
+                        <li><i class="fas fa-check-circle"></i> Query resolution</li>
+                    </ul>
+                    <a href="javascript:void(0);" onclick="emailForPricing('Tax Support')" class="pricing-contact" style="margin-top: 1rem; padding: 10px 20px; font-size: 0.9rem;">
+                        <i class="fas fa-envelope"></i> Inquire
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tax Planning Strategies Section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Tax Planning <span>Strategies</span></h2>
+                <p class="section-subtitle">Proactive approaches to optimize your tax position</p>
+            </div>
+            
+            <div class="strategies-grid">
+                <div class="strategy-card" data-aos="fade-up">
+                    <div class="strategy-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="strategy-content">
+                        <h3>Year-Round Planning</h3>
+                        <p>Continuous monitoring and adjustment of your tax strategy throughout the year, not just at filing time.</p>
+                        <div class="strategy-tags">
+                            <span class="strategy-tag">Quarterly reviews</span>
+                            <span class="strategy-tag">Estimated payments</span>
+                            <span class="strategy-tag">Cash flow planning</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="strategy-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="strategy-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <div class="strategy-content">
+                        <h3>Deduction Optimization</h3>
+                        <p>Identify and maximize all eligible deductions, credits, and exemptions specific to your situation.</p>
+                        <div class="strategy-tags">
+                            <span class="strategy-tag">Business expenses</span>
+                            <span class="strategy-tag">Depreciation</span>
+                            <span class="strategy-tag">Investment credits</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="strategy-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="strategy-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="strategy-content">
+                        <h3>Business Structure Planning</h3>
+                        <p>Evaluate the most tax-efficient structure for your business operations and growth plans.</p>
+                        <div class="strategy-tags">
+                            <span class="strategy-tag">Entity selection</span>
+                            <span class="strategy-tag">Restructuring</span>
+                            <span class="strategy-tag">Succession planning</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="strategy-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="strategy-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="strategy-content">
+                        <h3>Investment Planning</h3>
+                        <p>Structure investments to maximize after-tax returns while aligning with your financial goals.</p>
+                        <div class="strategy-tags">
+                            <span class="strategy-tag">Tax-advantaged accounts</span>
+                            <span class="strategy-tag">Capital gains planning</span>
+                            <span class="strategy-tag">Dividend strategy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tax Types Section -->
+    <section style="background: var(--gray-50); padding: 60px 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Tax Types We <span>Handle</span></h2>
+                <p class="section-subtitle">Comprehensive coverage across all tax categories</p>
+            </div>
+            
+            <div class="tax-types-grid">
+                <div class="tax-type-card" data-aos="fade-up">
+                    <div class="tax-type-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Income Tax</h3>
+                    <p>Comprehensive planning and support for individual and corporate income tax</p>
+                </div>
+                
+                <div class="tax-type-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="tax-type-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>VAT</h3>
+                    <p>Value Added Tax planning, calculation, and filing support</p>
+                </div>
+                
+                <div class="tax-type-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tax-type-icon">
+                        <i class="fas fa-percent"></i>
+                    </div>
+                    <h3>TDS</h3>
+                    <p>Tax Deducted at Source compliance and advisory services</p>
+                </div>
+                
+                <div class="tax-type-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="tax-type-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>International Tax</h3>
+                    <p>Cross-border tax planning and treaty analysis</p>
+                </div>
+                
+                <div class="tax-type-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tax-type-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Capital Gains Tax</h3>
+                    <p>Planning and calculation for asset sales and investments</p>
+                </div>
+                
+                <div class="tax-type-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="tax-type-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Corporate Tax</h3>
+                    <p>Specialized tax solutions for corporations of all sizes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tax Advisory Services -->
+    <section class="product-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Tax Advisory <span>Services</span></h2>
+                <p class="section-subtitle">Expert guidance for complex tax matters</p>
+            </div>
+            
+            <div class="advisory-grid">
+                <div class="advisory-card" data-aos="fade-up">
+                    <div class="advisory-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Transaction Advisory</h3>
+                    <p>Tax implications analysis for business transactions including mergers, acquisitions, and disposals.</p>
+                    <ul class="advisory-list">
+                        <li><i class="fas fa-circle"></i> M&A tax structuring</li>
+                        <li><i class="fas fa-circle"></i> Due diligence support</li>
+                        <li><i class="fas fa-circle"></i> Post-transaction integration</li>
+                    </ul>
+                </div>
+                
+                <div class="advisory-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="advisory-icon">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                    <h3>International Taxation</h3>
+                    <p>Guidance on cross-border transactions, double taxation treaties, and foreign tax credits.</p>
+                    <ul class="advisory-list">
+                        <li><i class="fas fa-circle"></i> Treaty analysis</li>
+                        <li><i class="fas fa-circle"></i> Transfer pricing</li>
+                        <li><i class="fas fa-circle"></i> Foreign tax credits</li>
+                    </ul>
+                </div>
+                
+                <div class="advisory-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="advisory-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Regulatory Advisory</h3>
+                    <p>Interpretation of new tax laws, regulations, and their impact on your business.</p>
+                    <ul class="advisory-list">
+                        <li><i class="fas fa-circle"></i> New law analysis</li>
+                        <li><i class="fas fa-circle"></i> Compliance reviews</li>
+                        <li><i class="fas fa-circle"></i> Risk assessments</li>
+                    </ul>
+                </div>
+                
+                <div class="advisory-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="advisory-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>Business Restructuring</h3>
+                    <p>Tax-efficient structuring of business reorganizations and ownership changes.</p>
+                    <ul class="advisory-list">
+                        <li><i class="fas fa-circle"></i> Reorganization planning</li>
+                        <li><i class="fas fa-circle"></i> Ownership transitions</li>
+                        <li><i class="fas fa-circle"></i> Succession planning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tax Support Services -->
+    <section style="background: var(--gray-50); padding: 60px 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Tax Support <span>Services</span></h2>
+                <p class="section-subtitle">Ongoing assistance for all your tax needs</p>
+            </div>
+            
+            <div class="support-grid">
+                <div class="support-card" data-aos="fade-up">
+                    <div class="support-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Tax Calculation</h3>
+                    <p>Accurate calculation of tax liabilities for individuals and businesses</p>
+                </div>
+                
+                <div class="support-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="support-icon">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <h3>Document Preparation</h3>
+                    <p>Preparation of all necessary tax forms and supporting documentation</p>
+                </div>
+                
+                <div class="support-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="support-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Deadline Management</h3>
+                    <p>Timely reminders and assistance to ensure all filing deadlines are met</p>
+                </div>
+                
+                <div class="support-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="support-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>Query Resolution</h3>
+                    <p>Quick answers to your tax-related questions throughout the year</p>
+                </div>
+                
+                <div class="support-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="support-icon">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <h3>Record Keeping</h3>
+                    <p>Guidance on maintaining proper tax records and documentation</p>
+                </div>
+                
+                <div class="support-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="support-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3>Prior Year Review</h3>
+                    <p>Review of previous years' tax positions and amendment opportunities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section style="padding: 60px 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Benefits of <span>Professional Tax Services</span></h2>
+                <p class="section-subtitle">Why partnering with NEXA makes sense for your tax needs</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up">
+                    <div class="benefit-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Tax Savings</h3>
+                    <p>Identify legitimate deductions and credits to minimize your tax liability.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Peace of Mind</h3>
+                    <p>Rest easy knowing your tax matters are handled by experienced professionals.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Time Savings</h3>
+                    <p>Focus on your business while we handle the complex tax work.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Better Decisions</h3>
+                    <p>Make informed business decisions with clear understanding of tax implications.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="benefit-icon">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <h3>Accurate Filing</h3>
+                    <p>Ensure your tax filings are accurate, complete, and compliant.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="benefit-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Strategic Advantage</h3>
+                    <p>Use tax planning as a strategic tool for business growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section style="background: var(--gray-50); padding: 60px 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">What Our <span>Clients Say</span></h2>
+                <p class="section-subtitle">Trusted by businesses and individuals across Nepal</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"NEXA's tax planning services have saved our business significant amounts while ensuring we remain fully compliant. Their team is knowledgeable, responsive, and truly cares about our success."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info">
+                            <h4>Rajesh Khadka</h4>
+                            <p>CEO, Mountain Hardware</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The tax advisory team at NEXA helped us navigate a complex international transaction with ease. Their expertise in cross-border taxation was invaluable."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PS</div>
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Director, TechNepal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+                <p class="section-subtitle">Common questions about our taxation services</p>
+            </div>
+            
+            <div class="faq-accordion" data-aos="fade-up">
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>What is the difference between tax planning and tax preparation?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Tax planning is a year-round proactive process of structuring your finances to minimize tax liability. Tax preparation is the reactive process of calculating and filing taxes based on past transactions. Our services focus on forward-looking tax planning to optimize your position before transactions occur.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>How often should I review my tax strategy?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>We recommend reviewing your tax strategy at least quarterly, or whenever significant business changes occur (new investments, expansion, restructuring). Regular reviews ensure your strategy adapts to changing circumstances and new tax laws.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>Do you work with both individuals and businesses?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Yes, we provide taxation services for individuals, sole proprietors, partnerships, corporations, and NGOs. Our team tailors solutions to the specific needs of each client type.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>What is the deadline for tax filing in Nepal?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>For individuals and businesses in Nepal, the tax filing deadline is typically three months after the end of the fiscal year (mid-July). We send reminders to all clients and ensure timely filing.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>Do you handle international tax matters?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Yes, we have expertise in international taxation, including cross-border transactions, double taxation treaties, and tax implications for non-residents and foreign investments in Nepal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container" data-aos="fade-up">
+                <div class="newsletter-icon">
+                    <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <h2>Subscribe to Our <span>Newsletter</span></h2>
+                <p>Stay updated with the latest tax law changes, planning strategies, and insights from our experts.</p>
+                
+                <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                    <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+                
+                <p class="newsletter-note">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Optimize Your Tax Position?</h2>
+                <p>Let our tax experts help you navigate the complexities of taxation and develop a strategy that works for you.</p>
+                <div class="cta-buttons">
+                    <a href="javascript:void(0);" onclick="emailForConsultation()" class="cta-btn-primary">Schedule Consultation</a>
+                    <a href="javascript:void(0);" onclick="emailForPricing('Taxation Services')" class="cta-btn-secondary">Request Pricing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section style="padding: 60px 0; background: white;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Related <span>Services</span></h2>
+                <p class="section-subtitle">Explore our other financial solutions</p>
+            </div>
+            
+            <div class="services-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Accounting Services</h3>
+                    <p>Comprehensive accounting solutions including financial statements and ledger management.</p>
+                    <a href="accounting-services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="service-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Book-Keeping Services</h3>
+                    <p>Meticulous day-to-day financial transaction recording and organization.</p>
+                    <a href="bookkeeping-services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Corporate Advisory</h3>
+                    <p>Strategic guidance for business registration and regulatory compliance.</p>
+                    <a href="corporate-advisory.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- First Column - Banner and About -->
+                <div>
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="footer-logo-img">
+                    <p class="footer-about">Premier business advisory and consulting firm in Nepal, registered under Companies Act, 2063. Providing comprehensive solutions across Accounting, Tax, Corporate Advisory, and Training.</p>
+                    
+                    <!-- Social Icons in Square Round Rectangles -->
+                    <div class="social-links-footer">
+                        <a href="#" class="social-link-footer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Second Column - Important Links -->
+                <div>
+                    <h4>Important Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="outsourcing-portal.html">Outsourcing</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Column - Our Services Links -->
+                <div>
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                         <li><a href="accounting-services.html">Accounting Services</a></li>
+                        <li><a href="tax-return-filing.html">Tax Return Filing</a></li>
+                        <li><a href="corporate-advisory.html">Corporate Advisory</a></li>
+                        <li><a href="taxation.html">Taxation Services</a></li>
+                        <li><a href="management-consulting.html">Management Consulting</a></li>
+                        <li><a href="nfrs-ifrs-implementation.html">NFRS/IFRS Implementation</a></li>
+                        <li><a href="training-and-courses.html">Training & Courses</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column - Payment We Accept -->
+                <div>
+                    <h4>Payment We Accept</h4>
+                    <div class="payment-methods">
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/pv0TC3Nh/LOGO-BLOCK-W-png.png" alt="eSewa">
+                        </div>
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/jkRdtxRk/idk-Kc-Pp-TJV-1773766149624.png" alt="Khalti">
+                        </div>
+                        <div class="payment-item bank">
+                            <img src="https://i.ibb.co/LzdxtLS3/Bank-Transfer-logo-1200x600.png" alt="Bank Transfer">
+                        </div>
+                    </div>
+                    <p style="color: var(--gray-500); margin-top: 1.5rem; font-size: 0.9rem;">
+                        <i class="fas fa-lock" style="color: var(--secondary); margin-right: 0.5rem;"></i>
+                        Secure payments processed in Nepal
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom with Copyright, Terms, Privacy, Disclaimer -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 NEXA Advisory & Consulting. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html>

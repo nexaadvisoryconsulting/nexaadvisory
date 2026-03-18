@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - NEXA Advisory & Consulting</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Privacy Policy for NEXA Advisory & Consulting. Learn how we collect, use, and protect your personal information.">
+    <meta name="keywords" content="privacy policy, data protection, GDPR, personal information, NEXA Advisory">
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Move to Top Button -->
+    <button class="move-to-top" id="moveToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Consent Banner -->
+    <div class="consent-banner" id="consentBanner">
+        <div class="container">
+            <div class="consent-content">
+                <div class="consent-text">
+                    <i class="fas fa-cookie-bite" style="color: var(--secondary); margin-right: 0.5rem;"></i>
+                    We use cookies to enhance your experience. By continuing to visit this site, you agree to our use of cookies.
+                    <a href="#section-6">Learn more</a>
+                </div>
+                <div class="consent-buttons">
+                    <button class="consent-btn consent-btn-accept" onclick="acceptCookies()">
+                        <i class="fas fa-check"></i> Accept All
+                    </button>
+                    <button class="consent-btn consent-btn-decline" onclick="declineCookies()">
+                        <i class="fas fa-times"></i> Decline
+                    </button>
+                    <button class="consent-btn consent-btn-settings" onclick="openCookieSettings()">
+                        <i class="fas fa-cog"></i> Cookie Settings
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info-top">
+                <span><i class="fas fa-envelope"></i> info@nexaadvisory.com.np</span>
+                <span><i class="fas fa-phone-alt"></i> +977 9869553322</span>
+            </div>
+            <div class="social-icons-top">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-banner">
+                <a href="index.html">
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="banner-logo-img">
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="outsourcing-portal.html" class="nav-link">Outsourcing</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                
+                <!-- Search Icon -->
+                <div class="search-wrapper">
+                    <button class="search-icon-btn" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-dropdown" id="searchDropdown">
+                        <div class="search-input-wrapper">
+                            <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="search-results" id="searchResults"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Progress Bar -->
+    <div class="privacy-progress">
+        <div class="container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="privacyProgressFill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Hero -->
+    <section class="privacy-hero">
+        <div class="container">
+            <div class="privacy-hero-content" data-aos="fade-up">
+               
+                <h1 class="privacy-hero-title">Privacy <span>Policy</span></h1>
+                <p class="privacy-hero-description">
+                    We are committed to protecting your privacy and ensuring the security of your personal information. 
+                    This policy explains how we collect, use, and safeguard your data.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Last Updated -->
+    <div class="last-updated">
+        <div class="container">
+            <i class="fas fa-calendar-alt"></i>
+            Last Updated: <strong id="currentDate">March 18, 2024</strong>
+        </div>
+    </div>
+
+    <!-- Privacy Content -->
+    <section class="privacy-content">
+        <div class="container">
+            <div class="privacy-container">
+                <!-- Navigation (Collapsible) -->
+                <div class="privacy-nav">
+                    <div class="privacy-nav-header" onclick="togglePrivacyNav()">
+                        <h3>
+                            <i class="fas fa-list"></i>
+                            Quick Navigation
+                        </h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="privacy-nav-content">
+                        <div class="privacy-nav-grid">
+                            <a href="#section-1" class="privacy-nav-item" onclick="scrollToPrivacySection('section-1')">
+                                <i class="fas fa-shield-alt"></i>
+                                1. Information We Collect
+                            </a>
+                            <a href="#section-2" class="privacy-nav-item" onclick="scrollToPrivacySection('section-2')">
+                                <i class="fas fa-edit"></i>
+                                2. How We Use Information
+                            </a>
+                            <a href="#section-3" class="privacy-nav-item" onclick="scrollToPrivacySection('section-3')">
+                                <i class="fas fa-share-alt"></i>
+                                3. Information Sharing
+                            </a>
+                            <a href="#section-4" class="privacy-nav-item" onclick="scrollToPrivacySection('section-4')">
+                                <i class="fas fa-lock"></i>
+                                4. Data Security
+                            </a>
+                            <a href="#section-5" class="privacy-nav-item" onclick="scrollToPrivacySection('section-5')">
+                                <i class="fas fa-globe"></i>
+                                5. International Transfers
+                            </a>
+                            <a href="#section-6" class="privacy-nav-item" onclick="scrollToPrivacySection('section-6')">
+                                <i class="fas fa-cookie-bite"></i>
+                                6. Cookies & Tracking
+                            </a>
+                            <a href="#section-7" class="privacy-nav-item" onclick="scrollToPrivacySection('section-7')">
+                                <i class="fas fa-user-shield"></i>
+                                7. Your Rights
+                            </a>
+                            <a href="#section-8" class="privacy-nav-item" onclick="scrollToPrivacySection('section-8')">
+                                <i class="fas fa-child"></i>
+                                8. Children's Privacy
+                            </a>
+                            <a href="#section-9" class="privacy-nav-item" onclick="scrollToPrivacySection('section-9')">
+                                <i class="fas fa-clock"></i>
+                                9. Data Retention
+                            </a>
+                            <a href="#section-10" class="privacy-nav-item" onclick="scrollToPrivacySection('section-10')">
+                                <i class="fas fa-bell"></i>
+                                10. Policy Updates
+                            </a>
+                            <a href="#section-11" class="privacy-nav-item" onclick="scrollToPrivacySection('section-11')">
+                                <i class="fas fa-envelope"></i>
+                                11. Contact Us
+                            </a>
+                            <a href="#section-12" class="privacy-nav-item" onclick="scrollToPrivacySection('section-12')">
+                                <i class="fas fa-gavel"></i>
+                                12. Legal Basis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Privacy Body -->
+                <div class="privacy-body">
+                    <!-- Print Button -->
+                    <div style="display: flex; justify-content: flex-end; margin-bottom: 2rem;">
+                        <button class="print-btn" onclick="printPrivacyPolicy()">
+                            <i class="fas fa-print"></i>
+                            Print Privacy Policy
+                        </button>
+                    </div>
+
+                    <!-- Section 1: Information We Collect -->
+                    <div id="section-1" class="privacy-section">
+                        <h2>
+                            <span class="section-number">1</span>
+                            <i class="fas fa-shield-alt"></i>
+                            Information We Collect
+                        </h2>
+                        
+                        <div class="info-box">
+                            <h4>
+                                <i class="fas fa-info-circle"></i>
+                                Our Commitment
+                            </h4>
+                            <p>
+                                We collect only the information necessary to provide you with our services and improve your experience. 
+                                We are transparent about what we collect and why.
+                            </p>
+                        </div>
+
+                        <h3>1.1 Personal Information You Provide</h3>
+                        <p>
+                            When you use our services, we may collect the following types of personal information:
+                        </p>
+                        <ul>
+                            <li><strong>Contact Information:</strong> Name, email address, phone number, and physical address</li>
+                            <li><strong>Account Information:</strong> Username, password, and account preferences</li>
+                            <li><strong>Business Information:</strong> Company name, position, industry, and business registration details</li>
+                            <li><strong>Payment Information:</strong> Bank account details, payment card information (processed securely through third-party payment processors)</li>
+                            <li><strong>Communication Data:</strong> Information you provide when contacting us, including emails and messages</li>
+                            <li><strong>Service Data:</strong> Information related to the services you request or use</li>
+                        </ul>
+
+                        <h3>1.2 Information Collected Automatically</h3>
+                        <p>
+                            When you visit our website, we automatically collect certain information through cookies and similar technologies:
+                        </p>
+                        <ul>
+                            <li><strong>Device Information:</strong> IP address, browser type, operating system, and device identifiers</li>
+                            <li><strong>Usage Data:</strong> Pages visited, time spent on pages, click patterns, and referral sources</li>
+                            <li><strong>Location Data:</strong> General geographic location based on IP address</li>
+                        </ul>
+
+                        <h3>1.3 Information from Third Parties</h3>
+                        <p>
+                            We may receive information about you from third-party sources, including:
+                        </p>
+                        <ul>
+                            <li>Business partners and referral sources</li>
+                            <li>Publicly available databases</li>
+                            <li>Social media platforms (when you interact with our content)</li>
+                        </ul>
+
+                        <div class="highlight-box">
+                            <p>
+                                We only collect information that is relevant and necessary for the purposes outlined in this policy. 
+                                You are not required to provide any information, but doing so may limit your ability to use certain features of our services.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Section 2: How We Use Information -->
+                    <div id="section-2" class="privacy-section">
+                        <h2>
+                            <span class="section-number">2</span>
+                            <i class="fas fa-edit"></i>
+                            How We Use Your Information
+                        </h2>
+
+                        <p>
+                            We use the information we collect for the following purposes:
+                        </p>
+
+                        <h3>2.1 Service Delivery</h3>
+                        <ul>
+                            <li>To provide, maintain, and improve our services</li>
+                            <li>To process transactions and send related information</li>
+                            <li>To manage your account and provide customer support</li>
+                            <li>To communicate with you about services, updates, and offers</li>
+                        </ul>
+
+                        <h3>2.2 Business Operations</h3>
+                        <ul>
+                            <li>To analyze usage patterns and improve our website</li>
+                            <li>To prevent fraud and enhance security</li>
+                            <li>To comply with legal obligations</li>
+                            <li>To enforce our terms and conditions</li>
+                        </ul>
+
+                        <h3>2.3 Marketing and Communications</h3>
+                        <ul>
+                            <li>To send you newsletters and marketing communications (with your consent)</li>
+                            <li>To personalize your experience and deliver relevant content</li>
+                            <li>To conduct surveys and research</li>
+                        </ul>
+
+                        <table class="privacy-table">
+                            <thead>
+                                <tr>
+                                    <th>Information Type</th>
+                                    <th>Primary Use</th>
+                                    <th>Legal Basis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Contact Information</td>
+                                    <td>Communication, Account Management</td>
+                                    <td>Contract, Legitimate Interests</td>
+                                </tr>
+                                <tr>
+                                    <td>Payment Information</td>
+                                    <td>Transaction Processing</td>
+                                    <td>Contract, Legal Obligation</td>
+                                </tr>
+                                <tr>
+                                    <td>Usage Data</td>
+                                    <td>Website Improvement, Analytics</td>
+                                    <td>Legitimate Interests, Consent</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Section 3: Information Sharing -->
+                    <div id="section-3" class="privacy-section">
+                        <h2>
+                            <span class="section-number">3</span>
+                            <i class="fas fa-share-alt"></i>
+                            Information Sharing and Disclosure
+                        </h2>
+
+                        <p>
+                            We do not sell, trade, or rent your personal information to third parties. We may share information in the following circumstances:
+                        </p>
+
+                        <h3>3.1 Service Providers</h3>
+                        <p>
+                            We share information with trusted third-party service providers who assist us in operating our website and delivering services, including:
+                        </p>
+                        <ul>
+                            <li>Payment processors (eSewa, Khalti, banks)</li>
+                            <li>Cloud hosting providers</li>
+                            <li>Analytics providers</li>
+                            <li>Email service providers</li>
+                        </ul>
+
+                        <h3>3.2 Legal Requirements</h3>
+                        <p>
+                            We may disclose information if required to do so by law or in response to valid requests by public authorities, including:
+                        </p>
+                        <ul>
+                            <li>To comply with a legal obligation</li>
+                            <li>To protect and defend our rights or property</li>
+                            <li>To prevent or investigate possible wrongdoing</li>
+                            <li>To protect the personal safety of users or the public</li>
+                        </ul>
+
+                        <h3>3.3 Business Transfers</h3>
+                        <p>
+                            In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of the transaction. We will notify you of any such change.
+                        </p>
+
+                        <h3>3.4 With Your Consent</h3>
+                        <p>
+                            We may share your information for other purposes with your explicit consent.
+                        </p>
+                    </div>
+
+                    <!-- Section 4: Data Security -->
+                    <div id="section-4" class="privacy-section">
+                        <h2>
+                            <span class="section-number">4</span>
+                            <i class="fas fa-lock"></i>
+                            Data Security
+                        </h2>
+
+                        <div class="info-box">
+                            <h4>
+                                <i class="fas fa-shield-alt"></i>
+                                Our Security Measures
+                            </h4>
+                            <p>
+                                We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.
+                            </p>
+                        </div>
+
+                        <h3>4.1 Security Practices</h3>
+                        <ul>
+                            <li><strong>Encryption:</strong> We use SSL/TLS encryption to protect data transmission</li>
+                            <li><strong>Access Controls:</strong> Strict access controls and authentication procedures</li>
+                            <li><strong>Regular Audits:</strong> Regular security assessments and audits</li>
+                            <li><strong>Employee Training:</strong> Regular privacy and security training for employees</li>
+                        </ul>
+
+                        <h3>4.2 Data Breach Procedures</h3>
+                        <p>
+                            In the event of a data breach, we will:
+                        </p>
+                        <ul>
+                            <li>Notify affected users within 72 hours of becoming aware of the breach</li>
+                            <li>Notify relevant supervisory authorities as required by law</li>
+                            <li>Take immediate steps to contain and remediate the breach</li>
+                        </ul>
+
+                        <div class="highlight-box">
+                            <p>
+                                While we implement strong security measures, no method of transmission over the Internet or electronic storage is 100% secure. We cannot guarantee absolute security, but we continuously work to protect your information.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Section 5: International Transfers -->
+                    <div id="section-5" class="privacy-section">
+                        <h2>
+                            <span class="section-number">5</span>
+                            <i class="fas fa-globe"></i>
+                            International Data Transfers
+                        </h2>
+
+                        <p>
+                            Your information may be transferred to and processed in countries other than Nepal. These countries may have different data protection laws.
+                        </p>
+
+                        <h3>5.1 Transfer Mechanisms</h3>
+                        <p>
+                            When we transfer data internationally, we ensure appropriate safeguards are in place, including:
+                        </p>
+                        <ul>
+                            <li>Standard contractual clauses approved by relevant authorities</li>
+                            <li>Binding corporate rules</li>
+                            <li>Certification mechanisms</li>
+                        </ul>
+
+                        <h3>5.2 Countries We Operate In</h3>
+                        <p>
+                            Our services are provided from Nepal, and data may be processed in:
+                        </p>
+                        <ul>
+                            <li>Nepal (primary)</li>
+                            <li>United States (cloud services)</li>
+                            <li>European Union (for EU clients)</li>
+                            <li>Singapore (Asia-Pacific region)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Section 6: Cookies and Tracking -->
+                    <div id="section-6" class="privacy-section">
+                        <h2>
+                            <span class="section-number">6</span>
+                            <i class="fas fa-cookie-bite"></i>
+                            Cookies and Tracking Technologies
+                        </h2>
+
+                        <p>
+                            We use cookies and similar tracking technologies to enhance your browsing experience and analyze website traffic.
+                        </p>
+
+                        <div class="cookie-settings">
+                            <h3 style="margin-top: 0;">Cookie Preferences</h3>
+                            
+                            <div class="cookie-option">
+                                <div class="cookie-option-info">
+                                    <h4>Necessary Cookies</h4>
+                                    <p>Essential for website functionality. Cannot be disabled.</p>
+                                </div>
+                                <label class="cookie-toggle">
+                                    <input type="checkbox" id="necessaryCookies" checked disabled>
+                                    <span class="cookie-slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="cookie-option">
+                                <div class="cookie-option-info">
+                                    <h4>Analytics Cookies</h4>
+                                    <p>Help us understand how visitors interact with our website.</p>
+                                </div>
+                                <label class="cookie-toggle">
+                                    <input type="checkbox" id="analyticsCookies" checked>
+                                    <span class="cookie-slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="cookie-option">
+                                <div class="cookie-option-info">
+                                    <h4>Marketing Cookies</h4>
+                                    <p>Used to deliver relevant advertisements and marketing messages.</p>
+                                </div>
+                                <label class="cookie-toggle">
+                                    <input type="checkbox" id="marketingCookies">
+                                    <span class="cookie-slider"></span>
+                                </label>
+                            </div>
+
+                            <button class="cookie-save-btn" onclick="saveCookiePreferences()">
+                                <i class="fas fa-save"></i> Save Preferences
+                            </button>
+                        </div>
+
+                        <h3>6.1 Types of Cookies We Use</h3>
+                        <ul>
+                            <li><strong>Essential Cookies:</strong> Required for website functionality</li>
+                            <li><strong>Analytics Cookies:</strong> Help us understand user behavior</li>
+                            <li><strong>Functional Cookies:</strong> Remember your preferences</li>
+                            <li><strong>Marketing Cookies:</strong> Track your interests for relevant advertising</li>
+                        </ul>
+
+                        <h3>6.2 Managing Cookies</h3>
+                        <p>
+                            You can control cookies through your browser settings. However, disabling certain cookies may limit your ability to use some features of our website.
+                        </p>
+                    </div>
+
+                    <!-- Section 7: Your Rights -->
+                    <div id="section-7" class="privacy-section">
+                        <h2>
+                            <span class="section-number">7</span>
+                            <i class="fas fa-user-shield"></i>
+                            Your Privacy Rights
+                        </h2>
+
+                        <p>
+                            Depending on your location, you may have certain rights regarding your personal information:
+                        </p>
+
+                        <div class="data-rights-grid">
+                            <div class="data-right-card">
+                                <div class="data-right-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <h4>Right to Access</h4>
+                                <p>Request a copy of your personal data</p>
+                                <button class="data-right-btn" onclick="submitDataRequest('access')">Request Access</button>
+                            </div>
+
+                            <div class="data-right-card">
+                                <div class="data-right-icon">
+                                    <i class="fas fa-edit"></i>
+                                </div>
+                                <h4>Right to Rectification</h4>
+                                <p>Correct inaccurate or incomplete data</p>
+                                <button class="data-right-btn" onclick="submitDataRequest('rectification')">Request Correction</button>
+                            </div>
+
+                            <div class="data-right-card">
+                                <div class="data-right-icon">
+                                    <i class="fas fa-trash-alt"></i>
+                                </div>
+                                <h4>Right to Erasure</h4>
+                                <p>Request deletion of your data</p>
+                                <button class="data-right-btn" onclick="submitDataRequest('erasure')">Request Deletion</button>
+                            </div>
+
+                            <div class="data-right-card">
+                                <div class="data-right-icon">
+                                    <i class="fas fa-ban"></i>
+                                </div>
+                                <h4>Right to Restrict</h4>
+                                <p>Limit how we use your data</p>
+                                <button class="data-right-btn" onclick="submitDataRequest('restrict')">Request Restriction</button>
+                            </div>
+
+                            <div class="data-right-card">
+                                <div class="data-right-icon">
+                                    <i class="fas fa-download"></i>
+                                </div>
+                                <h4>Right to Portability</h4>
+                                <p>Receive your data in a portable format</p>
+                                <button class="data-right-btn" onclick="submitDataRequest('portability')">Request Export</button>
+                            </div>
+
+                            <div class="data-right-card">
+                                <div class="data-right-icon">
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                                <h4>Right to Object</h4>
+                                <p>Object to certain data processing</p>
+                                <button class="data-right-btn" onclick="submitDataRequest('object')">Object to Processing</button>
+                            </div>
+                        </div>
+
+                        <h3>7.1 How to Exercise Your Rights</h3>
+                        <p>
+                            To exercise any of these rights, please contact us using the information in Section 11. We will respond to your request within 30 days.
+                        </p>
+
+                        <div class="info-box">
+                            <h4>
+                                <i class="fas fa-clock"></i>
+                                Response Time
+                            </h4>
+                            <p>
+                                We aim to respond to all legitimate requests within one month. Occasionally, it may take longer if your request is particularly complex or you have made multiple requests.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Section 8: Children's Privacy -->
+                    <div id="section-8" class="privacy-section">
+                        <h2>
+                            <span class="section-number">8</span>
+                            <i class="fas fa-child"></i>
+                            Children's Privacy
+                        </h2>
+
+                        <p>
+                            Our services are not intended for individuals under the age of 18. We do not knowingly collect personal information from children.
+                        </p>
+
+                        <h3>8.1 Age Restriction</h3>
+                        <p>
+                            If you are under 18, you may not use our services or provide any personal information to us. If we become aware that we have collected personal information from a child without verification of parental consent, we will take steps to delete that information.
+                        </p>
+
+                        <h3>8.2 Reporting</h3>
+                        <p>
+                            If you believe we might have any information from or about a child, please contact us immediately.
+                        </p>
+                    </div>
+
+                    <!-- Section 9: Data Retention -->
+                    <div id="section-9" class="privacy-section">
+                        <h2>
+                            <span class="section-number">9</span>
+                            <i class="fas fa-clock"></i>
+                            Data Retention
+                        </h2>
+
+                        <p>
+                            We retain your personal information for as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required or permitted by law.
+                        </p>
+
+                        <h3>9.1 Retention Periods</h3>
+                        <ul>
+                            <li><strong>Account Information:</strong> Retained until account deletion plus 30 days</li>
+                            <li><strong>Transaction Data:</strong> Retained for 7 years (legal requirements)</li>
+                            <li><strong>Communications:</strong> Retained for 2 years</li>
+                            <li><strong>Usage Data:</strong> Retained for 1 year</li>
+                        </ul>
+
+                        <h3>9.2 Deletion</h3>
+                        <p>
+                            When information is no longer needed, we will securely delete or anonymize it. If deletion is not possible, we will securely store it and isolate it from further processing.
+                        </p>
+                    </div>
+
+                    <!-- Section 10: Policy Updates -->
+                    <div id="section-10" class="privacy-section">
+                        <h2>
+                            <span class="section-number">10</span>
+                            <i class="fas fa-bell"></i>
+                            Changes to This Privacy Policy
+                        </h2>
+
+                        <p>
+                            We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements.
+                        </p>
+
+                        <h3>10.1 Notification of Changes</h3>
+                        <ul>
+                            <li>We will post the updated policy on this page with a revised "Last Updated" date</li>
+                            <li>For significant changes, we will provide a more prominent notice</li>
+                            <li>If required by law, we will obtain your consent for material changes</li>
+                        </ul>
+
+                        <h3>10.2 Your Continued Use</h3>
+                        <p>
+                            Your continued use of our services after any changes to this policy constitutes your acceptance of the revised policy.
+                        </p>
+
+                        <div class="highlight-box">
+                            <p>
+                                We encourage you to periodically review this page for the latest information on our privacy practices.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Section 11: Contact Us -->
+                    <div id="section-11" class="privacy-section">
+                        <h2>
+                            <span class="section-number">11</span>
+                            <i class="fas fa-envelope"></i>
+                            Contact Us
+                        </h2>
+
+                        <p>
+                            If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
+                        </p>
+
+                        <div class="contact-card">
+                            <h3 style="color: white; margin-bottom: 1rem;">NEXA Advisory & Consulting</h3>
+                            
+                            <p>
+                                <i class="fas fa-map-marker-alt" style="color: var(--secondary); width: 25px;"></i>
+                                <strong>Address:</strong> Putalisadak, Kathmandu, Nepal
+                            </p>
+                            
+                            <p>
+                                <i class="fas fa-envelope" style="color: var(--secondary); width: 25px;"></i>
+                                <strong>Email:</strong> privacy@nexaadvisory.com.np
+                            </p>
+                            
+                            <p>
+                                <i class="fas fa-phone-alt" style="color: var(--secondary); width: 25px;"></i>
+                                <strong>Phone:</strong> +977 1-5550123
+                            </p>
+                            
+                            <p>
+                                <i class="fas fa-user-tie" style="color: var(--secondary); width: 25px;"></i>
+                                <strong>Data Protection Officer:</strong> dpo@nexaadvisory.com.np
+                            </p>
+                        </div>
+
+                        <h3 style="margin-top: 2rem;">11.1 Supervisory Authority</h3>
+                        <p>
+                            If you are not satisfied with our response, you have the right to lodge a complaint with your local data protection authority.
+                        </p>
+                    </div>
+
+                    <!-- Section 12: Legal Basis -->
+                    <div id="section-12" class="privacy-section">
+                        <h2>
+                            <span class="section-number">12</span>
+                            <i class="fas fa-gavel"></i>
+                            Legal Basis for Processing
+                        </h2>
+
+                        <p>
+                            We process personal information based on the following legal grounds:
+                        </p>
+
+                        <h3>12.1 Contract</h3>
+                        <p>
+                            Processing necessary to perform our contract with you or to take steps at your request before entering into a contract.
+                        </p>
+
+                        <h3>12.2 Legitimate Interests</h3>
+                        <p>
+                            Processing necessary for our legitimate interests or those of third parties, provided your rights don't override these interests.
+                        </p>
+
+                        <h3>12.3 Legal Obligation</h3>
+                        <p>
+                            Processing necessary to comply with applicable laws and regulations.
+                        </p>
+
+                        <h3>12.4 Consent</h3>
+                        <p>
+                            Processing based on your consent, which you may withdraw at any time.
+                        </p>
+
+                        <table class="privacy-table">
+                            <thead>
+                                <tr>
+                                    <th>Processing Activity</th>
+                                    <th>Legal Basis</th>
+                                    <th>Legitimate Interest (if applicable)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Service Delivery</td>
+                                    <td>Contract</td>
+                                    <td>N/A</td>
+                                </tr>
+                                <tr>
+                                    <td>Analytics</td>
+                                    <td>Legitimate Interests</td>
+                                    <td>Improving our services</td>
+                                </tr>
+                                <tr>
+                                    <td>Marketing</td>
+                                    <td>Consent</td>
+                                    <td>N/A</td>
+                                </tr>
+                                <tr>
+                                    <td>Legal Compliance</td>
+                                    <td>Legal Obligation</td>
+                                    <td>N/A</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Data Request Modal -->
+                    <div class="modal" id="dataRequestModal">
+                        <div class="modal-content">
+                            <button class="modal-close" onclick="closeModal('dataRequest')">&times;</button>
+                            <div class="modal-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <h2 class="modal-title">Data Subject Request</h2>
+                            <p class="modal-subtitle">Submit your privacy rights request</p>
+                            
+                            <form class="modal-form" onsubmit="handleDataRequest(event)">
+                                <input type="hidden" id="requestType" name="requestType">
+                                
+                                <div class="form-group">
+                                    <label><i class="fas fa-user"></i> Full Name</label>
+                                    <input type="text" id="requestName" placeholder="John Doe" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label><i class="fas fa-envelope"></i> Email Address</label>
+                                    <input type="email" id="requestEmail" placeholder="john@example.com" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label><i class="fas fa-list"></i> Request Type</label>
+                                    <input type="text" id="requestTypeDisplay" class="form-control" readonly>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label><i class="fas fa-comment"></i> Additional Details</label>
+                                    <textarea id="requestDetails" rows="4" placeholder="Please provide any additional information that will help us process your request..."></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Acceptance Section -->
+                    <div class="agreement-section" style="margin-top: 3rem;">
+                        <p>
+                            <i class="fas fa-check-circle" style="color: var(--secondary); margin-right: 0.5rem;"></i>
+                            By using our services, you acknowledge that you have read and understood this Privacy Policy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- First Column - Banner and About -->
+                <div>
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="footer-logo-img">
+                    <p class="footer-about">Premier business advisory and consulting firm in Nepal, registered under Companies Act, 2063. Providing comprehensive solutions across Accounting, Tax, Corporate Advisory, and Training.</p>
+                    
+                    <!-- Social Icons in Square Round Rectangles -->
+                    <div class="social-links-footer">
+                        <a href="#" class="social-link-footer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Second Column - Important Links -->
+                <div>
+                    <h4>Important Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="outsourcing-portal.html">Outsourcing</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Column - Our Services Links -->
+                <div>
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="accounting-services.html">Accounting Services</a></li>
+                        <li><a href="tax-return-filing.html">Tax Return Filing</a></li>
+                        <li><a href="corporate-advisory.html">Corporate Advisory</a></li>
+                        <li><a href="taxation.html">Taxation Services</a></li>
+                        <li><a href="management-consulting.html">Management Consulting</a></li>
+                        <li><a href="nfrs-ifrs-implementation.html">NFRS/IFRS Implementation</a></li>
+                        <li><a href="training-and-courses.html">Training & Courses</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column - Payment We Accept -->
+                <div>
+                    <h4>Payment We Accept</h4>
+                    <div class="payment-methods">
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/pv0TC3Nh/LOGO-BLOCK-W-png.png" alt="eSewa">
+                        </div>
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/jkRdtxRk/idk-Kc-Pp-TJV-1773766149624.png" alt="Khalti">
+                        </div>
+                        <div class="payment-item bank">
+                            <img src="https://i.ibb.co/LzdxtLS3/Bank-Transfer-logo-1200x600.png" alt="Bank Transfer">
+                        </div>
+                    </div>
+                    <p style="color: var(--gray-500); margin-top: 1.5rem; font-size: 0.9rem;">
+                        <i class="fas fa-lock" style="color: var(--secondary); margin-right: 0.5rem;"></i>
+                        Secure payments processed in Nepal
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom with Copyright, Terms, Privacy, Disclaimer -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 NEXA Advisory & Consulting. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({ duration: 800, once: true });
+        
+        // Update request type display in modal
+        window.submitDataRequest = function(type) {
+            const modal = document.getElementById('dataRequestModal');
+            const requestType = document.getElementById('requestType');
+            const requestTypeDisplay = document.getElementById('requestTypeDisplay');
+            
+            if (requestType) {
+                requestType.value = type;
+            }
+            
+            if (requestTypeDisplay) {
+                const typeLabels = {
+                    'access': 'Right to Access',
+                    'rectification': 'Right to Rectification',
+                    'erasure': 'Right to Erasure',
+                    'restrict': 'Right to Restrict Processing',
+                    'portability': 'Right to Data Portability',
+                    'object': 'Right to Object'
+                };
+                requestTypeDisplay.value = typeLabels[type] || type;
+            }
+            
+            if (modal) {
+                modal.classList.add('active');
+            }
+        };
+    </script>
+</body>
+</html>

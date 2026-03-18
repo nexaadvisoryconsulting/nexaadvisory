@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Consulting - NEXA Advisory & Consulting | Strategic Business Excellence</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="NEXA Advisory's comprehensive management consulting services in Nepal: Business strategy, operations optimization, performance improvement, change management, and organizational development.">
+    <meta name="keywords" content="management consulting Nepal, business strategy, operations optimization, performance improvement, change management, business consultant Kathmandu">
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Move to Top Button -->
+    <button class="move-to-top" id="moveToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info-top">
+                <span><i class="fas fa-envelope"></i> info@nexaadvisory.com.np</span>
+                <span><i class="fas fa-phone-alt"></i> +977 9869553322</span>
+            </div>
+            <div class="social-icons-top">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-banner">
+                <a href="index.html">
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="banner-logo-img">
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="outsourcing-portal.html" class="nav-link">Outsourcing</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                
+                <!-- Search Icon -->
+                <div class="search-wrapper">
+                    <button class="search-icon-btn" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-dropdown" id="searchDropdown">
+                        <div class="search-input-wrapper">
+                            <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="search-results" id="searchResults"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Service Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div data-aos="fade-right">
+                    <span class="service-hero-badge">Strategic Business Excellence</span>
+                    <h1 class="service-hero-title">Management <span>Consulting</span> Services</h1>
+                    <p class="service-hero-description">
+                        NEXA Advisory provides comprehensive management consulting solutions to help organizations optimize operations, improve performance, and achieve sustainable growth through strategic guidance and data-driven insights.
+                    </p>
+                   
+                </div>
+                <div class="service-hero-image" data-aos="fade-left">
+                    <img src="https://i.ibb.co/TMy1rPR3/Management-consulting-presentation-in-action.png?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Management Consulting">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Stats -->
+    <div class="container">
+        <div class="service-stats">
+            <div class="service-stat" data-aos="fade-up">
+                <div class="number">200+</div>
+                <div class="label">Projects Completed</div>
+            </div>
+            <div class="service-stat" data-aos="fade-up" data-aos-delay="100">
+                <div class="number">15+</div>
+                <div class="label">Years Experience</div>
+            </div>
+            <div class="service-stat" data-aos="fade-up" data-aos-delay="200">
+                <div class="number">98%</div>
+                <div class="label">Client Satisfaction</div>
+            </div>
+            <div class="service-stat" data-aos="fade-up" data-aos-delay="300">
+                <div class="number">25+</div>
+                <div class="label">Expert Consultants</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Description Section 1 -->
+    <section class="product-section">
+        <div class="container">
+            <div class="product-container">
+                <div class="product-content" data-aos="fade-right">
+                    <h2>What is <span>Management Consulting</span>?</h2>
+                    <p>Management consulting helps organizations improve their performance by analyzing existing business challenges and developing plans for improvement. Consultants bring external expertise, fresh perspectives, and specialized skills to help businesses navigate complex issues.</p>
+                    <p>At NEXA Advisory, we partner with you to understand your unique challenges and opportunities, delivering customized solutions that drive measurable results and sustainable growth.</p>
+                    
+                    <h3>Why Choose Our Management Consulting?</h3>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> <strong>Expert Guidance:</strong> Access to experienced consultants with diverse industry backgrounds</li>
+                        <li><i class="fas fa-check"></i> <strong>Data-Driven Insights:</strong> Decisions backed by rigorous analysis and market research</li>
+                        <li><i class="fas fa-check"></i> <strong>Practical Solutions:</strong> Actionable strategies tailored to your specific context</li>
+                        <li><i class="fas fa-check"></i> <strong>Sustainable Results:</strong> Long-term improvements that outlast the engagement</li>
+                    </ul>
+                    
+                    <a href="javascript:void(0);" onclick="emailForPricing('Management Consulting')" class="pricing-contact">
+                        <i class="fas fa-envelope"></i> Contact for Pricing
+                    </a>
+                </div>
+                <div class="product-image" data-aos="fade-left">
+                    <div class="badge">Strategic Excellence</div>
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Management Consulting Importance">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Consulting Pillars -->
+    <section id="features" class="product-section" style="background: var(--gray-50);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Consulting <span>Pillars</span></h2>
+                <p class="section-subtitle">Four key areas where we deliver exceptional value</p>
+            </div>
+            
+            <div class="pillars-grid">
+                <div class="pillar-card" data-aos="fade-up">
+                    <div class="pillar-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Business Strategy</h3>
+                    <p>Develop robust strategies that align with your vision, market opportunities, and competitive landscape. We help you define your path to sustainable growth.</p>
+                    <div class="pillar-stats">
+                        <div class="pillar-stat">
+                            <div class="number">85%</div>
+                            <div class="label">Strategy Success</div>
+                        </div>
+                        <div class="pillar-stat">
+                            <div class="number">30%</div>
+                            <div class="label">Avg. Growth</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pillar-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pillar-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Operations Optimization</h3>
+                    <p>Streamline your operations, reduce costs, and improve efficiency through process analysis, workflow redesign, and performance monitoring.</p>
+                    <div class="pillar-stats">
+                        <div class="pillar-stat">
+                            <div class="number">40%</div>
+                            <div class="label">Efficiency Gain</div>
+                        </div>
+                        <div class="pillar-stat">
+                            <div class="number">25%</div>
+                            <div class="label">Cost Reduction</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pillar-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pillar-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Performance Improvement</h3>
+                    <p>Identify and implement initiatives to boost organizational performance, from productivity enhancements to quality management systems.</p>
+                    <div class="pillar-stats">
+                        <div class="pillar-stat">
+                            <div class="number">35%</div>
+                            <div class="label">Productivity Gain</div>
+                        </div>
+                        <div class="pillar-stat">
+                            <div class="number">50%</div>
+                            <div class="label">Quality Improvement</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pillar-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pillar-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Change Management</h3>
+                    <p>Guide your organization through transitions smoothly, ensuring employee adoption and minimizing disruption during periods of change.</p>
+                    <div class="pillar-stats">
+                        <div class="pillar-stat">
+                            <div class="number">90%</div>
+                            <div class="label">Adoption Rate</div>
+                        </div>
+                        <div class="pillar-stat">
+                            <div class="number">60%</div>
+                            <div class="label">Faster Transition</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;" data-aos="fade-up">
+                <a href="javascript:void(0);" onclick="emailForPricing('Management Consulting')" class="pricing-contact">
+                    <i class="fas fa-envelope"></i> Get Detailed Pricing
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Management <span>Consulting Services</span></h2>
+                <p class="section-subtitle">Comprehensive solutions to drive your business forward</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Strategic Planning</h3>
+                    <p>Develop comprehensive business strategies, set clear objectives, and create roadmaps for achieving long-term goals.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>Organizational Design</h3>
+                    <p>Structure your organization for optimal efficiency, with clear roles, responsibilities, and reporting lines.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Market Analysis</h3>
+                    <p>In-depth market research and competitive analysis to identify opportunities and inform strategic decisions.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Growth Strategy</h3>
+                    <p>Identify and evaluate growth opportunities, from market expansion to new product development.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Performance Management</h3>
+                    <p>Design and implement performance measurement systems to track progress and drive accountability.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Leadership Development</h3>
+                    <p>Develop your leadership team's capabilities to drive organizational success and navigate challenges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section style="background: var(--gray-50); padding: 60px 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Consulting <span>Methodology</span></h2>
+                <p class="section-subtitle">A proven approach to delivering results</p>
+            </div>
+            
+            <div class="methodology-grid">
+                <div class="methodology-card" data-aos="fade-up">
+                    <div class="methodology-number">1</div>
+                    <h3>Discovery</h3>
+                    <p>We conduct in-depth interviews, document review, and data analysis to understand your current situation and challenges.</p>
+                </div>
+                
+                <div class="methodology-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="methodology-number">2</div>
+                    <h3>Diagnosis</h3>
+                    <p>We identify root causes, assess performance gaps, and benchmark against industry best practices.</p>
+                </div>
+                
+                <div class="methodology-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="methodology-number">3</div>
+                    <h3>Design</h3>
+                    <p>We develop tailored solutions, create implementation roadmaps, and define success metrics.</p>
+                </div>
+                
+                <div class="methodology-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="methodology-number">4</div>
+                    <h3>Implementation</h3>
+                    <p>We work alongside your team to execute the plan, monitor progress, and adjust as needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section style="padding: 60px 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Benefits of <span>Management Consulting</span></h2>
+                <p class="section-subtitle">How partnering with NEXA transforms your business</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up">
+                    <div class="benefit-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Fresh Perspective</h3>
+                    <p>Gain objective insights and innovative ideas from experienced external consultants.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Accelerated Results</h3>
+                    <p>Achieve improvements faster with focused expertise and proven methodologies.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Risk Reduction</h3>
+                    <p>Mitigate risks through expert guidance and thorough analysis of options.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Competitive Edge</h3>
+                    <p>Gain advantage through strategic insights and optimized operations.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Team Development</h3>
+                    <p>Build internal capabilities as your team works alongside our consultants.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="benefit-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>ROI Focus</h3>
+                    <p>Every engagement is designed to deliver measurable returns on investment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section style="background: var(--gray-50); padding: 60px 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">What Our <span>Clients Say</span></h2>
+                <p class="section-subtitle">Trusted by businesses across Nepal</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"NEXA's management consulting team helped us restructure our operations and develop a growth strategy that has transformed our business. Their insights were invaluable."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info">
+                            <h4>Rajesh Khadka</h4>
+                            <p>CEO, Mountain Hardware</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Thanks to NEXA's strategic guidance, we've achieved 30% growth in just 18 months. Their team is professional, knowledgeable, and truly cares about our success."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PS</div>
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Founder, TechNepal Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+                <p class="section-subtitle">Common questions about our management consulting services</p>
+            </div>
+            
+            <div class="faq-accordion" data-aos="fade-up">
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>How is management consulting different from other consulting services?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Management consulting focuses on improving overall business performance, including strategy, operations, and organizational effectiveness. It addresses the "how" of running a business, while other specialties like financial or IT consulting focus on specific functions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>How long does a typical consulting engagement last?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Engagements vary based on scope and complexity, ranging from 2-3 months for focused projects to 6-12 months for comprehensive transformations. We'll work with you to design an engagement that fits your needs and timeline.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>Do you work with small and medium businesses?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Absolutely! We work with businesses of all sizes. Our engagements are tailored to each client's specific needs, budget, and scale. We have flexible engagement models designed specifically for growing businesses.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>How involved will my team need to be?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>We believe in collaboration. Your team's involvement is crucial for success, but we're respectful of their time. We'll work with you to determine the right level of engagement and ensure minimal disruption to daily operations.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>What industries do you specialize in?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>We have deep experience across multiple industries including banking & finance, manufacturing, tourism, healthcare, technology, and retail. Our consultants bring both industry-specific knowledge and cross-sector insights.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container" data-aos="fade-up">
+                <div class="newsletter-icon">
+                    <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <h2>Subscribe to Our <span>Newsletter</span></h2>
+                <p>Stay updated with the latest management insights, business strategies, and industry trends from our experts.</p>
+                
+                <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                    <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+                
+                <p class="newsletter-note">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Let our management consulting experts help you achieve your strategic goals and drive sustainable growth.</p>
+                <div class="cta-buttons">
+                    <a href="javascript:void(0);" onclick="emailForConsultation()" class="cta-btn-primary">Schedule Consultation</a>
+                    <a href="javascript:void(0);" onclick="emailForPricing('Management Consulting')" class="cta-btn-secondary">Request Pricing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section style="padding: 60px 0; background: white;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Related <span>Services</span></h2>
+                <p class="section-subtitle">Explore our other business solutions</p>
+            </div>
+            
+            <div class="services-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Corporate Advisory</h3>
+                    <p>Strategic guidance for business registration, restructuring, and regulatory compliance.</p>
+                    <a href="corporate-advisory.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Monitoring & Evaluation</h3>
+                    <p>Systematic assessment of project performance and impact to ensure objectives are met.</p>
+                    <a href="monitoring-evaluation.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Outsourcing Services</h3>
+                    <p>Comprehensive outsourcing solutions for your business operations.</p>
+                    <a href="outsourcing-portal.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- First Column - Banner and About -->
+                <div>
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="footer-logo-img">
+                    <p class="footer-about">Premier business advisory and consulting firm in Nepal, registered under Companies Act, 2063. Providing comprehensive solutions across Accounting, Tax, Corporate Advisory, and Training.</p>
+                    
+                    <!-- Social Icons in Square Round Rectangles -->
+                    <div class="social-links-footer">
+                        <a href="#" class="social-link-footer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Second Column - Important Links -->
+                <div>
+                    <h4>Important Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="outsourcing-portal.html">Outsourcing</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Column - Our Services Links -->
+                <div>
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                         <li><a href="accounting-services.html">Accounting Services</a></li>
+                        <li><a href="tax-return-filing.html">Tax Return Filing</a></li>
+                        <li><a href="corporate-advisory.html">Corporate Advisory</a></li>
+                        <li><a href="taxation.html">Taxation Services</a></li>
+                        <li><a href="management-consulting.html">Management Consulting</a></li>
+                        <li><a href="nfrs-ifrs-implementation.html">NFRS/IFRS Implementation</a></li>
+                        <li><a href="training-and-courses.html">Training & Courses</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column - Payment We Accept -->
+                <div>
+                    <h4>Payment We Accept</h4>
+                    <div class="payment-methods">
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/pv0TC3Nh/LOGO-BLOCK-W-png.png" alt="eSewa">
+                        </div>
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/jkRdtxRk/idk-Kc-Pp-TJV-1773766149624.png" alt="Khalti">
+                        </div>
+                        <div class="payment-item bank">
+                            <img src="https://i.ibb.co/LzdxtLS3/Bank-Transfer-logo-1200x600.png" alt="Bank Transfer">
+                        </div>
+                    </div>
+                    <p style="color: var(--gray-500); margin-top: 1.5rem; font-size: 0.9rem;">
+                        <i class="fas fa-lock" style="color: var(--secondary); margin-right: 0.5rem;"></i>
+                        Secure payments processed in Nepal
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom with Copyright, Terms, Privacy, Disclaimer -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 NEXA Advisory & Consulting. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html>

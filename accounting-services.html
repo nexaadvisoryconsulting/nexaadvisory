@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting Services - NEXA Advisory & Consulting | Premium Financial Solutions</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="NEXA Advisory's comprehensive accounting services in Nepal: Financial statements, ledger management, bank reconciliation, accounts payable/receivable, and monthly reporting.">
+    <meta name="keywords" content="accounting services Nepal, financial statements, bookkeeping, ledger management, bank reconciliation, accounting firm Kathmandu">
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Move to Top Button -->
+    <button class="move-to-top" id="moveToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info-top">
+                <span><i class="fas fa-envelope"></i> info@nexaadvisory.com.np</span>
+                <span><i class="fas fa-phone-alt"></i> +977 9869553322</span>
+            </div>
+            <div class="social-icons-top">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-banner">
+                <a href="index.html">
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="banner-logo-img">
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="outsourcing-portal.html" class="nav-link">Outsourcing</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                
+                <!-- Search Icon -->
+                <div class="search-wrapper">
+                    <button class="search-icon-btn" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-dropdown" id="searchDropdown">
+                        <div class="search-input-wrapper">
+                            <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="search-results" id="searchResults"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Service Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div data-aos="fade-right">
+                    <span class="service-hero-badge">Premium Financial Solutions</span>
+                    <h1 class="service-hero-title">Professional <span>Accounting</span> Services</h1>
+                    <p class="service-hero-description">
+                        NEXA Advisory provides comprehensive accounting solutions tailored to your business needs. From financial statement preparation to ledger management and bank reconciliation, our expert team ensures accuracy, compliance, and financial clarity.
+                    </p>
+                   
+                </div>
+                <div class="service-hero-image" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Accounting Services">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Stats -->
+    <div class="container">
+        <div class="service-stats">
+            <div class="service-stat" data-aos="fade-up">
+                <div class="number">500+</div>
+                <div class="label">Happy Clients</div>
+            </div>
+            <div class="service-stat" data-aos="fade-up" data-aos-delay="100">
+                <div class="number">15+</div>
+                <div class="label">Years Experience</div>
+            </div>
+            <div class="service-stat" data-aos="fade-up" data-aos-delay="200">
+                <div class="number">98%</div>
+                <div class="label">Client Retention</div>
+            </div>
+            <div class="service-stat" data-aos="fade-up" data-aos-delay="300">
+                <div class="number">25+</div>
+                <div class="label">Expert Accountants</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Description Section 1 -->
+    <section class="product-section">
+        <div class="container">
+            <div class="product-container">
+                <div class="product-content" data-aos="fade-right">
+                    <h2>What is <span>Accounting</span>?</h2>
+                    <p>Accounting is the systematic process of recording, analyzing, and reporting financial transactions of a business. It provides a clear picture of your company's financial health and is essential for making informed business decisions.</p>
+                    <p>At NEXA Advisory, we provide comprehensive accounting services that ensure your financial records are accurate, compliant with regulations, and ready for analysis whenever you need them.</p>
+                    
+                    <h3>Why is Professional Accounting Important?</h3>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> <strong>Financial Clarity:</strong> Understand your business performance with accurate financial statements</li>
+                        <li><i class="fas fa-check"></i> <strong>Regulatory Compliance:</strong> Stay compliant with NFRS/IFRS and tax regulations</li>
+                        <li><i class="fas fa-check"></i> <strong>Business Planning:</strong> Make informed decisions based on reliable financial data</li>
+                        <li><i class="fas fa-check"></i> <strong>Stakeholder Confidence:</strong> Build trust with investors, banks, and partners</li>
+                    </ul>
+                    
+                    <a href="javascript:void(0);" onclick="emailForPricing('Accounting Services')" class="pricing-contact">
+                        <i class="fas fa-envelope"></i> Contact for Pricing
+                    </a>
+                </div>
+                <div class="product-image" data-aos="fade-left">
+                    <div class="badge">Essential for Business</div>
+                    <img src="https://i.ibb.co/WvdGxhgn/6baf1af6-aba8-4470-be6e-c0325dea0fe6.png?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Accounting Importance">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="product-section" style="background: var(--gray-50);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Accounting <span>Services</span></h2>
+                <p class="section-subtitle">Comprehensive solutions to manage your finances effectively</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Financial Statement Preparation</h3>
+                    <p>Comprehensive financial statements including Balance Sheet, Income Statement, and Cash Flow Statement prepared in accordance with NFRS/IFRS standards.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Ledger Management</h3>
+                    <p>Meticulous maintenance of all ledgers including general ledger, subsidiary ledgers, and trial balance with regular updates and reviews.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Bank Reconciliation</h3>
+                    <p>Regular bank reconciliation to ensure your books match bank statements and identify any discrepancies promptly.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Accounts Payable/Receivable</h3>
+                    <p>Efficient management of payables and receivables to maintain healthy cash flow and vendor/customer relationships.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <h3>Monthly Reporting</h3>
+                    <p>Detailed monthly financial reports with analysis and insights to help you make informed business decisions.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Payroll Accounting</h3>
+                    <p>Complete payroll processing including salary calculations, tax deductions, and compliance with labor laws.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;" data-aos="fade-up">
+                <a href="javascript:void(0);" onclick="emailForPricing('Accounting Services')" class="pricing-contact">
+                    <i class="fas fa-envelope"></i> Get Detailed Pricing
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Accounting <span>Process</span></h2>
+                <p class="section-subtitle">A systematic approach to managing your finances</p>
+            </div>
+            
+            <div class="process-grid">
+                <div class="process-step" data-aos="fade-up">
+                    <div class="step-number">1</div>
+                    <h3>Data Collection</h3>
+                    <p>We gather all financial documents, bank statements, invoices, and receipts from your business.</p>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">2</div>
+                    <h3>Recording</h3>
+                    <p>Systematic recording of all transactions in accounting software with proper categorization.</p>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">3</div>
+                    <h3>Reconciliation</h3>
+                    <p>Regular reconciliation with bank statements to ensure accuracy and identify discrepancies.</p>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">4</div>
+                    <h3>Reporting</h3>
+                    <p>Preparation of financial statements and reports with analysis and insights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section style="background: var(--gray-50); padding: 60px 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Benefits of <span>Professional Accounting</span></h2>
+                <p class="section-subtitle">Why outsourcing your accounting to NEXA makes business sense</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Save Time</h3>
+                    <p>Focus on growing your business while we handle the complex accounting work efficiently.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Ensure Compliance</h3>
+                    <p>Stay compliant with NFRS/IFRS standards and tax regulations.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Better Decisions</h3>
+                    <p>Get accurate financial insights to make informed business decisions.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Cost Effective</h3>
+                    <p>Reduce overhead costs compared to hiring full-time in-house accountants.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="benefit-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Data Security</h3>
+                    <p>Your financial data is secure with our encrypted systems and strict confidentiality.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="benefit-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Expert Team</h3>
+                    <p>Work with qualified accountants experienced in various industries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section style="padding: 60px 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">What Our <span>Clients Say</span></h2>
+                <p class="section-subtitle">Trusted by businesses across Nepal</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"NEXA's accounting services have transformed our financial operations. Their team is professional, accurate, and always responsive to our needs. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info">
+                            <h4>Rajesh Khadka</h4>
+                            <p>CEO, Mountain Hardware</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Thanks to NEXA, we now have clear financial reports every month. Their attention to detail and deep understanding of NFRS/IFRS standards has been invaluable for our business."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PS</div>
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Owner, The Coffee House</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+                <p class="section-subtitle">Common questions about our accounting services</p>
+            </div>
+            
+            <div class="faq-accordion" data-aos="fade-up">
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>What accounting software do you use?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>We work with popular accounting software including Tally, QuickBooks, SAP, and various cloud-based solutions. We can also work with your existing systems or recommend the best software for your business needs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>How often will I receive financial reports?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>We provide financial reports according to your needs - monthly, quarterly, or annually. Our standard package includes monthly financial statements with real-time access through our client portal.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>Can you handle accounting for my small business?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Absolutely! We specialize in accounting for small and medium businesses. Our services are scalable and can be customized based on your transaction volume and specific requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>Is my financial data secure?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Yes, we implement strict data security protocols including encrypted data transmission, secure servers, signed NDAs, and restricted access to client information. We comply with international data protection standards.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>Do you offer a free consultation?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Yes, we offer a complimentary 30-minute initial consultation to understand your needs, assess your current accounting situation, and discuss how we can help your business.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container" data-aos="fade-up">
+                <div class="newsletter-icon">
+                    <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <h2>Subscribe to Our <span>Newsletter</span></h2>
+                <p>Stay updated with the latest accounting insights, tax updates, and financial tips from our experts.</p>
+                
+                <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                    <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+                
+                <p class="newsletter-note">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Streamline Your Accounting?</h2>
+                <p>Get in touch with our accounting experts for a free consultation and customized pricing.</p>
+                <div class="cta-buttons">
+                    <a href="javascript:void(0);" onclick="emailForConsultation()" class="cta-btn-primary">Schedule Consultation</a>
+                    <a href="javascript:void(0);" onclick="emailForPricing('Accounting Services')" class="cta-btn-secondary">Request Pricing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section style="padding: 60px 0; background: white;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Related <span>Services</span></h2>
+                <p class="section-subtitle">Explore our other financial services</p>
+            </div>
+            
+            <div class="services-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Book-Keeping Services</h3>
+                    <p>Meticulous day-to-day financial transaction recording and organization for businesses of all sizes.</p>
+                    <a href="bookkeeping-services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="service-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Tax Return Filing</h3>
+                    <p>Professional tax preparation and filing services for individuals and businesses ensuring compliance.</p>
+                    <a href="tax-services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>NFRS/IFRS Implementation</h3>
+                    <p>Expert guidance in adopting and implementing Nepal Financial Reporting Standards.</p>
+                    <a href="ifrs-services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- First Column - Banner and About -->
+                <div>
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="footer-logo-img">
+                    <p class="footer-about">Premier business advisory and consulting firm in Nepal, registered under Companies Act, 2063. Providing comprehensive solutions across Accounting, Tax, Corporate Advisory, and Training.</p>
+                    
+                    <!-- Social Icons in Square Round Rectangles -->
+                    <div class="social-links-footer">
+                        <a href="#" class="social-link-footer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Second Column - Important Links -->
+                <div>
+                    <h4>Important Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="outsourcing-portal.html">Outsourcing</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Column - Our Services Links -->
+                <div>
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                         <li><a href="accounting-services.html">Accounting Services</a></li>
+                        <li><a href="tax-return-filing.html">Tax Return Filing</a></li>
+                        <li><a href="corporate-advisory.html">Corporate Advisory</a></li>
+                        <li><a href="taxation.html">Taxation Services</a></li>
+                        <li><a href="management-consulting.html">Management Consulting</a></li>
+                        <li><a href="nfrs-ifrs-implementation.html">NFRS/IFRS Implementation</a></li>
+                        <li><a href="training-and-courses.html">Training & Courses</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column - Payment We Accept -->
+                <div>
+                    <h4>Payment We Accept</h4>
+                    <div class="payment-methods">
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/pv0TC3Nh/LOGO-BLOCK-W-png.png" alt="eSewa">
+                        </div>
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/jkRdtxRk/idk-Kc-Pp-TJV-1773766149624.png" alt="Khalti">
+                        </div>
+                        <div class="payment-item bank">
+                            <img src="https://i.ibb.co/LzdxtLS3/Bank-Transfer-logo-1200x600.png" alt="Bank Transfer">
+                        </div>
+                    </div>
+                    <p style="color: var(--gray-500); margin-top: 1.5rem; font-size: 0.9rem;">
+                        <i class="fas fa-lock" style="color: var(--secondary); margin-right: 0.5rem;"></i>
+                        Secure payments processed in Nepal
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom with Copyright, Terms, Privacy, Disclaimer -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 NEXA Advisory & Consulting. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html>

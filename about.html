@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - NEXA Advisory & Consulting | Nepal's Premier Advisory Firm</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="NEXA Advisory & Consulting - A premier Nepal-based advisory firm providing comprehensive business consulting, accounting, tax, and training services.">
+    <meta name="keywords" content="Nepal consulting firm, business advisory Nepal, accounting services Nepal, tax consulting Nepal">
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Move to Top Button -->
+    <button class="move-to-top" id="moveToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info-top">
+                <span><i class="fas fa-envelope"></i> info@nexaadvisory.com.np</span>
+                <span><i class="fas fa-phone-alt"></i> +977 9869553322</span>
+            </div>
+            <div class="social-icons-top">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-banner">
+                <a href="index.html">
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="banner-logo-img">
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="outsourcing.html" class="nav-link">Outsourcing</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                
+                <!-- Search Icon -->
+                <div class="search-wrapper">
+                    <button class="search-icon-btn" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-dropdown" id="searchDropdown">
+                        <div class="search-input-wrapper">
+                            <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="search-results" id="searchResults"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+   
+
+    <!-- Mission & Vision Section -->
+    <section class="mv-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Purpose</h2>
+                <p class="section-subtitle">Driving business excellence in Nepal</p>
+            </div>
+            
+            <div class="mv-grid">
+                <div class="mv-card" data-aos="fade-right">
+                    <div class="mv-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To empower Nepalese businesses with world-class advisory services, fostering sustainable growth and economic prosperity through ethical practices, innovative solutions, and unwavering commitment to excellence.</p>
+                </div>
+                
+                <div class="mv-card" data-aos="fade-left">
+                    <div class="mv-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To become Nepal's most trusted advisory firm, recognized globally for transforming businesses and shaping the future of commerce through strategic excellence and deep local insights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nepal Presence Section - Unique to About page -->
+    <section class="presence-section">
+        <div class="container">
+            <div class="presence-container">
+                <div class="presence-content" data-aos="fade-right">
+                    <h2>Pan-<span>Nepal</span> Presence</h2>
+                    <p>With a strong foothold in Kathmandu and expanding presence across all seven provinces, we serve clients from every corner of Nepal. Our deep understanding of local markets, combined with global best practices, makes us the ideal partner for businesses nationwide.</p>
+                    
+                    <div class="presence-stats">
+                        <div class="presence-stat">
+                            <div class="number">7</div>
+                            <div class="label">Provinces</div>
+                        </div>
+                        <div class="presence-stat">
+                            <div class="number">25+</div>
+                            <div class="label">Cities</div>
+                        </div>
+                        <div class="presence-stat">
+                            <div class="number">500+</div>
+                            <div class="label">Clients</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="presence-map" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1589772018573-3ff1e9a205cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Nepal Map">
+                    <div class="map-pin">
+                        <div class="map-tooltip">Kathmandu - Headquarters</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Core Values</h2>
+                <p class="section-subtitle">The principles that guide our every engagement</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card" data-aos="fade-up">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Integrity</h3>
+                    <p>Unwavering commitment to ethical practices and transparent dealings in every engagement.</p>
+                </div>
+                
+                <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="value-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Excellence</h3>
+                    <p>Striving for the highest quality in every service we deliver, exceeding client expectations.</p>
+                </div>
+                
+                <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Collaboration</h3>
+                    <p>Working hand-in-hand with clients to achieve shared goals and lasting success.</p>
+                </div>
+                
+                <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>Embracing new ideas and technologies to provide cutting-edge solutions.</p>
+                </div>
+                
+                <div class="value-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Commitment</h3>
+                    <p>Deep dedication to our clients' success and Nepal's business community.</p>
+                </div>
+                
+                <div class="value-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="value-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Perspective</h3>
+                    <p>Bringing international best practices to the Nepalese market.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose" style="background: var(--gray-50);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Why Choose NEXA</h2>
+                <p class="section-subtitle">What sets us apart from the rest</p>
+            </div>
+            
+            <div class="why-choose-grid">
+                <div class="why-card" data-aos="fade-up">
+                    <div class="why-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>15+ Years of Excellence</h3>
+                    <p>Over a decade and a half of experience serving businesses across Nepal with unwavering quality and commitment.</p>
+                </div>
+                
+                <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Expert Team</h3>
+                    <p>25+ highly qualified consultants with diverse industry expertise and professional certifications.</p>
+                </div>
+                
+                <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="why-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Client-First Approach</h3>
+                    <p>98% client satisfaction rate with personalized attention to every client's unique needs.</p>
+                </div>
+                
+                <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="why-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Proven Track Record</h3>
+                    <p>Successfully completed 500+ projects across various industries with measurable results.</p>
+                </div>
+                
+                <div class="why-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="why-icon">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <h3>Comprehensive Services</h3>
+                    <p>End-to-end solutions from accounting to corporate advisory under one roof.</p>
+                </div>
+                
+                <div class="why-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="why-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Trusted Partner</h3>
+                    <p>Recognized as a reliable and ethical business partner by clients across Nepal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section - Unique to About page -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="testimonial-container" data-aos="fade-up">
+                <div class="testimonial-icon">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <p class="testimonial-text">
+                    "NEXA Advisory has been instrumental in our company's growth. Their deep understanding of the Nepalese market, combined with international best practices, helped us navigate complex regulatory requirements and achieve our business objectives. Their team is professional, responsive, and truly cares about their clients' success."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">RK</div>
+                    <div class="author-info">
+                        <h4>Rajesh Khadka</h4>
+                        <p>CEO, Mountain Hardware</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- First Column - Banner and About -->
+                <div>
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="footer-logo-img">
+                    <p class="footer-about">Premier business advisory and consulting firm in Nepal, registered under Companies Act, 2063. Providing comprehensive solutions across Accounting, Tax, Corporate Advisory, and Training.</p>
+                    
+                    <!-- Social Icons in Square Round Rectangles -->
+                    <div class="social-links-footer">
+                        <a href="#" class="social-link-footer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Second Column - Important Links -->
+                <div>
+                    <h4>Important Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="outsourcing-portal.html">Outsourcing</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Column - Our Services Links -->
+                <div>
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="accounting-services.html">Accounting Services</a></li>
+                        <li><a href="tax-return-filing.html">Tax Return Filing</a></li>
+                        <li><a href="corporate-advisory.html">Corporate Advisory</a></li>
+                        <li><a href="taxation.html">Taxation Services</a></li>
+                        <li><a href="management-consulting.html">Management Consulting</a></li>
+                        <li><a href="nfrs-ifrs-implementation.html">NFRS/IFRS Implementation</a></li>
+                        <li><a href="training-and-courses.html">Training & Courses</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column - Payment We Accept -->
+                <div>
+                    <h4>Payment We Accept</h4>
+                    <div class="payment-methods">
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/pv0TC3Nh/LOGO-BLOCK-W-png.png" alt="eSewa">
+                        </div>
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/jkRdtxRk/idk-Kc-Pp-TJV-1773766149624.png" alt="Khalti">
+                        </div>
+                        <div class="payment-item bank">
+                            <img src="https://i.ibb.co/LzdxtLS3/Bank-Transfer-logo-1200x600.png" alt="Bank Transfer">
+                        </div>
+                    </div>
+                    <p style="color: var(--gray-500); margin-top: 1.5rem; font-size: 0.9rem;">
+                        <i class="fas fa-lock" style="color: var(--secondary); margin-right: 0.5rem;"></i>
+                        Secure payments processed in Nepal
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom with Copyright, Terms, Privacy, Disclaimer -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 NEXA Advisory & Consulting. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

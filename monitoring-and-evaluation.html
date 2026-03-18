@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring & Evaluation - NEXA Advisory & Consulting | Impact Assessment Experts</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="NEXA Advisory's comprehensive monitoring and evaluation services in Nepal: Performance metrics, impact assessment, data analysis, and reporting for projects and programs.">
+    <meta name="keywords" content="monitoring and evaluation Nepal, M&E services, impact assessment, performance metrics, data analysis, project evaluation Kathmandu">
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Move to Top Button -->
+    <button class="move-to-top" id="moveToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info-top">
+                <span><i class="fas fa-envelope"></i> info@nexaadvisory.com.np</span>
+                <span><i class="fas fa-phone-alt"></i> +977 9869553322</span>
+            </div>
+            <div class="social-icons-top">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-banner">
+                <a href="index.html">
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="banner-logo-img">
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="outsourcing-portal.html" class="nav-link">Outsourcing</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                
+                <!-- Search Icon -->
+                <div class="search-wrapper">
+                    <button class="search-icon-btn" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-dropdown" id="searchDropdown">
+                        <div class="search-input-wrapper">
+                            <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="search-results" id="searchResults"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Service Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div data-aos="fade-right">
+                    <span class="service-hero-badge">Impact Assessment Experts</span>
+                    <h1 class="service-hero-title">Monitoring & <span>Evaluation</span> Services</h1>
+                    <p class="service-hero-description">
+                        NEXA Advisory provides comprehensive monitoring and evaluation solutions to help organizations measure project performance, assess impact, and make data-driven decisions for continuous improvement.
+                    </p>
+                   
+                </div>
+                <div class="service-hero-image" data-aos="fade-left">
+                    <img src="https://i.ibb.co/LXfgb9nc/129e2420-b8cd-4424-b04c-722fe29a5b4c.png?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Monitoring & Evaluation">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Stats -->
+    <div class="container">
+        <div class="service-stats">
+            <div class="service-stat" data-aos="fade-up">
+                <div class="number">100+</div>
+                <div class="label">Projects Evaluated</div>
+            </div>
+            <div class="service-stat" data-aos="fade-up" data-aos-delay="100">
+                <div class="number">15+</div>
+                <div class="label">Years Experience</div>
+            </div>
+            <div class="service-stat" data-aos="fade-up" data-aos-delay="200">
+                <div class="number">98%</div>
+                <div class="label">Client Satisfaction</div>
+            </div>
+            <div class="service-stat" data-aos="fade-up" data-aos-delay="300">
+                <div class="number">25+</div>
+                <div class="label">M&E Experts</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Description Section 1 -->
+    <section class="product-section">
+        <div class="container">
+            <div class="product-container">
+                <div class="product-content" data-aos="fade-right">
+                    <h2>What is <span>Monitoring & Evaluation</span>?</h2>
+                    <p>Monitoring and Evaluation (M&E) is a systematic process that helps organizations track project progress, measure outcomes, and assess overall impact. It provides the evidence needed to make informed decisions, improve program effectiveness, and demonstrate accountability to stakeholders.</p>
+                    <p>At NEXA Advisory, we design and implement robust M&E frameworks that generate reliable data and actionable insights for continuous improvement and impact reporting.</p>
+                    
+                    <h3>Why Choose Our M&E Services?</h3>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> <strong>Evidence-Based Decisions:</strong> Make informed choices backed by reliable data</li>
+                        <li><i class="fas fa-check"></i> <strong>Impact Demonstration:</strong> Show stakeholders the real difference your project makes</li>
+                        <li><i class="fas fa-check"></i> <strong>Continuous Improvement:</strong> Identify areas for enhancement in real-time</li>
+                        <li><i class="fas fa-check"></i> <strong>Accountability:</strong> Meet donor and stakeholder reporting requirements</li>
+                    </ul>
+                    
+                    <a href="javascript:void(0);" onclick="emailForPricing('Monitoring & Evaluation')" class="pricing-contact">
+                        <i class="fas fa-envelope"></i> Contact for Pricing
+                    </a>
+                </div>
+                <div class="product-image" data-aos="fade-left">
+                    <div class="badge">Data-Driven Impact</div>
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="M&E Importance">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- M&E Cycle Section -->
+    <section id="features" class="product-section" style="background: var(--gray-50);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">The M&E <span>Cycle</span></h2>
+                <p class="section-subtitle">A systematic approach to measuring and improving impact</p>
+            </div>
+            
+            <div class="cycle-grid">
+                <div class="cycle-card" data-aos="fade-up">
+                    <div class="cycle-number">1</div>
+                    <h3>Planning</h3>
+                    <p>Develop M&E framework, define indicators, set baselines, and establish data collection methods.</p>
+                </div>
+                
+                <div class="cycle-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cycle-number">2</div>
+                    <h3>Data Collection</h3>
+                    <p>Gather quantitative and qualitative data through surveys, interviews, focus groups, and observations.</p>
+                </div>
+                
+                <div class="cycle-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cycle-number">3</div>
+                    <h3>Analysis</h3>
+                    <p>Process and analyze data to identify trends, patterns, and insights about project performance.</p>
+                </div>
+                
+                <div class="cycle-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cycle-number">4</div>
+                    <h3>Reporting</h3>
+                    <p>Generate comprehensive reports with findings, recommendations, and actionable insights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our M&E <span>Services</span></h2>
+                <p class="section-subtitle">Comprehensive solutions for your monitoring and evaluation needs</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Performance Metrics</h3>
+                    <p>Develop and track key performance indicators (KPIs) aligned with your project goals and objectives.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Impact Assessment</h3>
+                    <p>Comprehensive evaluation of project outcomes and long-term impact on target populations.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Data Analysis</h3>
+                    <p>Advanced statistical analysis and data visualization to uncover meaningful insights.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Report Generation</h3>
+                    <p>Clear, comprehensive reports with findings, conclusions, and actionable recommendations.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Baseline Studies</h3>
+                    <p>Establish baselines before project implementation to measure progress and impact accurately.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Mid-term Reviews</h3>
+                    <p>Assess project progress mid-implementation to identify areas for improvement.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;" data-aos="fade-up">
+                <a href="javascript:void(0);" onclick="emailForPricing('Monitoring & Evaluation')" class="pricing-contact">
+                    <i class="fas fa-envelope"></i> Get Detailed Pricing
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Framework Section with Tabs -->
+    <section style="background: var(--gray-50); padding: 60px 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">M&E <span>Frameworks</span></h2>
+                <p class="section-subtitle">Choose the right approach for your project</p>
+            </div>
+            
+            <div class="framework-tabs" data-aos="fade-up">
+                <button class="framework-tab active" onclick="switchFramework('logical')">Logical Framework</button>
+                <button class="framework-tab" onclick="switchFramework('theory')">Theory of Change</button>
+                <button class="framework-tab" onclick="switchFramework('results')">Results Framework</button>
+            </div>
+            
+            <div class="framework-content active" id="logical" data-aos="fade-up">
+                <div class="framework-card">
+                    <h3>Logical Framework Approach</h3>
+                    <p>A structured methodology for project planning and management that links project activities to expected outcomes and impacts through a logical matrix.</p>
+                    
+                    <h4>Key Components</h4>
+                    <ul class="framework-list">
+                        <li><i class="fas fa-check"></i> <strong>Goal:</strong> Overall long-term development impact</li>
+                        <li><i class="fas fa-check"></i> <strong>Purpose:</strong> Immediate project objective</li>
+                        <li><i class="fas fa-check"></i> <strong>Outputs:</strong> Direct deliverables from activities</li>
+                        <li><i class="fas fa-check"></i> <strong>Activities:</strong> Specific actions to produce outputs</li>
+                        <li><i class="fas fa-check"></i> <strong>Indicators:</strong> Measurable signs of progress</li>
+                        <li><i class="fas fa-check"></i> <strong>Means of Verification:</strong> Data sources for indicators</li>
+                    </ul>
+                    
+                    <p><strong>Best For:</strong> Development projects, donor-funded programs, and projects requiring structured reporting.</p>
+                </div>
+            </div>
+            
+            <div class="framework-content" id="theory">
+                <div class="framework-card">
+                    <h3>Theory of Change</h3>
+                    <p>A comprehensive description of how and why a desired change is expected to happen in a particular context, mapping out causal pathways from activities to impact.</p>
+                    
+                    <h4>Key Components</h4>
+                    <ul class="framework-list">
+                        <li><i class="fas fa-check"></i> <strong>Long-term Goal:</strong> Ultimate impact envisioned</li>
+                        <li><i class="fas fa-check"></i> <strong>Preconditions:</strong> Necessary conditions for change</li>
+                        <li><i class="fas fa-check"></i> <strong>Interventions:</strong> Actions to create preconditions</li>
+                        <li><i class="fas fa-check"></i> <strong>Assumptions:</strong> External factors affecting success</li>
+                        <li><i class="fas fa-check"></i> <strong>Indicators:</strong> Measures for each step</li>
+                        <li><i class="fas fa-check"></i> <strong>Causal Pathways:</strong> Links between steps</li>
+                    </ul>
+                    
+                    <p><strong>Best For:</strong> Complex programs, advocacy initiatives, and projects with multiple stakeholders.</p>
+                </div>
+            </div>
+            
+            <div class="framework-content" id="results">
+                <div class="framework-card">
+                    <h3>Results Framework</h3>
+                    <p>A logic model that illustrates the causal chain from inputs to outcomes, focusing on performance measurement and results-based management.</p>
+                    
+                    <h4>Key Components</h4>
+                    <ul class="framework-list">
+                        <li><i class="fas fa-check"></i> <strong>Inputs:</strong> Resources invested in the project</li>
+                        <li><i class="fas fa-check"></i> <strong>Activities:</strong> Actions taken with inputs</li>
+                        <li><i class="fas fa-check"></i> <strong>Outputs:</strong> Direct products of activities</li>
+                        <li><i class="fas fa-check"></i> <strong>Outcomes:</strong> Short-term changes observed</li>
+                        <li><i class="fas fa-check"></i> <strong>Impact:</strong> Long-term sustainable changes</li>
+                        <li><i class="fas fa-check"></i> <strong>Performance Indicators:</strong> Measures at each level</li>
+                    </ul>
+                    
+                    <p><strong>Best For:</strong> Government programs, organizational performance management, and results-based budgeting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Indicators Section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Key M&E <span>Indicators</span></h2>
+                <p class="section-subtitle">Types of indicators we track across projects</p>
+            </div>
+            
+            <div class="indicators-grid">
+                <div class="indicator-card" data-aos="fade-up">
+                    <div class="indicator-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Input Indicators</h3>
+                    <p>Measure resources invested in the project</p>
+                    <div class="indicator-tags">
+                        <span class="indicator-tag">Budget allocated</span>
+                        <span class="indicator-tag">Staff time</span>
+                        <span class="indicator-tag">Equipment</span>
+                        <span class="indicator-tag">Materials</span>
+                    </div>
+                </div>
+                
+                <div class="indicator-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="indicator-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Process Indicators</h3>
+                    <p>Track project implementation progress</p>
+                    <div class="indicator-tags">
+                        <span class="indicator-tag">Activities completed</span>
+                        <span class="indicator-tag">Trainings held</span>
+                        <span class="indicator-tag">Meetings conducted</span>
+                    </div>
+                </div>
+                
+                <div class="indicator-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="indicator-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>Output Indicators</h3>
+                    <p>Measure direct products of activities</p>
+                    <div class="indicator-tags">
+                        <span class="indicator-tag">People trained</span>
+                        <span class="indicator-tag">Materials produced</span>
+                        <span class="indicator-tag">Services delivered</span>
+                    </div>
+                </div>
+                
+                <div class="indicator-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="indicator-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Outcome Indicators</h3>
+                    <p>Measure short-term changes</p>
+                    <div class="indicator-tags">
+                        <span class="indicator-tag">Behavior change</span>
+                        <span class="indicator-tag">Knowledge gain</span>
+                        <span class="indicator-tag">Skill improvement</span>
+                    </div>
+                </div>
+                
+                <div class="indicator-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="indicator-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Impact Indicators</h3>
+                    <p>Measure long-term effects</p>
+                    <div class="indicator-tags">
+                        <span class="indicator-tag">Quality of life</span>
+                        <span class="indicator-tag">Economic status</span>
+                        <span class="indicator-tag">Environmental change</span>
+                    </div>
+                </div>
+                
+                <div class="indicator-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="indicator-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Efficiency Indicators</h3>
+                    <p>Measure cost-effectiveness</p>
+                    <div class="indicator-tags">
+                        <span class="indicator-tag">Cost per beneficiary</span>
+                        <span class="indicator-tag">Time to completion</span>
+                        <span class="indicator-tag">Resource utilization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Collection Methods -->
+    <section style="background: var(--gray-50); padding: 60px 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Data Collection <span>Methods</span></h2>
+                <p class="section-subtitle">Rigorous approaches to gather reliable information</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-poll"></i>
+                    </div>
+                    <h3>Surveys</h3>
+                    <p>Structured questionnaires for quantitative data collection from large samples.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Focus Groups</h3>
+                    <p>Guided discussions with small groups to gather qualitative insights.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Key Informant Interviews</h3>
+                    <p>In-depth interviews with stakeholders and experts for detailed information.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Observations</h3>
+                    <p>Systematic observation of activities and behaviors in real settings.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Document Review</h3>
+                    <p>Analysis of project documents, reports, and administrative data.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Data Collection</h3>
+                    <p>Digital tools for real-time data collection in remote locations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section style="padding: 60px 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Benefits of <span>M&E</span></h2>
+                <p class="section-subtitle">How systematic monitoring transforms your projects</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Improved Performance</h3>
+                    <p>Identify what's working and what's not, enabling real-time adjustments for better outcomes.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Accountability</h3>
+                    <p>Demonstrate to donors and stakeholders that resources are used effectively.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Evidence-Based Decisions</h3>
+                    <p>Make informed choices based on reliable data rather than assumptions.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Impact Demonstration</h3>
+                    <p>Show the real difference your project makes in the lives of beneficiaries.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="benefit-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Organizational Learning</h3>
+                    <p>Capture lessons learned to improve future projects and strategies.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="benefit-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Stakeholder Confidence</h3>
+                    <p>Build trust with donors, partners, and communities through transparent reporting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section style="background: var(--gray-50); padding: 60px 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">What Our <span>Clients Say</span></h2>
+                <p class="section-subtitle">Trusted by organizations across Nepal</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"NEXA's M&E framework transformed how we track our project outcomes. Their team designed a comprehensive system that gives us real-time insights and has helped us secure continued donor funding."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SK</div>
+                        <div class="author-info">
+                            <h4>Sushila Karki</h4>
+                            <p>Program Director, Health Nepal</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The baseline study NEXA conducted for our education project was thorough and professional. Their analysis helped us set realistic targets and measure our impact effectively."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div class="author-info">
+                            <h4>Mohan Rai</h4>
+                            <p>Project Manager, Education Initiative</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+                <p class="section-subtitle">Common questions about our monitoring and evaluation services</p>
+            </div>
+            
+            <div class="faq-accordion" data-aos="fade-up">
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>What is the difference between monitoring and evaluation?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Monitoring is the continuous tracking of project progress against planned activities, while evaluation is the periodic assessment of project outcomes and impact. Monitoring tells you what's happening, evaluation tells you what changed as a result.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>How long does an M&E framework development take?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Typically, developing a comprehensive M&E framework takes 3-6 weeks, depending on project complexity. This includes stakeholder consultations, indicator development, data collection tool design, and system setup.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>Do you work with NGOs and international development organizations?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Absolutely! We have extensive experience working with NGOs, INGOs, UN agencies, and government departments. We understand donor reporting requirements and can design systems that meet multiple stakeholder needs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>What data collection methods do you use?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>We use a mix of quantitative and qualitative methods including surveys, focus groups, key informant interviews, observations, document review, and mobile data collection tools. The approach is tailored to your specific needs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>How do you ensure data quality?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>We implement rigorous quality assurance protocols including enumerator training, pre-testing of tools, real-time data validation, spot checks, and triangulation of data from multiple sources to ensure reliability and accuracy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container" data-aos="fade-up">
+                <div class="newsletter-icon">
+                    <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <h2>Subscribe to Our <span>Newsletter</span></h2>
+                <p>Stay updated with the latest M&E best practices, impact assessment tools, and industry insights from our experts.</p>
+                
+                <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                    <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+                
+                <p class="newsletter-note">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Measure Your Impact?</h2>
+                <p>Let our M&E experts help you design a system that tracks performance, demonstrates results, and drives continuous improvement.</p>
+                <div class="cta-buttons">
+                    <a href="javascript:void(0);" onclick="emailForConsultation()" class="cta-btn-primary">Schedule Consultation</a>
+                    <a href="javascript:void(0);" onclick="emailForPricing('Monitoring & Evaluation')" class="cta-btn-secondary">Request Pricing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section style="padding: 60px 0; background: white;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Related <span>Services</span></h2>
+                <p class="section-subtitle">Explore our other consulting solutions</p>
+            </div>
+            
+            <div class="services-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Management Consulting</h3>
+                    <p>Strategic guidance to optimize operations, improve efficiency, and drive business growth.</p>
+                    <a href="management-consulting.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Corporate Advisory</h3>
+                    <p>Strategic guidance for business registration, restructuring, and regulatory compliance.</p>
+                    <a href="corporate-advisory.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>NFRS/IFRS Implementation</h3>
+                    <p>Expert guidance in adopting and implementing Nepal Financial Reporting Standards.</p>
+                    <a href="ifrs-services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- First Column - Banner and About -->
+                <div>
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="footer-logo-img">
+                    <p class="footer-about">Premier business advisory and consulting firm in Nepal, registered under Companies Act, 2063. Providing comprehensive solutions across Accounting, Tax, Corporate Advisory, and Training.</p>
+                    
+                    <!-- Social Icons in Square Round Rectangles -->
+                    <div class="social-links-footer">
+                        <a href="#" class="social-link-footer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Second Column - Important Links -->
+                <div>
+                    <h4>Important Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="outsourcing-portal.html">Outsourcing</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Column - Our Services Links -->
+                <div>
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="accounting-services.html">Accounting Services</a></li>
+                        <li><a href="tax-return-filing.html">Tax Return Filing</a></li>
+                        <li><a href="corporate-advisory.html">Corporate Advisory</a></li>
+                        <li><a href="taxation.html">Taxation Services</a></li>
+                        <li><a href="management-consulting.html">Management Consulting</a></li>
+                        <li><a href="nfrs-ifrs-implementation.html">NFRS/IFRS Implementation</a></li>
+                        <li><a href="training-and-courses.html">Training & Courses</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column - Payment We Accept -->
+                <div>
+                    <h4>Payment We Accept</h4>
+                    <div class="payment-methods">
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/pv0TC3Nh/LOGO-BLOCK-W-png.png" alt="eSewa">
+                        </div>
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/jkRdtxRk/idk-Kc-Pp-TJV-1773766149624.png" alt="Khalti">
+                        </div>
+                        <div class="payment-item bank">
+                            <img src="https://i.ibb.co/LzdxtLS3/Bank-Transfer-logo-1200x600.png" alt="Bank Transfer">
+                        </div>
+                    </div>
+                    <p style="color: var(--gray-500); margin-top: 1.5rem; font-size: 0.9rem;">
+                        <i class="fas fa-lock" style="color: var(--secondary); margin-right: 0.5rem;"></i>
+                        Secure payments processed in Nepal
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom with Copyright, Terms, Privacy, Disclaimer -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 NEXA Advisory & Consulting. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html>

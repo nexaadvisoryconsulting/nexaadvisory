@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - NEXA Advisory & Consulting | Your Questions Answered</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Find answers to frequently asked questions about NEXA Advisory's services, accounting, taxation, corporate advisory, training, and more.">
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Move to Top Button -->
+    <button class="move-to-top" id="moveToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info-top">
+                <span><i class="fas fa-envelope"></i> info@nexaadvisory.com.np</span>
+                <span><i class="fas fa-phone-alt"></i> +977 9869553322</span>
+            </div>
+            <div class="social-icons-top">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-banner">
+                <a href="index.html">
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="banner-logo-img">
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="outsourcing-portal.html" class="nav-link">Outsourcing</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="faqs.html" class="nav-link active">FAQs</a>
+                
+                <!-- Search Icon -->
+                <div class="search-wrapper">
+                    <button class="search-icon-btn" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-dropdown" id="searchDropdown">
+                        <div class="search-input-wrapper">
+                            <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="search-results" id="searchResults"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- FAQ Hero -->
+    <section class="faq-hero">
+        <div class="container">
+            <div class="faq-hero-content" data-aos="fade-up">
+                <h1 class="faq-hero-title">Frequently Asked <span>Questions</span></h1>
+                <p class="faq-hero-description">
+                    Find quick answers to common questions about our services, processes, and how we can help your business thrive.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Navigation -->
+    <div class="category-nav">
+        <div class="container">
+            <div class="category-slider" id="categorySlider">
+                <button class="category-btn active" onclick="scrollToCategory('general')">
+                    <i class="fas fa-building"></i> General
+                </button>
+                <button class="category-btn" onclick="scrollToCategory('accounting')">
+                    <i class="fas fa-calculator"></i> Accounting
+                </button>
+                <button class="category-btn" onclick="scrollToCategory('tax')">
+                    <i class="fas fa-file-invoice-dollar"></i> Tax
+                </button>
+                <button class="category-btn" onclick="scrollToCategory('corporate')">
+                    <i class="fas fa-building"></i> Corporate
+                </button>
+                <button class="category-btn" onclick="scrollToCategory('advisory')">
+                    <i class="fas fa-chart-line"></i> Advisory
+                </button>
+                <button class="category-btn" onclick="scrollToCategory('training')">
+                    <i class="fas fa-chalkboard-teacher"></i> Training
+                </button>
+                <button class="category-btn" onclick="scrollToCategory('outsourcing')">
+                    <i class="fas fa-handshake"></i> Outsourcing
+                </button>
+                <button class="category-btn" onclick="scrollToCategory('technical')">
+                    <i class="fas fa-code"></i> Technical
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Accordion Section -->
+    <section class="faq-accordion-section">
+        <div class="container">
+            <!-- Search Bar (Optional) -->
+            <div class="faq-search" style="margin-bottom: 2rem; display: none;">
+                <input type="text" id="faqSearch" class="form-control" placeholder="Search FAQs..." onkeyup="searchFAQs()">
+            </div>
+
+            <!-- General FAQs Category -->
+            <div id="general" class="faq-category" data-aos="fade-up">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <h3>
+                        <i class="fas fa-building"></i>
+                        General Questions
+                        <span>8</span>
+                    </h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="category-content show">
+                    <div class="faq-items">
+                        <!-- FAQ 1 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What services does NEXA Advisory provide?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We provide comprehensive business advisory services including Accounting, Book-Keeping, Tax Return Filing, Corporate Advisory, Management Consulting, Monitoring & Evaluation, NFRS/IFRS Implementation, Taxation, and Professional Training.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>Are you registered in Nepal?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, NEXA Advisory is fully registered under the Companies Act, 2063 of Nepal and operates as a legitimate business advisory firm in Kathmandu.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>Do you serve clients outside Nepal?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Absolutely! We serve clients globally including USA, UK, Europe, and Asia Pacific. Our team provides virtual consultations and remote services for international clients.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What industries do you specialize in?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We serve 25+ industries including Banking & Finance, Tourism, Manufacturing, IT, Healthcare, Hydropower, Education, Real Estate, Retail, and more across Nepal and globally.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>How experienced is your team?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Our team consists of 25+ expert consultants with an average of 15+ years of experience. We have completed 500+ projects with 98% client satisfaction rate.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 6 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What languages do your consultants speak?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Our consultants are fluent in Nepali, English, and Hindi. We can arrange for other language support for international clients as needed.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 7 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>Do you offer free initial consultations?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we offer a complimentary 30-minute initial consultation to understand your needs and discuss how we can help your business.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 8 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What are your business hours?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We are open Sunday to Friday from 9:00 AM to 6:00 PM (Nepal Time). For international clients, we offer flexible scheduling across time zones.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accounting FAQs Category -->
+            <div id="accounting" class="faq-category" data-aos="fade-up">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <h3>
+                        <i class="fas fa-calculator"></i>
+                        Accounting Services
+                        <span>6</span>
+                    </h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="category-content">
+                    <div class="faq-items">
+                        <!-- FAQ 1 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What accounting services do you offer?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We offer comprehensive accounting services including financial statement preparation, ledger management, bank reconciliation, accounts payable/receivable, and monthly/quarterly/annual reporting.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>Do you use accounting software?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we work with popular accounting software including Tally, QuickBooks, SAP, and cloud-based solutions. We can also work with your existing systems.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>Can you handle bookkeeping for small businesses?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Absolutely! We specialize in bookkeeping for small and medium businesses, handling daily transactions, expense tracking, and financial organization.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>How often will I receive financial reports?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We provide financial reports according to your needs - monthly, quarterly, or annually. You'll have access to real-time financial data through our client portal.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What is NFRS/IFRS implementation?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>NFRS/IFRS implementation involves adopting Nepal Financial Reporting Standards. We help businesses transition, conduct gap analysis, train staff, and ensure compliance.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 6 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>Do you handle payroll accounting?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we provide comprehensive payroll accounting services including salary calculations, tax deductions, and compliance with labor laws.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tax FAQs Category -->
+            <div id="tax" class="faq-category" data-aos="fade-up">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <h3>
+                        <i class="fas fa-file-invoice-dollar"></i>
+                        Tax Services
+                        <span>7</span>
+                    </h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="category-content">
+                    <div class="faq-items">
+                        <!-- FAQ 1 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What tax services do you provide?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We provide comprehensive tax services including income tax return filing, VAT/GST filing, TDS returns, tax planning, tax advisory, and tax audit support.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>Do you handle both personal and business taxes?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we handle tax filing for individuals, sole proprietors, partnerships, corporations, and NGOs. Our team ensures compliance with all tax regulations.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What is the deadline for tax filing in Nepal?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>For individuals and businesses in Nepal, the tax filing deadline is typically three months after the end of the fiscal year (mid-July). We send reminders to all clients.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>Can you help with tax planning?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Absolutely! Our tax planning services help you legally minimize tax liability, identify deductions, and structure your finances for optimal tax efficiency.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What is VAT registration threshold in Nepal?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>In Nepal, businesses with annual turnover exceeding Rs. 2 million must register for VAT. We can help you with registration and compliance.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 6 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>Do you handle international tax matters?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we have expertise in international taxation, including cross-border transactions, double taxation treaties, and tax implications for non-residents.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 7 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What documents do I need for tax filing?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>You'll need PAN card, income statements, expense records, bank statements, investment proofs, and previous year's returns. We provide a detailed checklist.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Corporate Advisory FAQs Category -->
+            <div id="corporate" class="faq-category" data-aos="fade-up">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <h3>
+                        <i class="fas fa-building"></i>
+                        Corporate Advisory
+                        <span>6</span>
+                    </h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="category-content">
+                    <div class="faq-items">
+                        <!-- FAQ 1 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What is corporate advisory?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Corporate advisory includes business registration, company formation, corporate restructuring, regulatory compliance, and strategic guidance for businesses at all stages.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>How do I register a company in Nepal?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We handle the entire company registration process including name reservation, document preparation, PAN registration, and obtaining necessary licenses from the Office of Company Registrar.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What types of companies can be registered?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>You can register various entities including Private Limited, Public Limited, Partnerships, Sole Proprietorships, and Non-Government Organizations (NGOs).</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>Do you help with foreign company registration?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we assist foreign companies with branch office registration, liaison office setup, and subsidiary formation in Nepal, ensuring compliance with FDI regulations.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What is corporate restructuring?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Corporate restructuring involves mergers, acquisitions, demergers, and business reorganization to improve efficiency, reduce costs, or adapt to market changes.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 6 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>How long does company registration take?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Company registration in Nepal typically takes 5-7 working days with proper documentation. We expedite the process through our relationships with regulatory authorities.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Management Consulting FAQs Category -->
+            <div id="advisory" class="faq-category" data-aos="fade-up">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <h3>
+                        <i class="fas fa-chart-line"></i>
+                        Management Consulting
+                        <span>5</span>
+                    </h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="category-content">
+                    <div class="faq-items">
+                        <!-- FAQ 1 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What is management consulting?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Management consulting helps organizations improve performance through business strategy, operations optimization, change management, and data-driven decision making.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>How can you help my business grow?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We develop customized growth strategies, identify market opportunities, optimize operations, and implement systems that drive sustainable business growth.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What is Monitoring & Evaluation (M&E)?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>M&E involves systematic assessment of project performance, tracking metrics, measuring impact, and ensuring objectives are met. We help organizations with data-driven decision making.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>Do you offer digital transformation consulting?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we help businesses leverage technology to streamline operations, enhance customer experiences, and create new revenue streams through digital transformation.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What is change management?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Change management helps organizations smoothly transition to new processes, technologies, or structures while minimizing disruption and ensuring employee adoption.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training FAQs Category -->
+            <div id="training" class="faq-category" data-aos="fade-up">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <h3>
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        Training & Courses
+                        <span>6</span>
+                    </h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="category-content">
+                    <div class="faq-items">
+                        <!-- FAQ 1 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What training programs do you offer?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We offer professional training in Accounting, Taxation, Financial Management, Leadership Development, Soft Skills, and custom corporate training programs.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>Are your courses certified?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, all our training programs provide certificates of completion recognized by industry bodies. Some courses offer continuing professional education (CPE) credits.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>Do you offer online training?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we offer both in-person and online training options. Our virtual classrooms provide interactive learning experiences with live instructors.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>Can you customize training for our organization?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Absolutely! We develop custom training programs tailored to your organization's specific needs, industry, and skill gaps.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What is the duration of your courses?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Course durations vary from 1-day workshops to multi-week comprehensive programs. We offer flexible scheduling to accommodate working professionals.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 6 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>Do you offer group discounts?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we offer special rates for group enrollments and corporate training packages. Contact us for a customized quote based on your team size.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Outsourcing FAQs Category -->
+            <div id="outsourcing" class="faq-category" data-aos="fade-up">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <h3>
+                        <i class="fas fa-handshake"></i>
+                        Outsourcing Services
+                        <span>5</span>
+                    </h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="category-content">
+                    <div class="faq-items">
+                        <!-- FAQ 1 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What outsourcing services do you offer?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We offer comprehensive outsourcing solutions including Customer Support, Finance & Accounting, HR Outsourcing, Payroll Processing, and IT Support.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>How does outsourcing benefit my business?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Outsourcing reduces operational costs, provides access to expert talent, increases efficiency, and allows you to focus on core business activities.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What is the pricing model for outsourcing?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We offer flexible pricing models including hourly rates, monthly retainers, and project-based pricing. We'll work with you to find the best solution for your needs.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>How do you ensure data security?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We implement strict data security protocols, signed NDAs, secure systems, and comply with international data protection standards to protect your information.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>Can I start with a small pilot project?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Absolutely! We recommend starting with a pilot project to test our services, processes, and communication before scaling up the engagement.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical FAQs Category -->
+            <div id="technical" class="faq-category" data-aos="fade-up">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <h3>
+                        <i class="fas fa-code"></i>
+                        Technical & Process
+                        <span>5</span>
+                    </h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="category-content">
+                    <div class="faq-items">
+                        <!-- FAQ 1 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>How do I get started with NEXA?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Simply contact us via phone, email, or our website form. We'll schedule a free initial consultation to discuss your needs and how we can help.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What is your response time?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We typically respond to all inquiries within 24 hours during business days. Urgent matters can be addressed via phone for immediate assistance.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>Do you provide ongoing support?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we offer ongoing support through retainers and service agreements. Our team is available for questions, updates, and assistance as needed.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>How do you handle confidential information?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We sign non-disclosure agreements (NDAs) with all clients and have strict internal protocols for handling confidential information securely.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFaq(this)">
+                                <span>What payment methods do you accept?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We accept bank transfers, checks, and online payments. Specific payment terms are discussed and agreed upon during engagement.</p>
+                                <div class="faq-meta">
+                                    <div class="faq-helpful">
+                                        <span>Was this helpful?</span>
+                                        <i class="far fa-thumbs-up" onclick="event.stopPropagation(); markHelpful(this)"></i>
+                                        <i class="far fa-thumbs-down" onclick="event.stopPropagation(); markNotHelpful(this)"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Still Have Questions -->
+    <section class="questions-section">
+        <div class="container">
+            <div class="questions-card" data-aos="zoom-in">
+                <h3>Still Have Questions?</h3>
+                <p>Can't find the answer you're looking for? Our team is here to help with any specific questions about your business needs.</p>
+                <div class="questions-buttons">
+                    <a href="contact.html" class="questions-btn-primary">Contact Us</a>
+                    <a href="tel:+97715550123" class="questions-btn-secondary">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- First Column - Banner and About -->
+                <div>
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="footer-logo-img">
+                    <p class="footer-about">Premier business advisory and consulting firm in Nepal, registered under Companies Act, 2063. Providing comprehensive solutions across Accounting, Tax, Corporate Advisory, and Training.</p>
+                    
+                    <!-- Social Icons in Square Round Rectangles -->
+                    <div class="social-links-footer">
+                        <a href="#" class="social-link-footer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Second Column - Important Links -->
+                <div>
+                    <h4>Important Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="accounting-services.html">Accounting Services</a></li>
+                        <li><a href="tax-return-filing.html">Tax Return Filing</a></li>
+                        <li><a href="corporate-advisory.html">Corporate Advisory</a></li>
+                        <li><a href="taxation.html">Taxation Services</a></li>
+                        <li><a href="management-consulting.html">Management Consulting</a></li>
+                        <li><a href="nfrs-ifrs-implementation.html">NFRS/IFRS Implementation</a></li>
+                        <li><a href="training-and-courses.html">Training & Courses</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Column - Our Services Links -->
+                <div>
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#accounting">Accounting Services</a></li>
+                        <li><a href="services.html#tax">Tax Return Filing</a></li>
+                        <li><a href="services.html#corporate">Corporate Advisory</a></li>
+                        <li><a href="services.html#management">Management Consulting</a></li>
+                        <li><a href="services.html#ifrs">NFRS/IFRS Implementation</a></li>
+                        <li><a href="services.html#training">Training & Courses</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column - Payment We Accept -->
+                <div>
+                    <h4>Payment We Accept</h4>
+                    <div class="payment-methods">
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/pv0TC3Nh/LOGO-BLOCK-W-png.png" alt="eSewa">
+                        </div>
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/jkRdtxRk/idk-Kc-Pp-TJV-1773766149624.png" alt="Khalti">
+                        </div>
+                        <div class="payment-item bank">
+                            <img src="https://i.ibb.co/LzdxtLS3/Bank-Transfer-logo-1200x600.png" alt="Bank Transfer">
+                        </div>
+                    </div>
+                    <p style="color: var(--gray-500); margin-top: 1.5rem; font-size: 0.9rem;">
+                        <i class="fas fa-lock" style="color: var(--secondary); margin-right: 0.5rem;"></i>
+                        Secure payments processed in Nepal
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom with Copyright, Terms, Privacy, Disclaimer -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 NEXA Advisory & Consulting. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({ duration: 600, once: true, offset: 20 });
+    </script>
+</body>
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - NEXA Advisory & Consulting | Premium Business Solutions</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore NEXA Advisory's comprehensive services: Accounting, Book-Keeping, Tax Return Filing, Corporate Advisory, Management Consulting, M&E, NFRS/IFRS, Taxation, and Training in Nepal.">
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Move to Top Button -->
+    <button class="move-to-top" id="moveToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info-top">
+                <span><i class="fas fa-envelope"></i> info@nexaadvisory.com.np</span>
+                <span><i class="fas fa-phone-alt"></i> +977 9869553322</span>
+            </div>
+            <div class="social-icons-top">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-banner">
+                <a href="index.html">
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="banner-logo-img">
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="outsourcing.html" class="nav-link">Outsourcing</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                
+                <!-- Search Icon -->
+                <div class="search-wrapper">
+                    <button class="search-icon-btn" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-dropdown" id="searchDropdown">
+                        <div class="search-input-wrapper">
+                            <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="search-results" id="searchResults"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Services Hero -->
+    <section class="services-hero">
+        <div class="container">
+            <div class="services-hero-content" data-aos="fade-up">
+                <h1 class="services-hero-title">Comprehensive <span>Business Solutions</span></h1>
+                <p class="services-hero-description">
+                    From accounting to corporate advisory, discover our full spectrum of professional services tailored to meet your business needs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+        <div class="container">
+            <div class="filter-container">
+                <span class="filter-label"><i class="fas fa-sliders-h"></i> Filter:</span>
+                
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all" onclick="filterByMainCategory('all')">All</button>
+                    <button class="filter-tab" data-filter="financial" onclick="filterByMainCategory('financial')">Financial</button>
+                    <button class="filter-tab" data-filter="advisory" onclick="filterByMainCategory('advisory')">Advisory</button>
+                    <button class="filter-tab" data-filter="tax" onclick="filterByMainCategory('tax')">Tax</button>
+                    <button class="filter-tab" data-filter="training" onclick="filterByMainCategory('training')">Training</button>
+                </div>
+                
+                <div class="filter-subtabs" id="subFilters">
+                    <button class="filter-subtab active" data-subfilter="all" onclick="filterBySubCategory('all')">All</button>
+                    <button class="filter-subtab" data-subfilter="accounting" onclick="filterBySubCategory('accounting')">Accounting</button>
+                    <button class="filter-subtab" data-subfilter="bookkeeping" onclick="filterBySubCategory('bookkeeping')">Book-Keeping</button>
+                    <button class="filter-subtab" data-subfilter="corporate" onclick="filterBySubCategory('corporate')">Corporate</button>
+                    <button class="filter-subtab" data-subfilter="management" onclick="filterBySubCategory('management')">Management</button>
+                    <button class="filter-subtab" data-subfilter="monitoring" onclick="filterBySubCategory('monitoring')">M&E</button>
+                    <button class="filter-subtab" data-subfilter="ifrs" onclick="filterBySubCategory('ifrs')">NFRS/IFRS</button>
+                    <button class="filter-subtab" data-subfilter="taxation" onclick="filterBySubCategory('taxation')">Taxation</button>
+                    <button class="filter-subtab" data-subfilter="training" onclick="filterBySubCategory('training')">Training</button>
+                </div>
+                
+                <span class="filter-clear" onclick="clearFilters()">Clear</span>
+                
+                <span class="filter-stats" id="filterStats"><span id="visibleCount">10</span>/<span id="totalCount">10</span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Grid -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid" id="servicesGrid">
+                <!-- Accounting Services -->
+                <div class="service-card" data-category="financial" data-subcategory="accounting" data-aos="fade-up">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Accounting Services</h3>
+                    <p>Comprehensive accounting solutions including financial statements and ledger management.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Financial Statement Preparation</li>
+                        <li><i class="fas fa-check-circle"></i> Ledger Management</li>
+                        <li><i class="fas fa-check-circle"></i> Bank Reconciliation</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-badge">Financial</span>
+                        <a href="accounting-services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Book-Keeping Services -->
+                <div class="service-card" data-category="financial" data-subcategory="bookkeeping" data-aos="fade-up" data-aos-delay="50">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Book-Keeping Services</h3>
+                    <p>Meticulous day-to-day financial transaction recording and organization.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Daily Transaction Recording</li>
+                        <li><i class="fas fa-check-circle"></i> Invoice Management</li>
+                        <li><i class="fas fa-check-circle"></i> Expense Tracking</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-badge">Financial</span>
+                        <a href="book-keeping-services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Tax Return Filing -->
+                <div class="service-card" data-category="tax" data-subcategory="taxation" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Tax Return Filing</h3>
+                    <p>Professional tax preparation and filing services for individuals and businesses.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Income Tax Returns</li>
+                        <li><i class="fas fa-check-circle"></i> VAT/GST Filing</li>
+                        <li><i class="fas fa-check-circle"></i> TDS Returns</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-badge">Tax</span>
+                        <a href="tax-return-filing.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Corporate Advisory -->
+                <div class="service-card" data-category="advisory" data-subcategory="corporate" data-aos="fade-up">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Corporate Advisory</h3>
+                    <p>Strategic guidance for businesses at every stage, from startup to expansion.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Business Registration</li>
+                        <li><i class="fas fa-check-circle"></i> Company Formation</li>
+                        <li><i class="fas fa-check-circle"></i> Corporate Restructuring</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-badge">Advisory</span>
+                        <a href="corporate-advisory.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Management Consulting -->
+                <div class="service-card" data-category="advisory" data-subcategory="management" data-aos="fade-up" data-aos-delay="50">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Management Consulting</h3>
+                    <p>Expert guidance to optimize operations, improve efficiency, and drive growth.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Business Strategy</li>
+                        <li><i class="fas fa-check-circle"></i> Operations Optimization</li>
+                        <li><i class="fas fa-check-circle"></i> Performance Improvement</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-badge">Advisory</span>
+                        <a href="management-consulting.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Monitoring and Evaluation -->
+                <div class="service-card" data-category="advisory" data-subcategory="monitoring" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Monitoring & Evaluation</h3>
+                    <p>Systematic assessment of project performance and impact to ensure objectives are met.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Performance Metrics</li>
+                        <li><i class="fas fa-check-circle"></i> Impact Assessment</li>
+                        <li><i class="fas fa-check-circle"></i> Data Analysis</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-badge">Advisory</span>
+                        <a href="monitoring-and-evaluation.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- NFRS/IFRS Implementation -->
+                <div class="service-card" data-category="financial" data-subcategory="ifrs" data-aos="fade-up">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>NFRS/IFRS Implementation</h3>
+                    <p>Expert guidance in adopting and implementing Nepal Financial Reporting Standards.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Gap Analysis</li>
+                        <li><i class="fas fa-check-circle"></i> System Conversion</li>
+                        <li><i class="fas fa-check-circle"></i> Staff Training</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-badge">Financial</span>
+                        <a href="nfrs-ifrs-implementation.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Taxation -->
+                <div class="service-card" data-category="tax" data-subcategory="taxation" data-aos="fade-up" data-aos-delay="50">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-percent"></i>
+                    </div>
+                    <h3>Taxation</h3>
+                    <p>Comprehensive tax advisory and planning services to optimize your tax position.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Tax Planning</li>
+                        <li><i class="fas fa-check-circle"></i> Tax Advisory</li>
+                        <li><i class="fas fa-check-circle"></i> Tax Audit Support</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-badge">Tax</span>
+                        <a href="taxation.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Training & Courses -->
+                <div class="service-card" data-category="training" data-subcategory="training" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Training & Courses</h3>
+                    <p>Professional development programs and courses for individuals and organizations.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Accounting Courses</li>
+                        <li><i class="fas fa-check-circle"></i> Tax Training</li>
+                        <li><i class="fas fa-check-circle"></i> Leadership Development</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-badge">Training</span>
+                        <a href="training-and-courses.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Our simple 4-step process</p>
+            </div>
+            
+            <div class="process-grid">
+                <div class="process-card" data-aos="fade-up">
+                    <div class="process-number">1</div>
+                    <h3>Discovery</h3>
+                    <p>We understand your unique needs through detailed consultation.</p>
+                </div>
+                
+                <div class="process-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="process-number">2</div>
+                    <h3>Analysis</h3>
+                    <p>Our experts analyze your situation to develop optimal solutions.</p>
+                </div>
+                
+                <div class="process-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-number">3</div>
+                    <h3>Strategy</h3>
+                    <p>We craft customized strategies tailored to your goals.</p>
+                </div>
+                
+                <div class="process-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="process-number">4</div>
+                    <h3>Implementation</h3>
+                    <p>Our team works alongside you to ensure successful outcomes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Get Started?</h2>
+                <p>Let's discuss how our services can help your business succeed.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-btn-primary">Schedule Consultation</a>
+                    <a href="#services" class="cta-btn-secondary">Explore All Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- First Column - Banner and About -->
+                <div>
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="footer-logo-img">
+                    <p class="footer-about">Premier business advisory and consulting firm in Nepal, registered under Companies Act, 2063. Providing comprehensive solutions across Accounting, Tax, Corporate Advisory, and Training.</p>
+                    
+                    <!-- Social Icons in Square Round Rectangles -->
+                    <div class="social-links-footer">
+                        <a href="#" class="social-link-footer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Second Column - Important Links -->
+                <div>
+                    <h4>Important Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="outsourcing-portal.html">Outsourcing</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Column - Our Services Links -->
+                <div>
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="accounting-services.html">Accounting Services</a></li>
+                        <li><a href="tax-return-filing.html">Tax Return Filing</a></li>
+                        <li><a href="corporate-advisory.html">Corporate Advisory</a></li>
+                        <li><a href="taxation.html">Taxation Services</a></li>
+                        <li><a href="management-consulting.html">Management Consulting</a></li>
+                        <li><a href="nfrs-ifrs-implementation.html">NFRS/IFRS Implementation</a></li>
+                        <li><a href="training-and-courses.html">Training & Courses</a></li>
+                </div>
+                
+                <!-- Fourth Column - Payment We Accept -->
+                <div>
+                    <h4>Payment We Accept</h4>
+                    <div class="payment-methods">
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/pv0TC3Nh/LOGO-BLOCK-W-png.png" alt="eSewa">
+                        </div>
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/jkRdtxRk/idk-Kc-Pp-TJV-1773766149624.png" alt="Khalti">
+                        </div>
+                        <div class="payment-item bank">
+                            <img src="https://i.ibb.co/LzdxtLS3/Bank-Transfer-logo-1200x600.png" alt="Bank Transfer">
+                        </div>
+                    </div>
+                    <p style="color: var(--gray-500); margin-top: 1.5rem; font-size: 0.9rem;">
+                        <i class="fas fa-lock" style="color: var(--secondary); margin-right: 0.5rem;"></i>
+                        Secure payments processed in Nepal
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom with Copyright, Terms, Privacy, Disclaimer -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 NEXA Advisory & Consulting. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

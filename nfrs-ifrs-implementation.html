@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFRS/IFRS Implementation - NEXA Advisory & Consulting | Financial Reporting Standards Experts</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="NEXA Advisory's comprehensive NFRS/IFRS implementation services in Nepal: Gap analysis, system conversion, staff training, and ongoing support for all financial reporting standards including NAS, IAS, NFRS, IFRS, NFRS for SMEs, and IFRS for SMEs.">
+    <meta name="keywords" content="NFRS implementation Nepal, IFRS implementation, NAS, IAS, NFRS for SMEs, IFRS for SMEs, financial reporting standards, gap analysis, system conversion Kathmandu">
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Move to Top Button -->
+    <button class="move-to-top" id="moveToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info-top">
+                <span><i class="fas fa-envelope"></i> info@nexaadvisory.com.np</span>
+                <span><i class="fas fa-phone-alt"></i> +977 9869553322</span>
+            </div>
+            <div class="social-icons-top">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-banner">
+                <a href="index.html">
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="banner-logo-img">
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="outsourcing-portal.html" class="nav-link">Outsourcing</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                
+                <!-- Search Icon -->
+                <div class="search-wrapper">
+                    <button class="search-icon-btn" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-dropdown" id="searchDropdown">
+                        <div class="search-input-wrapper">
+                            <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="search-results" id="searchResults"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Service Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div data-aos="fade-right">
+                    <h1 class="service-hero-title">NFRS/IFRS <span>Implementation</span> Services</h1>
+                    <p class="service-hero-description">
+                        NEXA Advisory provides comprehensive NFRS and IFRS implementation solutions, guiding organizations through every step of the transition. From gap analysis to system conversion and staff training, we ensure compliance with all financial reporting standards including NAS, IAS, NFRS, IFRS, NFRS for SMEs, and IFRS for SMEs.
+                    </p>
+                    
+                </div>
+                <div class="service-hero-image" data-aos="fade-left">
+                    <img src="https://i.ibb.co/WpRDfKLT/fa3cb717-c56f-4e92-be33-d019acdb9fba.png?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="NFRS/IFRS Implementation">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Standards Overview Section -->
+    <section class="standards-overview" id="frameworks">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Financial Reporting <span>Frameworks</span></h2>
+                <p class="section-subtitle">Comprehensive coverage of all major standards - Nepal and Global</p>
+            </div>
+            
+            <div class="standards-grid">
+                <!-- Nepal Standards -->
+                <div class="standard-card" data-aos="fade-up">
+                    <div class="standard-header">
+                        <div class="standard-icon">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <h3>Nepal Standards (NAS/NFRS)</h3>
+                    </div>
+                    <ul class="standard-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>NAS</strong> - Nepal Accounting Standards</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>NFRS</strong> - Nepal Financial Reporting Standards</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>NFRS for SMEs</strong> - NFRS for Small & Medium Enterprises</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>NFRS 1</strong> - First-time Adoption</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>NFRS 2-41</strong> - Individual Standards</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Interpretations</strong> - IFRIC, SIC</li>
+                    </ul>
+                </div>
+                
+                <!-- International Standards -->
+                <div class="standard-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="standard-header">
+                        <div class="standard-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>International Standards (IAS/IFRS)</h3>
+                    </div>
+                    <ul class="standard-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>IAS</strong> - International Accounting Standards</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>IFRS</strong> - International Financial Reporting Standards</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>IFRS for SMEs</strong> - IFRS for Small & Medium Enterprises</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>IFRS 1</strong> - First-time Adoption</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>IFRS 2-18</strong> - Individual Standards</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Interpretations</strong> - IFRIC, SIC</li>
+                    </ul>
+                </div>
+                
+                <!-- Specialized Frameworks -->
+                <div class="standard-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="standard-header">
+                        <div class="standard-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Specialized Frameworks</h3>
+                    </div>
+                    <ul class="standard-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>IPSAS</strong> - Public Sector Accounting Standards</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>NFRS for NPOs</strong> - Not-for-Profit Organizations</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>IFRS for NPOs</strong> - International NPO Standards</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Banks & Financial Institutions</strong> - Specific Requirements</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Insurance Companies</strong> - IFRS 17</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Extractive Industries</strong> - IFRS 6</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- First-Time Adoption Section -->
+    <section class="adoption-section">
+        <div class="container">
+            <div class="adoption-content">
+                <div class="adoption-text" data-aos="fade-right">
+                    <h2>First-Time <span>Adoption</span> Services</h2>
+                    <p>Transitioning to NFRS or IFRS for the first time requires careful planning and execution. Our first-time adoption services guide you through every step of the process, ensuring a smooth and compliant transition.</p>
+                    
+                    <ul class="adoption-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>Initial Assessment:</strong> Evaluate current accounting policies and identify gaps</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Opening Balance Sheet:</strong> Prepare NFRS/IFRS opening balance sheet (date of transition)</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Reconciliations:</strong> Reconcile previous GAAP to NFRS/IFRS</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Policy Selection:</strong> Choose appropriate accounting policies and exemptions</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Comparative Information:</strong> Prepare restated comparative financial statements</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Disclosures:</strong> Draft comprehensive first-time adoption disclosures</li>
+                    </ul>
+                    
+                    <div class="adoption-stats">
+                        <div class="adoption-stat">
+                            <div class="number">3-6</div>
+                            <div class="label">Months Avg.</div>
+                        </div>
+                        <div class="adoption-stat">
+                            <div class="number">100%</div>
+                            <div class="label">Compliance</div>
+                        </div>
+                        <div class="adoption-stat">
+                            <div class="number">40+</div>
+                            <div class="label">Adoptions</div>
+                        </div>
+                    </div>
+                    
+                    <a href="javascript:void(0);" onclick="emailForPricing('First-Time Adoption')" class="pricing-contact" style="margin-top: 2rem; background: var(--secondary); color: var(--primary);">
+                        <i class="fas fa-envelope"></i> Contact for Pricing
+                    </a>
+                </div>
+                <div class="adoption-image" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="First-Time Adoption">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Standards Section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Key Standards We <span>Implement</span></h2>
+                <p class="section-subtitle">Comprehensive coverage of all major financial reporting frameworks</p>
+            </div>
+            
+            <div class="standards-detailed">
+                <!-- NFRS Standards -->
+                <div class="standard-detailed-card" data-aos="fade-up">
+                    <div class="standard-detailed-header">
+                        <i class="fas fa-file-invoice"></i>
+                        <h3>NFRS Standards (Nepal)</h3>
+                    </div>
+                    <div class="standard-detailed-body">
+                        <h4>Key NFRS Standards:</h4>
+                        <ul class="standard-list-compact">
+                            <li><i class="fas fa-circle"></i> <strong>NFRS 1:</strong> First-time Adoption</li>
+                            <li><i class="fas fa-circle"></i> <strong>NFRS 2:</strong> Share-based Payment</li>
+                            <li><i class="fas fa-circle"></i> <strong>NFRS 3:</strong> Business Combinations</li>
+                            <li><i class="fas fa-circle"></i> <strong>NFRS 4:</strong> Insurance Contracts</li>
+                            <li><i class="fas fa-circle"></i> <strong>NFRS 5:</strong> Non-current Assets Held for Sale</li>
+                            <li><i class="fas fa-circle"></i> <strong>NFRS 6:</strong> Exploration for Mineral Resources</li>
+                            <li><i class="fas fa-circle"></i> <strong>NFRS 7:</strong> Financial Instruments: Disclosures</li>
+                            <li><i class="fas fa-circle"></i> <strong>NFRS 8:</strong> Operating Segments</li>
+                            <li><i class="fas fa-circle"></i> <strong>NFRS 9:</strong> Financial Instruments</li>
+                            <li><i class="fas fa-circle"></i> <strong>NFRS 10:</strong> Consolidated Financial Statements</li>
+                            <li><i class="fas fa-circle"></i> <strong>NFRS 11:</strong> Joint Arrangements</li>
+                            <li><i class="fas fa-circle"></i> <strong>NFRS 12:</strong> Disclosure of Interests in Other Entities</li>
+                            <li><i class="fas fa-circle"></i> <strong>NFRS 13:</strong> Fair Value Measurement</li>
+                            <li><i class="fas fa-circle"></i> <strong>NFRS 14:</strong> Regulatory Deferral Accounts</li>
+                            <li><i class="fas fa-circle"></i> <strong>NFRS 15:</strong> Revenue from Contracts with Customers</li>
+                            <li><i class="fas fa-circle"></i> <strong>NFRS 16:</strong> Leases</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- IFRS Standards -->
+                <div class="standard-detailed-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="standard-detailed-header">
+                        <i class="fas fa-globe-asia"></i>
+                        <h3>IFRS Standards (Global)</h3>
+                    </div>
+                    <div class="standard-detailed-body">
+                        <h4>Key IFRS Standards:</h4>
+                        <ul class="standard-list-compact">
+                            <li><i class="fas fa-circle"></i> <strong>IFRS 1:</strong> First-time Adoption</li>
+                            <li><i class="fas fa-circle"></i> <strong>IFRS 2:</strong> Share-based Payment</li>
+                            <li><i class="fas fa-circle"></i> <strong>IFRS 3:</strong> Business Combinations</li>
+                            <li><i class="fas fa-circle"></i> <strong>IFRS 4:</strong> Insurance Contracts</li>
+                            <li><i class="fas fa-circle"></i> <strong>IFRS 5:</strong> Non-current Assets Held for Sale</li>
+                            <li><i class="fas fa-circle"></i> <strong>IFRS 6:</strong> Exploration for Mineral Resources</li>
+                            <li><i class="fas fa-circle"></i> <strong>IFRS 7:</strong> Financial Instruments: Disclosures</li>
+                            <li><i class="fas fa-circle"></i> <strong>IFRS 8:</strong> Operating Segments</li>
+                            <li><i class="fas fa-circle"></i> <strong>IFRS 9:</strong> Financial Instruments</li>
+                            <li><i class="fas fa-circle"></i> <strong>IFRS 10:</strong> Consolidated Financial Statements</li>
+                            <li><i class="fas fa-circle"></i> <strong>IFRS 11:</strong> Joint Arrangements</li>
+                            <li><i class="fas fa-circle"></i> <strong>IFRS 12:</strong> Disclosure of Interests</li>
+                            <li><i class="fas fa-circle"></i> <strong>IFRS 13:</strong> Fair Value Measurement</li>
+                            <li><i class="fas fa-circle"></i> <strong>IFRS 14:</strong> Regulatory Deferral Accounts</li>
+                            <li><i class="fas fa-circle"></i> <strong>IFRS 15:</strong> Revenue from Contracts</li>
+                            <li><i class="fas fa-circle"></i> <strong>IFRS 16:</strong> Leases</li>
+                            <li><i class="fas fa-circle"></i> <strong>IFRS 17:</strong> Insurance Contracts</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- SME Standards -->
+                <div class="standard-detailed-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="standard-detailed-header">
+                        <i class="fas fa-building"></i>
+                        <h3>SME Standards</h3>
+                    </div>
+                    <div class="standard-detailed-body">
+                        <h4>NFRS for SMEs & IFRS for SMEs:</h4>
+                        <ul class="standard-list-compact">
+                            <li><i class="fas fa-circle"></i> <strong>Section 1:</strong> Scope</li>
+                            <li><i class="fas fa-circle"></i> <strong>Section 2:</strong> Concepts and Pervasive Principles</li>
+                            <li><i class="fas fa-circle"></i> <strong>Section 3:</strong> Financial Statement Presentation</li>
+                            <li><i class="fas fa-circle"></i> <strong>Section 4:</strong> Statement of Financial Position</li>
+                            <li><i class="fas fa-circle"></i> <strong>Section 5:</strong> Statement of Comprehensive Income</li>
+                            <li><i class="fas fa-circle"></i> <strong>Section 6:</strong> Statement of Changes in Equity</li>
+                            <li><i class="fas fa-circle"></i> <strong>Section 7:</strong> Statement of Cash Flows</li>
+                            <li><i class="fas fa-circle"></i> <strong>Section 8:</strong> Notes to Financial Statements</li>
+                            <li><i class="fas fa-circle"></i> <strong>Section 9:</strong> Consolidated Financial Statements</li>
+                            <li><i class="fas fa-circle"></i> <strong>Section 10:</strong> Accounting Policies</li>
+                            <li><i class="fas fa-circle"></i> <strong>Section 11:</strong> Financial Assets and Liabilities</li>
+                            <li><i class="fas fa-circle"></i> <strong>Section 12:</strong> Inventories</li>
+                            <li><i class="fas fa-circle"></i> <strong>Section 13:</strong> Investments in Associates</li>
+                            <li><i class="fas fa-circle"></i> <strong>Section 14:</strong> Investments in Joint Ventures</li>
+                            <li><i class="fas fa-circle"></i> <strong>Section 15:</strong> Investment Property</li>
+                            <li><i class="fas fa-circle"></i> <strong>Section 16:</strong> Property, Plant and Equipment</li>
+                            <li><i class="fas fa-circle"></i> <strong>Section 17:</strong> Intangible Assets</li>
+                            <li><i class="fas fa-circle"></i> <strong>Section 18:</strong> Business Combinations</li>
+                            <li><i class="fas fa-circle"></i> <strong>Section 19:</strong> Leases</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- IAS Standards -->
+                <div class="standard-detailed-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="standard-detailed-header">
+                        <i class="fas fa-history"></i>
+                        <h3>IAS Standards</h3>
+                    </div>
+                    <div class="standard-detailed-body">
+                        <h4>Key IAS Standards:</h4>
+                        <ul class="standard-list-compact">
+                            <li><i class="fas fa-circle"></i> <strong>IAS 1:</strong> Presentation of Financial Statements</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 2:</strong> Inventories</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 7:</strong> Statement of Cash Flows</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 8:</strong> Accounting Policies</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 10:</strong> Events after Reporting Period</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 12:</strong> Income Taxes</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 16:</strong> Property, Plant and Equipment</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 17:</strong> Leases</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 18:</strong> Revenue</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 19:</strong> Employee Benefits</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 20:</strong> Government Grants</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 21:</strong> Foreign Exchange</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 23:</strong> Borrowing Costs</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 24:</strong> Related Party Disclosures</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 26:</strong> Retirement Benefit Plans</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 27:</strong> Separate Financial Statements</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 28:</strong> Investments in Associates</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 29:</strong> Hyperinflationary Economies</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 32:</strong> Financial Instruments: Presentation</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 33:</strong> Earnings per Share</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 34:</strong> Interim Financial Reporting</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 36:</strong> Impairment of Assets</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 37:</strong> Provisions, Contingent Liabilities</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 38:</strong> Intangible Assets</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 39:</strong> Financial Instruments: Recognition</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 40:</strong> Investment Property</li>
+                            <li><i class="fas fa-circle"></i> <strong>IAS 41:</strong> Agriculture</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Standards Comparison Section -->
+    <section class="comparison-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Standards <span>Comparison</span></h2>
+                <p class="section-subtitle">Understanding the relationship between Nepal and Global Standards</p>
+            </div>
+            
+            <table class="comparison-table" data-aos="fade-up">
+                <thead>
+                    <tr>
+                        <th>Nepal Standard</th>
+                        <th>Corresponding International Standard</th>
+                        <th>Key Differences</th>
+                        <th>Effective Date (Nepal)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>NFRS 1</strong> - First-time Adoption</td>
+                        <td>IFRS 1</td>
+                        <td>Minor modifications for Nepal context</td>
+                        <td>July 2018</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NFRS 2-41</strong></td>
+                        <td>IFRS 2-17</td>
+                        <td>Generally aligned with IFRS</td>
+                        <td>Various</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NFRS for SMEs</strong></td>
+                        <td>IFRS for SMEs</td>
+                        <td>Adapted for Nepal business environment</td>
+                        <td>July 2020</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NAS</strong> (Legacy)</td>
+                        <td>IAS (Legacy)</td>
+                        <td>Based on old IAS with modifications</td>
+                        <td>Pre-2018</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NFRS 9</strong> - Financial Instruments</td>
+                        <td>IFRS 9</td>
+                        <td>Fully converged</td>
+                        <td>July 2018</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NFRS 15</strong> - Revenue</td>
+                        <td>IFRS 15</td>
+                        <td>Fully converged</td>
+                        <td>July 2018</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NFRS 16</strong> - Leases</td>
+                        <td>IFRS 16</td>
+                        <td>Fully converged</td>
+                        <td>July 2019</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p style="text-align: center; margin-top: 2rem; color: var(--gray-500); font-size: 0.95rem;">
+                *NFRS are substantially converged with IFRS, with modifications for Nepal-specific requirements.
+            </p>
+        </div>
+    </section>
+
+    <!-- Framework Tabs Section -->
+    <section style="background: var(--gray-50); padding: 60px 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Implementation <span>Frameworks</span></h2>
+                <p class="section-subtitle">Choose the right approach for your organization</p>
+            </div>
+            
+            <div class="framework-tabs" data-aos="fade-up">
+                <button class="framework-tab active" onclick="switchFramework('full-ifrs')">Full IFRS/NFRS</button>
+                <button class="framework-tab" onclick="switchFramework('sme')">SME Framework</button>
+                <button class="framework-tab" onclick="switchFramework('first-time')">First-Time Adoption</button>
+            </div>
+            
+            <div class="framework-content active" id="full-ifrs" data-aos="fade-up">
+                <div class="framework-card">
+                    <h3>Full IFRS/NFRS Framework</h3>
+                    <p>Comprehensive financial reporting framework for publicly accountable entities, listed companies, financial institutions, and large enterprises.</p>
+                    
+                    <h4>Applicable To:</h4>
+                    <ul class="framework-list">
+                        <li><i class="fas fa-building"></i> Listed companies on Nepal Stock Exchange</li>
+                        <li><i class="fas fa-university"></i> Banks and Financial Institutions</li>
+                        <li><i class="fas fa-chart-line"></i> Insurance Companies</li>
+                        <li><i class="fas fa-industry"></i> Large manufacturing and trading entities</li>
+                        <li><i class="fas fa-globe"></i> Multinational corporations operating in Nepal</li>
+                        <li><i class="fas fa-handshake"></i> Entities with public accountability</li>
+                    </ul>
+                    
+                    <h4>Key Requirements:</h4>
+                    <ul class="framework-list">
+                        <li><i class="fas fa-check-circle"></i> Complete set of financial statements</li>
+                        <li><i class="fas fa-check-circle"></i> Full compliance with all applicable standards</li>
+                        <li><i class="fas fa-check-circle"></i> Extensive disclosures</li>
+                        <li><i class="fas fa-check-circle"></i> Fair value measurements where required</li>
+                        <li><i class="fas fa-check-circle"></i> Complex financial instrument accounting</li>
+                    </ul>
+                    
+                    <a href="javascript:void(0);" onclick="emailForPricing('Full IFRS/NFRS Implementation')" class="pricing-contact" style="margin-top: 1rem;">
+                        <i class="fas fa-envelope"></i> Contact for Pricing
+                    </a>
+                </div>
+            </div>
+            
+            <div class="framework-content" id="sme">
+                <div class="framework-card">
+                    <h3>NFRS/IFRS for SMEs</h3>
+                    <p>Simplified framework for small and medium-sized enterprises that do not have public accountability.</p>
+                    
+                    <h4>Applicable To:</h4>
+                    <ul class="framework-list">
+                        <li><i class="fas fa-store"></i> Small and medium retail businesses</li>
+                        <li><i class="fas fa-truck"></i> Logistics and transportation companies</li>
+                        <li><i class="fas fa-laptop"></i> Technology startups and IT companies</li>
+                        <li><i class="fas fa-hotel"></i> Small hotels and restaurants</li>
+                        <li><i class="fas fa-clinic-medical"></i> Small healthcare providers</li>
+                        <li><i class="fas fa-graduation-cap"></i> Educational institutions (non-listed)</li>
+                    </ul>
+                    
+                    <h4>Key Features:</h4>
+                    <ul class="framework-list">
+                        <li><i class="fas fa-check-circle"></i> Simplified recognition and measurement</li>
+                        <li><i class="fas fa-check-circle"></i> Reduced disclosure requirements</li>
+                        <li><i class="fas fa-check-circle"></i> Less complex accounting treatments</li>
+                        <li><i class="fas fa-check-circle"></i> Cost-effective implementation</li>
+                        <li><i class="fas fa-check-circle"></i> Easier ongoing compliance</li>
+                    </ul>
+                    
+                    <h4>Simplified Sections:</h4>
+                    <ul class="framework-list">
+                        <li><i class="fas fa-circle"></i> <strong>Section 11:</strong> Basic financial instruments (simplified)</li>
+                        <li><i class="fas fa-circle"></i> <strong>Section 12:</strong> Other financial instruments issues</li>
+                        <li><i class="fas fa-circle"></i> <strong>Section 17:</strong> Property, plant and equipment (cost model only)</li>
+                        <li><i class="fas fa-circle"></i> <strong>Section 18:</strong> Intangible assets (cost model only)</li>
+                        <li><i class="fas fa-circle"></i> <strong>Section 19:</strong> Business combinations (simplified)</li>
+                        <li><i class="fas fa-circle"></i> <strong>Section 20:</strong> Leases (operating lease approach)</li>
+                    </ul>
+                    
+                    <a href="javascript:void(0);" onclick="emailForPricing('SME Framework Implementation')" class="pricing-contact" style="margin-top: 1rem;">
+                        <i class="fas fa-envelope"></i> Contact for Pricing
+                    </a>
+                </div>
+            </div>
+            
+            <div class="framework-content" id="first-time">
+                <div class="framework-card">
+                    <h3>First-Time Adoption (NFRS 1/IFRS 1)</h3>
+                    <p>Specialized framework for entities transitioning from previous GAAP (including NAS) to NFRS or IFRS for the first time.</p>
+                    
+                    <h4>Key Steps:</h4>
+                    <ul class="framework-list">
+                        <li><i class="fas fa-circle"></i> <strong>Step 1:</strong> Identify date of transition and prepare opening NFRS/IFRS balance sheet</li>
+                        <li><i class="fas fa-circle"></i> <strong>Step 2:</strong> Select mandatory exemptions and optional exemptions</li>
+                        <li><i class="fas fa-circle"></i> <strong>Step 3:</strong> Reconcile equity and profit/loss from previous GAAP to NFRS/IFRS</li>
+                        <li><i class="fas fa-circle"></i> <strong>Step 4:</strong> Prepare comparative information under NFRS/IFRS</li>
+                        <li><i class="fas fa-circle"></i> <strong>Step 5:</strong> Draft first-time adoption disclosures</li>
+                    </ul>
+                    
+                    <h4>Available Exemptions:</h4>
+                    <ul class="framework-list">
+                        <li><i class="fas fa-check"></i> <strong>Business combinations</strong> - Not required to restate past combinations</li>
+                        <li><i class="fas fa-check"></i> <strong>Fair value as deemed cost</strong> - Use previous GAAP revaluations</li>
+                        <li><i class="fas fa-check"></i> <strong>Employee benefits</strong> - Recognize all cumulative actuarial gains/losses</li>
+                        <li><i class="fas fa-check"></i> <strong>Compound instruments</strong> - Separate components at transition date</li>
+                        <li><i class="fas fa-check"></i> <strong>Leases</strong> - Simplified transition approach for IFRS 16</li>
+                    </ul>
+                    
+                    <h4>Mandatory Exceptions:</h4>
+                    <ul class="framework-list">
+                        <li><i class="fas fa-times"></i> Hedge accounting (must meet all criteria at transition)</li>
+                        <li><i class="fas fa-times"></i> Estimates (must be consistent with previous estimates)</li>
+                        <li><i class="fas fa-times"></i> Derecognition of financial assets/liabilities (prospective only)</li>
+                    </ul>
+                    
+                    <a href="javascript:void(0);" onclick="emailForPricing('First-Time Adoption Services')" class="pricing-contact" style="margin-top: 1rem;">
+                        <i class="fas fa-envelope"></i> Contact for Pricing
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Process -->
+    <section class="product-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Implementation <span>Process</span></h2>
+                <p class="section-subtitle">Our systematic approach to NFRS/IFRS implementation</p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="phase">Phase 1</span>
+                        <h3>Gap Analysis</h3>
+                        <p>We assess your current accounting policies, systems, and practices against NFRS/IFRS requirements to identify gaps and develop a detailed implementation roadmap.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="phase">Phase 2</span>
+                        <h3>Policy Development</h3>
+                        <p>We develop comprehensive accounting policies manual aligned with NFRS/IFRS, including policy choices, elections, and exemptions applicable to your organization.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="phase">Phase 3</span>
+                        <h3>System Conversion</h3>
+                        <p>We assist in modifying your accounting systems, charts of accounts, and processes to capture information required under the new standards.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="phase">Phase 4</span>
+                        <h3>Staff Training</h3>
+                        <p>We provide comprehensive training to your finance team on the new standards, ensuring they understand the requirements and can maintain compliance.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="phase">Phase 5</span>
+                        <h3>Parallel Run</h3>
+                        <p>We run parallel reporting under both old and new standards to validate accuracy and make necessary adjustments before full implementation.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="phase">Phase 6</span>
+                        <h3>First-Time Adoption</h3>
+                        <p>We prepare opening balance sheet, reconciliations, and first NFRS/IFRS financial statements with all required disclosures.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="phase">Phase 7</span>
+                        <h3>Ongoing Support</h3>
+                        <p>We provide continued support for subsequent reporting periods, answering queries and assisting with complex transactions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section style="background: var(--gray-50); padding: 60px 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Benefits of <span>NFRS/IFRS</span></h2>
+                <p class="section-subtitle">Why adopt international financial reporting standards</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up">
+                    <div class="benefit-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Recognition</h3>
+                    <p>Financial statements recognized internationally, facilitating cross-border investments and partnerships.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Investor Confidence</h3>
+                    <p>Enhanced credibility with investors, lenders, and stakeholders through transparent reporting.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Comparability</h3>
+                    <p>Consistent accounting policies enable meaningful comparison with international peers.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Regulatory Compliance</h3>
+                    <p>Meet Nepal Rastra Bank, Company Registrar, and other regulatory requirements.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="benefit-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Access to Capital</h3>
+                    <p>Easier access to international capital markets and foreign investment.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="benefit-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Competitive Advantage</h3>
+                    <p>Demonstrate commitment to best practices and financial transparency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section style="padding: 60px 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">What Our <span>Clients Say</span></h2>
+                <p class="section-subtitle">Trusted by leading organizations across Nepal</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"NEXA guided us through our first-time adoption of NFRS with exceptional expertise. Their team handled the entire process professionally, from gap analysis to final financial statements. We couldn't have done it without them."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info">
+                            <h4>Rajesh Khadka</h4>
+                            <p>CFO, Mountain Hardware</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The training NEXA provided to our finance team on NFRS 9 and 15 was outstanding. They made complex standards easy to understand and practical to implement. Highly recommended for any organization transitioning to NFRS."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PS</div>
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Finance Director, TechNepal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+                <p class="section-subtitle">Common questions about NFRS/IFRS implementation</p>
+            </div>
+            
+            <div class="faq-accordion" data-aos="fade-up">
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>What is the difference between NFRS and IFRS?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>NFRS (Nepal Financial Reporting Standards) are substantially converged with IFRS (International Financial Reporting Standards). The Nepal Accounting Standards Board (NASB) has adopted IFRS with minor modifications to suit the Nepal context. Generally, if you understand IFRS, you understand NFRS.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>Which entities are required to apply NFRS?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>NFRS is mandatory for all listed companies, banks and financial institutions, insurance companies, and large enterprises meeting specified criteria. SMEs may apply NFRS for SMEs. The specific requirements depend on the nature and size of your organization.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>How long does NFRS/IFRS implementation take?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Implementation typically takes 3-9 months depending on organization size, complexity, and current systems. Our phased approach ensures a smooth transition with minimal disruption to your operations.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>What is NFRS 1 and why is it important?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>NFRS 1 "First-time Adoption of Nepal Financial Reporting Standards" provides guidance for entities transitioning to NFRS for the first time. It specifies how to prepare opening NFRS balance sheet, select exemptions, and provide reconciliations. It's the starting point for all first-time adopters.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>Can SMEs apply full NFRS?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Yes, SMEs can voluntarily apply full NFRS, though it's not required. However, NFRS for SMEs is specifically designed to be simpler and more cost-effective for small and medium enterprises while still providing high-quality financial information.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>What ongoing support do you provide after implementation?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>We provide ongoing support including assistance with complex transactions, updates on new standards, annual financial statement preparation, and staff training. Our retainer packages ensure you're always compliant and confident in your financial reporting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container" data-aos="fade-up">
+                <div class="newsletter-icon">
+                    <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <h2>Subscribe to Our <span>Newsletter</span></h2>
+                <p>Stay updated with the latest NFRS/IFRS developments, regulatory changes, and implementation insights.</p>
+                
+                <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                    <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+                
+                <p class="newsletter-note">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Implement NFRS/IFRS?</h2>
+                <p>Let our financial reporting experts guide you through a smooth and compliant transition to international standards.</p>
+                <div class="cta-buttons">
+                    <a href="javascript:void(0);" onclick="emailForConsultation()" class="cta-btn-primary">Schedule Consultation</a>
+                    <a href="javascript:void(0);" onclick="emailForPricing('NFRS/IFRS Implementation')" class="cta-btn-secondary">Request Pricing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section style="padding: 60px 0; background: white;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Related <span>Services</span></h2>
+                <p class="section-subtitle">Explore our other financial and advisory solutions</p>
+            </div>
+            
+            <div class="services-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Accounting Services</h3>
+                    <p>Comprehensive accounting solutions including financial statements and ledger management.</p>
+                    <a href="accounting-services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="service-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Tax Return Filing</h3>
+                    <p>Professional tax preparation and filing services for individuals and businesses.</p>
+                    <a href="tax-services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Corporate Advisory</h3>
+                    <p>Strategic guidance for business registration, restructuring, and regulatory compliance.</p>
+                    <a href="corporate-advisory.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- First Column - Banner and About -->
+                <div>
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="footer-logo-img">
+                    <p class="footer-about">Premier business advisory and consulting firm in Nepal, registered under Companies Act, 2063. Providing comprehensive solutions across Accounting, Tax, Corporate Advisory, and Training.</p>
+                    
+                    <!-- Social Icons in Square Round Rectangles -->
+                    <div class="social-links-footer">
+                        <a href="#" class="social-link-footer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Second Column - Important Links -->
+                <div>
+                    <h4>Important Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="outsourcing-portal.html">Outsourcing</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Column - Our Services Links -->
+                <div>
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="accounting-services.html">Accounting Services</a></li>
+                        <li><a href="tax-return-filing.html">Tax Return Filing</a></li>
+                        <li><a href="corporate-advisory.html">Corporate Advisory</a></li>
+                        <li><a href="taxation.html">Taxation Services</a></li>
+                        <li><a href="management-consulting.html">Management Consulting</a></li>
+                        <li><a href="nfrs-ifrs-implementation.html">NFRS/IFRS Implementation</a></li>
+                        <li><a href="training-and-courses.html">Training & Courses</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column - Payment We Accept -->
+                <div>
+                    <h4>Payment We Accept</h4>
+                    <div class="payment-methods">
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/pv0TC3Nh/LOGO-BLOCK-W-png.png" alt="eSewa">
+                        </div>
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/jkRdtxRk/idk-Kc-Pp-TJV-1773766149624.png" alt="Khalti">
+                        </div>
+                        <div class="payment-item bank">
+                            <img src="https://i.ibb.co/LzdxtLS3/Bank-Transfer-logo-1200x600.png" alt="Bank Transfer">
+                        </div>
+                    </div>
+                    <p style="color: var(--gray-500); margin-top: 1.5rem; font-size: 0.9rem;">
+                        <i class="fas fa-lock" style="color: var(--secondary); margin-right: 0.5rem;"></i>
+                        Secure payments processed in Nepal
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom with Copyright, Terms, Privacy, Disclaimer -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 NEXA Advisory & Consulting. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html>

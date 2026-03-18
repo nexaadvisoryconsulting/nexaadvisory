@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industries We Serve - NEXA Advisory & Consulting | Nepal & Global Expertise</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="NEXA Advisory serves 25+ industries across Nepal and globally including Banking, Tourism, Manufacturing, IT, Hydropower, Healthcare, and more. Industry-specific business solutions.">
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Move to Top -->
+    <button class="move-to-top" id="moveToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info-top">
+                <span><i class="fas fa-envelope"></i> info@nexaadvisory.com.np</span>
+                <span><i class="fas fa-phone-alt"></i> +977 9869553322</span>
+            </div>
+            <div class="social-icons-top">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-banner">
+                <a href="index.html">
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="banner-logo-img">
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="industries.html" class="nav-link active">Industries</a>
+                <a href="outsourcing.html" class="nav-link">Outsourcing</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                
+                <!-- Search Icon -->
+                <div class="search-wrapper">
+                    <button class="search-icon-btn" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-dropdown" id="searchDropdown">
+                        <div class="search-input-wrapper">
+                            <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="search-results" id="searchResults"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Industries Hero -->
+    <section class="industries-hero">
+        <div class="container">
+            <div class="industries-hero-content" data-aos="fade-up">
+                <h1 class="industries-hero-title">Industries We <span>Serve</span></h1>
+                <p class="industries-hero-description">
+                    Deep industry expertise across Nepal and global markets. We understand the unique challenges and opportunities in every sector.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+        <div class="container">
+            <div class="filter-container">
+                <span class="filter-label"><i class="fas fa-sliders-h"></i> Filter</span>
+                
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all" onclick="filterIndustries('all')">All</button>
+                    <button class="filter-tab" data-filter="nepal" onclick="filterIndustries('nepal')">Nepal Focus</button>
+                    <button class="filter-tab" data-filter="financial" onclick="filterIndustries('financial')">Financial</button>
+                    <button class="filter-tab" data-filter="industrial" onclick="filterIndustries('industrial')">Industrial</button>
+                    <button class="filter-tab" data-filter="services" onclick="filterIndustries('services')">Services</button>
+                    <button class="filter-tab" data-filter="technology" onclick="filterIndustries('technology')">Technology</button>
+                </div>
+                
+                <span class="filter-stats" id="filterStats"><span id="visibleCount">20</span>/<span id="totalCount">20</span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Industries Grid -->
+    <section class="industries-section">
+        <div class="container">
+            <div class="industries-grid" id="industriesGrid">
+                <!-- Banking & Financial -->
+                <div class="industry-card" data-category="financial nepal" data-aos="fade-up">
+                    <div class="industry-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Banking & Financial</h3>
+                    <p class="industry-desc">Commercial banks, microfinance, insurance, and cooperatives.</p>
+                    <div class="industry-tags">
+                        <span class="industry-tag">Commercial Banking</span>
+                        <span class="industry-tag">Microfinance</span>
+                        <span class="industry-tag">Insurance</span>
+                    </div>
+                    <div class="industry-footer">
+                        <div class="industry-stat">27 <span>clients</span></div>
+                        <div class="industry-link"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+
+                <!-- Tourism & Hospitality -->
+                <div class="industry-card" data-category="services nepal" data-aos="fade-up" data-aos-delay="50">
+                    <div class="industry-icon">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <h3>Tourism & Hospitality</h3>
+                    <p class="industry-desc">Hotels, resorts, trekking agencies, and restaurants.</p>
+                    <div class="industry-tags">
+                        <span class="industry-tag">Hotels</span>
+                        <span class="industry-tag">Resorts</span>
+                        <span class="industry-tag">Trekking</span>
+                    </div>
+                    <div class="industry-footer">
+                        <div class="industry-stat">45 <span>clients</span></div>
+                        <div class="industry-link"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+
+                <!-- Manufacturing -->
+                <div class="industry-card" data-category="industrial nepal" data-aos="fade-up" data-aos-delay="100">
+                    <div class="industry-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Manufacturing</h3>
+                    <p class="industry-desc">Cement, steel, food processing, and consumer goods.</p>
+                    <div class="industry-tags">
+                        <span class="industry-tag">Cement</span>
+                        <span class="industry-tag">Food Processing</span>
+                        <span class="industry-tag">Steel</span>
+                    </div>
+                    <div class="industry-footer">
+                        <div class="industry-stat">52 <span>clients</span></div>
+                        <div class="industry-link"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+
+                <!-- Information Technology -->
+                <div class="industry-card" data-category="technology global" data-aos="fade-up" data-aos-delay="150">
+                    <div class="industry-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Information Technology</h3>
+                    <p class="industry-desc">Software, IT services, digital transformation, and startups.</p>
+                    <div class="industry-tags">
+                        <span class="industry-tag">Software</span>
+                        <span class="industry-tag">IT Services</span>
+                        <span class="industry-tag">Startups</span>
+                    </div>
+                    <div class="industry-footer">
+                        <div class="industry-stat">38 <span>clients</span></div>
+                        <div class="industry-link"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+
+                <!-- Healthcare & Pharma -->
+                <div class="industry-card" data-category="services nepal" data-aos="fade-up" data-aos-delay="200">
+                    <div class="industry-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Healthcare & Pharma</h3>
+                    <p class="industry-desc">Hospitals, clinics, pharmaceuticals, and diagnostics.</p>
+                    <div class="industry-tags">
+                        <span class="industry-tag">Hospitals</span>
+                        <span class="industry-tag">Pharma</span>
+                        <span class="industry-tag">Clinics</span>
+                    </div>
+                    <div class="industry-footer">
+                        <div class="industry-stat">31 <span>clients</span></div>
+                        <div class="industry-link"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+
+                <!-- Agriculture -->
+                <div class="industry-card" data-category="industrial nepal" data-aos="fade-up" data-aos-delay="250">
+                    <div class="industry-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Agriculture</h3>
+                    <p class="industry-desc">Tea, coffee, dairy, poultry, and commercial farming.</p>
+                    <div class="industry-tags">
+                        <span class="industry-tag">Tea & Coffee</span>
+                        <span class="industry-tag">Dairy</span>
+                        <span class="industry-tag">Poultry</span>
+                    </div>
+                    <div class="industry-footer">
+                        <div class="industry-stat">43 <span>clients</span></div>
+                        <div class="industry-link"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+
+                <!-- Hydropower & Energy -->
+                <div class="industry-card" data-category="industrial nepal" data-aos="fade-up" data-aos-delay="300">
+                    <div class="industry-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Hydropower & Energy</h3>
+                    <p class="industry-desc">Hydropower projects, solar energy, and power distribution.</p>
+                    <div class="industry-tags">
+                        <span class="industry-tag">Hydropower</span>
+                        <span class="industry-tag">Solar</span>
+                        <span class="industry-tag">Renewable</span>
+                    </div>
+                    <div class="industry-footer">
+                        <div class="industry-stat">22 <span>projects</span></div>
+                        <div class="industry-link"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="industry-card" data-category="services nepal" data-aos="fade-up" data-aos-delay="350">
+                    <div class="industry-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education</h3>
+                    <p class="industry-desc">Schools, colleges, universities, and training institutes.</p>
+                    <div class="industry-tags">
+                        <span class="industry-tag">Schools</span>
+                        <span class="industry-tag">Colleges</span>
+                        <span class="industry-tag">Universities</span>
+                    </div>
+                    <div class="industry-footer">
+                        <div class="industry-stat">35 <span>institutions</span></div>
+                        <div class="industry-link"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+
+                <!-- Real Estate -->
+                <div class="industry-card" data-category="industrial nepal" data-aos="fade-up" data-aos-delay="400">
+                    <div class="industry-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Real Estate</h3>
+                    <p class="industry-desc">Property development, construction, and infrastructure.</p>
+                    <div class="industry-tags">
+                        <span class="industry-tag">Development</span>
+                        <span class="industry-tag">Construction</span>
+                        <span class="industry-tag">Housing</span>
+                    </div>
+                    <div class="industry-footer">
+                        <div class="industry-stat">29 <span>projects</span></div>
+                        <div class="industry-link"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+
+                <!-- Retail & E-commerce -->
+                <div class="industry-card" data-category="services global" data-aos="fade-up" data-aos-delay="450">
+                    <div class="industry-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Retail & E-commerce</h3>
+                    <p class="industry-desc">Retail chains, online marketplaces, and D2C brands.</p>
+                    <div class="industry-tags">
+                        <span class="industry-tag">Retail</span>
+                        <span class="industry-tag">E-commerce</span>
+                        <span class="industry-tag">D2C</span>
+                    </div>
+                    <div class="industry-footer">
+                        <div class="industry-stat">41 <span>clients</span></div>
+                        <div class="industry-link"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+
+                <!-- Logistics -->
+                <div class="industry-card" data-category="services nepal" data-aos="fade-up" data-aos-delay="500">
+                    <div class="industry-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Transport & Logistics</h3>
+                    <p class="industry-desc">Freight, courier services, and supply chain management.</p>
+                    <div class="industry-tags">
+                        <span class="industry-tag">Freight</span>
+                        <span class="industry-tag">Courier</span>
+                        <span class="industry-tag">Supply Chain</span>
+                    </div>
+                    <div class="industry-footer">
+                        <div class="industry-stat">27 <span>clients</span></div>
+                        <div class="industry-link"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+
+                <!-- Telecommunications -->
+                <div class="industry-card" data-category="technology nepal" data-aos="fade-up" data-aos-delay="550">
+                    <div class="industry-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3>Telecommunications</h3>
+                    <p class="industry-desc">Mobile operators, ISPs, and fiber networks.</p>
+                    <div class="industry-tags">
+                        <span class="industry-tag">Mobile</span>
+                        <span class="industry-tag">ISP</span>
+                        <span class="industry-tag">Fiber</span>
+                    </div>
+                    <div class="industry-footer">
+                        <div class="industry-stat">15 <span>clients</span></div>
+                        <div class="industry-link"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+
+                <!-- Insurance -->
+                <div class="industry-card" data-category="financial nepal" data-aos="fade-up" data-aos-delay="600">
+                    <div class="industry-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Insurance</h3>
+                    <p class="industry-desc">Life insurance, non-life insurance, and brokers.</p>
+                    <div class="industry-tags">
+                        <span class="industry-tag">Life</span>
+                        <span class="industry-tag">Non-Life</span>
+                        <span class="industry-tag">Brokers</span>
+                    </div>
+                    <div class="industry-footer">
+                        <div class="industry-stat">19 <span>clients</span></div>
+                        <div class="industry-link"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+
+                <!-- Media & Entertainment -->
+                <div class="industry-card" data-category="services global" data-aos="fade-up" data-aos-delay="650">
+                    <div class="industry-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Media & Entertainment</h3>
+                    <p class="industry-desc">Television, digital media, and production houses.</p>
+                    <div class="industry-tags">
+                        <span class="industry-tag">Television</span>
+                        <span class="industry-tag">Digital Media</span>
+                        <span class="industry-tag">Production</span>
+                    </div>
+                    <div class="industry-footer">
+                        <div class="industry-stat">23 <span>clients</span></div>
+                        <div class="industry-link"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+
+                <!-- Microfinance -->
+                <div class="industry-card" data-category="financial nepal" data-aos="fade-up" data-aos-delay="700">
+                    <div class="industry-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Microfinance</h3>
+                    <p class="industry-desc">Microfinance institutions and cooperatives.</p>
+                    <div class="industry-tags">
+                        <span class="industry-tag">Microfinance</span>
+                        <span class="industry-tag">Cooperatives</span>
+                        <span class="industry-tag">Saving & Credit</span>
+                    </div>
+                    <div class="industry-footer">
+                        <div class="industry-stat">34 <span>clients</span></div>
+                        <div class="industry-link"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+
+                <!-- Professional Services -->
+                <div class="industry-card" data-category="services global" data-aos="fade-up" data-aos-delay="750">
+                    <div class="industry-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Professional Services</h3>
+                    <p class="industry-desc">Law firms, consulting, and engineering firms.</p>
+                    <div class="industry-tags">
+                        <span class="industry-tag">Legal</span>
+                        <span class="industry-tag">Consulting</span>
+                        <span class="industry-tag">Engineering</span>
+                    </div>
+                    <div class="industry-footer">
+                        <div class="industry-stat">47 <span>clients</span></div>
+                        <div class="industry-link"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+
+                <!-- NGOs & INGOs -->
+                <div class="industry-card" data-category="services nepal" data-aos="fade-up" data-aos-delay="800">
+                    <div class="industry-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>NGOs & INGOs</h3>
+                    <p class="industry-desc">Non-profits and international development agencies.</p>
+                    <div class="industry-tags">
+                        <span class="industry-tag">NGOs</span>
+                        <span class="industry-tag">INGOs</span>
+                        <span class="industry-tag">Development</span>
+                    </div>
+                    <div class="industry-footer">
+                        <div class="industry-stat">28 <span>clients</span></div>
+                        <div class="industry-link"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+
+                <!-- Automotive -->
+                <div class="industry-card" data-category="industrial global" data-aos="fade-up" data-aos-delay="850">
+                    <div class="industry-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Automotive</h3>
+                    <p class="industry-desc">Dealerships, parts, service centers, and manufacturing.</p>
+                    <div class="industry-tags">
+                        <span class="industry-tag">Dealerships</span>
+                        <span class="industry-tag">Parts</span>
+                        <span class="industry-tag">Service</span>
+                    </div>
+                    <div class="industry-footer">
+                        <div class="industry-stat">33 <span>clients</span></div>
+                        <div class="industry-link"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+
+                <!-- Mining -->
+                <div class="industry-card" data-category="industrial global" data-aos="fade-up" data-aos-delay="900">
+                    <div class="industry-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Mining & Minerals</h3>
+                    <p class="industry-desc">Mineral exploration and resource extraction.</p>
+                    <div class="industry-tags">
+                        <span class="industry-tag">Exploration</span>
+                        <span class="industry-tag">Mining</span>
+                        <span class="industry-tag">Resources</span>
+                    </div>
+                    <div class="industry-footer">
+                        <div class="industry-stat">12 <span>projects</span></div>
+                        <div class="industry-link"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nepal Focus -->
+    <section class="nepal-focus">
+        <div class="container">
+            <div class="nepal-focus-content">
+                <div class="nepal-text" data-aos="fade-right">
+                    <h2>Deep Expertise in <span>Nepal's</span> Key Industries</h2>
+                    <p>With over 15 years of experience in the Nepalese market, we understand the unique dynamics, regulations, and opportunities across Nepal's diverse economic sectors.</p>
+                    
+                    <div class="nepal-industries-grid">
+                        <div class="nepal-industry-item">
+                            <i class="fas fa-university"></i>
+                            <span>Banking & Finance</span>
+                        </div>
+                        <div class="nepal-industry-item">
+                            <i class="fas fa-hotel"></i>
+                            <span>Tourism & Hospitality</span>
+                        </div>
+                        <div class="nepal-industry-item">
+                            <i class="fas fa-industry"></i>
+                            <span>Manufacturing</span>
+                        </div>
+                        <div class="nepal-industry-item">
+                            <i class="fas fa-seedling"></i>
+                            <span>Agriculture</span>
+                        </div>
+                        <div class="nepal-industry-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>Hydropower</span>
+                        </div>
+                        <div class="nepal-industry-item">
+                            <i class="fas fa-hospital"></i>
+                            <span>Healthcare</span>
+                        </div>
+                        <div class="nepal-industry-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Education</span>
+                        </div>
+                        <div class="nepal-industry-item">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <span>Microfinance</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nepal-image" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Nepal">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Presence -->
+    <section class="global-presence">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Global Presence</h2>
+                <p class="section-subtitle">Serving clients across international markets</p>
+            </div>
+            
+            <div class="global-grid">
+                <div class="global-card" data-aos="fade-up">
+                    <div class="global-icon">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                    <h3>Asia Pacific</h3>
+                    <p>Serving clients across India, China, Southeast Asia, and the Pacific region.</p>
+                    <div class="global-regions">
+                        <span class="global-region">India</span>
+                        <span class="global-region">China</span>
+                        <span class="global-region">Singapore</span>
+                        <span class="global-region">Malaysia</span>
+                    </div>
+                </div>
+                
+                <div class="global-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="global-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3>North America</h3>
+                    <p>Extensive experience with US and Canadian markets.</p>
+                    <div class="global-regions">
+                        <span class="global-region">USA</span>
+                        <span class="global-region">Canada</span>
+                        <span class="global-region">Mexico</span>
+                    </div>
+                </div>
+                
+                <div class="global-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="global-icon">
+                        <i class="fas fa-globe-europe"></i>
+                    </div>
+                    <h3>Europe</h3>
+                    <p>Working with European clients across UK, Germany, and Nordic countries.</p>
+                    <div class="global-regions">
+                        <span class="global-region">UK</span>
+                        <span class="global-region">Germany</span>
+                        <span class="global-region">Netherlands</span>
+                        <span class="global-region">Nordics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="case-studies">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Success Stories</h2>
+                <p class="section-subtitle">Real results across diverse sectors</p>
+            </div>
+            
+            <div class="case-grid">
+                <div class="case-card" data-aos="fade-up">
+                    <div class="case-image">
+                        <img src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Banking">
+                    </div>
+                    <div class="case-content">
+                        <div class="case-industry">BANKING</div>
+                        <h3>Digital Transformation for National Bank</h3>
+                        <p>40% efficiency improvement through digital transformation.</p>
+                        <a href="#" class="case-link">Read Story <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="case-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="case-image">
+                        <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Hydropower">
+                    </div>
+                    <div class="case-content">
+                        <div class="case-industry">HYDROPOWER</div>
+                        <h3>$80M Funding for 50MW Project</h3>
+                        <p>End-to-end financial advisory for hydropower project.</p>
+                        <a href="#" class="case-link">Read Story <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="case-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="case-image">
+                        <img src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tourism">
+                    </div>
+                    <div class="case-content">
+                        <div class="case-industry">TOURISM</div>
+                        <h3>50% Revenue Growth for Hotel Chain</h3>
+                        <p>Strategic expansion with 3 new properties.</p>
+                        <a href="#" class="case-link">Read Story <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Transform Your Industry?</h2>
+                <p>Let's discuss how our industry expertise can help your business succeed.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-btn-primary">Schedule Consultation</a>
+                    <a href="services.html" class="cta-btn-secondary">Explore Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- First Column - Banner and About -->
+                <div>
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="footer-logo-img">
+                    <p class="footer-about">Premier business advisory and consulting firm in Nepal, registered under Companies Act, 2063. Providing comprehensive solutions across Accounting, Tax, Corporate Advisory, and Training.</p>
+                    
+                    <!-- Social Icons in Square Round Rectangles -->
+                    <div class="social-links-footer">
+                        <a href="#" class="social-link-footer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Second Column - Important Links -->
+                <div>
+                    <h4>Important Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="outsourcing-portal.html">Outsourcing</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Column - Our Services Links -->
+                <div>
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                       <li><a href="accounting-services.html">Accounting Services</a></li>
+                        <li><a href="tax-return-filing.html">Tax Return Filing</a></li>
+                        <li><a href="corporate-advisory.html">Corporate Advisory</a></li>
+                        <li><a href="taxation.html">Taxation Services</a></li>
+                        <li><a href="management-consulting.html">Management Consulting</a></li>
+                        <li><a href="nfrs-ifrs-implementation.html">NFRS/IFRS Implementation</a></li>
+                        <li><a href="training-and-courses.html">Training & Courses</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column - Payment We Accept -->
+                <div>
+                    <h4>Payment We Accept</h4>
+                    <div class="payment-methods">
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/pv0TC3Nh/LOGO-BLOCK-W-png.png" alt="eSewa">
+                        </div>
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/jkRdtxRk/idk-Kc-Pp-TJV-1773766149624.png" alt="Khalti">
+                        </div>
+                        <div class="payment-item bank">
+                            <img src="https://i.ibb.co/LzdxtLS3/Bank-Transfer-logo-1200x600.png" alt="Bank Transfer">
+                        </div>
+                    </div>
+                    <p style="color: var(--gray-500); margin-top: 1.5rem; font-size: 0.9rem;">
+                        <i class="fas fa-lock" style="color: var(--secondary); margin-right: 0.5rem;"></i>
+                        Secure payments processed in Nepal
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom with Copyright, Terms, Privacy, Disclaimer -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 NEXA Advisory & Consulting. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

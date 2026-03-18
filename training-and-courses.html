@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training & Courses - NEXA Advisory & Consulting | Professional Development Programs</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="NEXA Advisory's professional training and courses in Nepal: Accounting courses, tax training, financial management, leadership development, and corporate training programs.">
+    <meta name="keywords" content="training Nepal, professional courses, accounting courses, tax training, leadership development, corporate training Kathmandu">
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Move to Top Button -->
+    <button class="move-to-top" id="moveToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info-top">
+                <span><i class="fas fa-envelope"></i> info@nexaadvisory.com.np</span>
+                <span><i class="fas fa-phone-alt"></i> +977 9869553322</span>
+            </div>
+            <div class="social-icons-top">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-banner">
+                <a href="index.html">
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="banner-logo-img">
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="outsourcing-portal.html" class="nav-link">Outsourcing</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                
+                <!-- Search Icon -->
+                <div class="search-wrapper">
+                    <button class="search-icon-btn" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-dropdown" id="searchDropdown">
+                        <div class="search-input-wrapper">
+                            <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="search-results" id="searchResults"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+   
+   
+
+    <!-- Course Categories -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Course <span>Categories</span></h2>
+                <p class="section-subtitle">Explore our diverse range of professional training programs</p>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card" data-aos="fade-up" onclick="filterCourses('accounting')">
+                    <div class="category-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Accounting</h3>
+                    <p>8 Courses</p>
+                </div>
+                
+                <div class="category-card" data-aos="fade-up" data-aos-delay="50" onclick="filterCourses('tax')">
+                    <div class="category-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Taxation</h3>
+                    <p>6 Courses</p>
+                </div>
+                
+                <div class="category-card" data-aos="fade-up" data-aos-delay="100" onclick="filterCourses('finance')">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Financial Management</h3>
+                    <p>5 Courses</p>
+                </div>
+                
+                <div class="category-card" data-aos="fade-up" data-aos-delay="150" onclick="filterCourses('leadership')">
+                    <div class="category-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Leadership</h3>
+                    <p>6 Courses</p>
+                </div>
+                
+                <div class="category-card" data-aos="fade-up" data-aos-delay="200" onclick="filterCourses('software')">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Software Skills</h3>
+                    <p>4 Courses</p>
+                </div>
+                
+                <div class="category-card" data-aos="fade-up" data-aos-delay="250" onclick="filterCourses('compliance')">
+                    <div class="category-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Compliance</h3>
+                    <p>5 Courses</p>
+                </div>
+                
+                <div class="category-card" data-aos="fade-up" data-aos-delay="300" onclick="filterCourses('soft-skills')">
+                    <div class="category-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Soft Skills</h3>
+                    <p>6 Courses</p>
+                </div>
+                
+                <div class="category-card" data-aos="fade-up" data-aos-delay="350" onclick="filterCourses('corporate')">
+                    <div class="category-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Corporate Training</h3>
+                    <p>10+ Programs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Popular <span>Courses</span></h2>
+                <p class="section-subtitle">Browse our most sought-after training programs</p>
+            </div>
+            
+            <div class="course-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all" onclick="filterCourses('all')">All Courses</button>
+                <button class="filter-btn" data-filter="accounting" onclick="filterCourses('accounting')">Accounting</button>
+                <button class="filter-btn" data-filter="tax" onclick="filterCourses('tax')">Taxation</button>
+                <button class="filter-btn" data-filter="finance" onclick="filterCourses('finance')">Financial Management</button>
+                <button class="filter-btn" data-filter="leadership" onclick="filterCourses('leadership')">Leadership</button>
+            </div>
+            
+            <div class="courses-grid">
+                <!-- Accounting Course 1 -->
+                <div class="course-card" data-category="accounting" data-aos="fade-up">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Advanced Financial Accounting">
+                        <div class="course-badge">Popular</div>
+                    </div>
+                    <div class="course-content">
+                        <span class="course-category">Accounting</span>
+                        <h3 class="course-title">Advanced Financial Accounting</h3>
+                        <p class="course-description">Master advanced accounting principles, consolidated financial statements, and complex transactions.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">
+                                <i class="far fa-clock"></i> 40 Hours
+                            </div>
+                            <div class="course-meta-item">
+                                <i class="fas fa-users"></i> 25 Seats
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">Contact for Pricing</div>
+                            <a href="javascript:void(0);" onclick="emailForPricing('Advanced Financial Accounting')" class="course-link">Inquire <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tax Course 2 -->
+                <div class="course-card" data-category="tax" data-aos="fade-up" data-aos-delay="50">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Comprehensive Tax Planning">
+                        <div class="course-badge">New</div>
+                    </div>
+                    <div class="course-content">
+                        <span class="course-category">Taxation</span>
+                        <h3 class="course-title">Comprehensive Tax Planning</h3>
+                        <p class="course-description">Learn tax planning strategies for individuals and businesses, including income tax, VAT, and TDS.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">
+                                <i class="far fa-clock"></i> 35 Hours
+                            </div>
+                            <div class="course-meta-item">
+                                <i class="fas fa-users"></i> 20 Seats
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">Contact for Pricing</div>
+                            <a href="javascript:void(0);" onclick="emailForPricing('Comprehensive Tax Planning')" class="course-link">Inquire <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Finance Course 3 -->
+                <div class="course-card" data-category="finance" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Financial Management">
+                        <div class="course-badge">Certified</div>
+                    </div>
+                    <div class="course-content">
+                        <span class="course-category">Financial Management</span>
+                        <h3 class="course-title">Strategic Financial Management</h3>
+                        <p class="course-description">Develop skills in financial analysis, budgeting, forecasting, and strategic decision-making.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">
+                                <i class="far fa-clock"></i> 45 Hours
+                            </div>
+                            <div class="course-meta-item">
+                                <i class="fas fa-users"></i> 25 Seats
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">Contact for Pricing</div>
+                            <a href="javascript:void(0);" onclick="emailForPricing('Strategic Financial Management')" class="course-link">Inquire <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Leadership Course 4 -->
+                <div class="course-card" data-category="leadership" data-aos="fade-up">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Leadership Excellence">
+                        <div class="course-badge">Premium</div>
+                    </div>
+                    <div class="course-content">
+                        <span class="course-category">Leadership</span>
+                        <h3 class="course-title">Leadership Excellence Program</h3>
+                        <p class="course-description">Develop essential leadership skills, team management, and organizational influence.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">
+                                <i class="far fa-clock"></i> 50 Hours
+                            </div>
+                            <div class="course-meta-item">
+                                <i class="fas fa-users"></i> 20 Seats
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">Contact for Pricing</div>
+                            <a href="javascript:void(0);" onclick="emailForPricing('Leadership Excellence Program')" class="course-link">Inquire <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Software Course 5 -->
+                <div class="course-card" data-category="accounting" data-aos="fade-up" data-aos-delay="50">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tally ERP Training">
+                        <div class="course-badge">Hands-on</div>
+                    </div>
+                    <div class="course-content">
+                        <span class="course-category">Accounting</span>
+                        <h3 class="course-title">Tally ERP Professional</h3>
+                        <p class="course-description">Comprehensive training on Tally ERP, including accounting, inventory, and GST compliance.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">
+                                <i class="far fa-clock"></i> 30 Hours
+                            </div>
+                            <div class="course-meta-item">
+                                <i class="fas fa-users"></i> 20 Seats
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">Contact for Pricing</div>
+                            <a href="javascript:void(0);" onclick="emailForPricing('Tally ERP Professional')" class="course-link">Inquire <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tax Course 6 -->
+                <div class="course-card" data-category="tax" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="VAT & TDS Specialist">
+                        <div class="course-badge">Specialist</div>
+                    </div>
+                    <div class="course-content">
+                        <span class="course-category">Taxation</span>
+                        <h3 class="course-title">VAT & TDS Specialist Course</h3>
+                        <p class="course-description">In-depth training on VAT and TDS regulations, calculations, and filing procedures.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">
+                                <i class="far fa-clock"></i> 25 Hours
+                            </div>
+                            <div class="course-meta-item">
+                                <i class="fas fa-users"></i> 25 Seats
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">Contact for Pricing</div>
+                            <a href="javascript:void(0);" onclick="emailForPricing('VAT & TDS Specialist Course')" class="course-link">Inquire <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Paths Section -->
+    <section class="paths-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Learning <span>Paths</span></h2>
+                <p class="section-subtitle">Structured programs for career advancement</p>
+            </div>
+            
+            <div class="paths-grid">
+                <div class="path-card" data-aos="fade-up">
+                    <div class="path-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Accounting Professional</h3>
+                    <div class="courses-count">6 Courses | 180 Hours</div>
+                    <p>Complete pathway to become a skilled accounting professional, from fundamentals to advanced practices.</p>
+                    <ul class="path-features">
+                        <li><i class="fas fa-check-circle"></i> Financial Accounting Fundamentals</li>
+                        <li><i class="fas fa-check-circle"></i> Advanced Financial Accounting</li>
+                        <li><i class="fas fa-check-circle"></i> Tally ERP Professional</li>
+                        <li><i class="fas fa-check-circle"></i> Cost & Management Accounting</li>
+                        <li><i class="fas fa-check-circle"></i> Financial Statement Analysis</li>
+                        <li><i class="fas fa-check-circle"></i> Accounting Software Suite</li>
+                    </ul>
+                    <a href="javascript:void(0);" onclick="emailForPricing('Accounting Professional Learning Path')" class="pricing-contact" style="width: 100%; justify-content: center;">Inquire About Path</a>
+                </div>
+                
+                <div class="path-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="path-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Taxation Specialist</h3>
+                    <div class="courses-count">5 Courses | 150 Hours</div>
+                    <p>Specialized training for tax professionals covering all aspects of taxation in Nepal.</p>
+                    <ul class="path-features">
+                        <li><i class="fas fa-check-circle"></i> Income Tax Fundamentals</li>
+                        <li><i class="fas fa-check-circle"></i> VAT & TDS Specialist</li>
+                        <li><i class="fas fa-check-circle"></i> Corporate Taxation</li>
+                        <li><i class="fas fa-check-circle"></i> International Taxation</li>
+                        <li><i class="fas fa-check-circle"></i> Tax Planning Strategies</li>
+                    </ul>
+                    <a href="javascript:void(0);" onclick="emailForPricing('Taxation Specialist Learning Path')" class="pricing-contact" style="width: 100%; justify-content: center;">Inquire About Path</a>
+                </div>
+                
+                <div class="path-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="path-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Leadership Development</h3>
+                    <div class="courses-count">4 Courses | 120 Hours</div>
+                    <p>Comprehensive program for aspiring and current leaders to enhance their management capabilities.</p>
+                    <ul class="path-features">
+                        <li><i class="fas fa-check-circle"></i> Leadership Fundamentals</li>
+                        <li><i class="fas fa-check-circle"></i> Team Management & Motivation</li>
+                        <li><i class="fas fa-check-circle"></i> Strategic Decision Making</li>
+                        <li><i class="fas fa-check-circle"></i> Change Management</li>
+                        <li><i class="fas fa-check-circle"></i> Effective Communication</li>
+                        <li><i class="fas fa-check-circle"></i> Conflict Resolution</li>
+                    </ul>
+                    <a href="javascript:void(0);" onclick="emailForPricing('Leadership Development Learning Path')" class="pricing-contact" style="width: 100%; justify-content: center;">Inquire About Path</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+  
+    <!-- Testimonials -->
+    <section style="padding: 60px 0; background: white;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Student <span>Testimonials</span></h2>
+                <p class="section-subtitle">What our learners say about our training programs</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The Advanced Financial Accounting course at NEXA transformed my understanding of complex accounting principles. The instructor was knowledgeable and the practical examples were invaluable for my career."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info">
+                            <h4>Roshan Karki</h4>
+                            <p>Senior Accountant</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I took the Comprehensive Tax Planning course and it was exactly what I needed. The practical approach and real-world case studies helped me apply the concepts immediately in my work."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PS</div>
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Tax Consultant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+                <p class="section-subtitle">Common questions about our training programs</p>
+            </div>
+            
+            <div class="faq-accordion" data-aos="fade-up">
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>Are your courses certified?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Yes, all our training programs provide certificates of completion recognized by industry bodies. Many of our courses also offer continuing professional education (CPE) credits for accounting and finance professionals.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>Do you offer online training options?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Yes, we offer both in-person and online training options. Our virtual classrooms provide interactive learning experiences with live instructors, recorded sessions for review, and digital course materials.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>Can you customize training for our organization?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Absolutely! We develop custom corporate training programs tailored to your organization's specific needs, industry requirements, and skill gaps. Contact us for a customized training proposal.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>What is the duration of your courses?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Course durations vary from 1-day workshops to multi-week comprehensive programs ranging from 25 to 50 hours. We offer flexible scheduling including weekday, weekend, and evening batches to accommodate working professionals.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>Do you offer group discounts?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Yes, we offer special rates for group enrollments and corporate training packages. Discounts are available for teams of 3 or more from the same organization. Contact us for a customized quote based on your team size.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>What is your cancellation policy?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Cancellations made 7 days before the course start date receive a full refund. Cancellations within 7 days may be subject to a 25% fee. You can also transfer your registration to a future batch at no additional cost.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container" data-aos="fade-up">
+                <div class="newsletter-icon">
+                    <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <h2>Subscribe to Our <span>Training Newsletter</span></h2>
+                <p>Stay updated with new course announcements, upcoming batches, and special offers.</p>
+                
+                <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                    <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+                
+                <p class="newsletter-note">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Advance Your Career?</h2>
+                <p>Join thousands of professionals who have enhanced their skills through NEXA's training programs.</p>
+                <div class="cta-buttons">
+                    <a href="javascript:void(0);" onclick="emailForConsultation()" class="cta-btn-primary">Schedule Consultation</a>
+                    <a href="#courses" class="cta-btn-secondary">Browse All Courses</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section style="padding: 60px 0; background: white;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Related <span>Services</span></h2>
+                <p class="section-subtitle">Explore our other professional solutions</p>
+            </div>
+            
+            <div class="services-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Accounting Services</h3>
+                    <p>Comprehensive accounting solutions for your business.</p>
+                    <a href="accounting-services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="service-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Taxation Services</h3>
+                    <p>Expert tax planning and advisory for individuals and businesses.</p>
+                    <a href="taxation-services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Management Consulting</h3>
+                    <p>Strategic guidance to optimize operations and drive growth.</p>
+                    <a href="management-consulting.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- First Column - Banner and About -->
+                <div>
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="footer-logo-img">
+                    <p class="footer-about">Premier business advisory and consulting firm in Nepal, registered under Companies Act, 2063. Providing comprehensive solutions across Accounting, Tax, Corporate Advisory, and Training.</p>
+                    
+                    <!-- Social Icons in Square Round Rectangles -->
+                    <div class="social-links-footer">
+                        <a href="#" class="social-link-footer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Second Column - Important Links -->
+                <div>
+                    <h4>Important Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="outsourcing-portal.html">Outsourcing</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Column - Our Services Links -->
+                <div>
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                         <li><a href="accounting-services.html">Accounting Services</a></li>
+                        <li><a href="tax-return-filing.html">Tax Return Filing</a></li>
+                        <li><a href="corporate-advisory.html">Corporate Advisory</a></li>
+                        <li><a href="taxation.html">Taxation Services</a></li>
+                        <li><a href="management-consulting.html">Management Consulting</a></li>
+                        <li><a href="nfrs-ifrs-implementation.html">NFRS/IFRS Implementation</a></li>
+                        <li><a href="training-and-courses.html">Training & Courses</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column - Payment We Accept -->
+                <div>
+                    <h4>Payment We Accept</h4>
+                    <div class="payment-methods">
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/pv0TC3Nh/LOGO-BLOCK-W-png.png" alt="eSewa">
+                        </div>
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/jkRdtxRk/idk-Kc-Pp-TJV-1773766149624.png" alt="Khalti">
+                        </div>
+                        <div class="payment-item bank">
+                            <img src="https://i.ibb.co/LzdxtLS3/Bank-Transfer-logo-1200x600.png" alt="Bank Transfer">
+                        </div>
+                    </div>
+                    <p style="color: var(--gray-500); margin-top: 1.5rem; font-size: 0.9rem;">
+                        <i class="fas fa-lock" style="color: var(--secondary); margin-right: 0.5rem;"></i>
+                        Secure payments processed in Nepal
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom with Copyright, Terms, Privacy, Disclaimer -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 NEXA Advisory & Consulting. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html>

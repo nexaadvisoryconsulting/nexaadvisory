@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Advisory - NEXA Advisory & Consulting | Strategic Business Solutions</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="NEXA Advisory's comprehensive corporate advisory services in Nepal: Business registration, company formation, corporate restructuring, regulatory compliance, and strategic guidance.">
+    <meta name="keywords" content="corporate advisory Nepal, business registration, company formation, corporate restructuring, regulatory compliance, business advisory Kathmandu">
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Move to Top Button -->
+    <button class="move-to-top" id="moveToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info-top">
+                <span><i class="fas fa-envelope"></i> info@nexaadvisory.com.np</span>
+                <span><i class="fas fa-phone-alt"></i> +977 9869553322</span>
+            </div>
+            <div class="social-icons-top">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-banner">
+                <a href="index.html">
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="banner-logo-img">
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="outsourcing-portal.html" class="nav-link">Outsourcing</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                
+                <!-- Search Icon -->
+                <div class="search-wrapper">
+                    <button class="search-icon-btn" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-dropdown" id="searchDropdown">
+                        <div class="search-input-wrapper">
+                            <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="search-results" id="searchResults"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Service Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div data-aos="fade-right">
+                    <span class="service-hero-badge">Strategic Business Solutions</span>
+                    <h1 class="service-hero-title">Corporate <span>Advisory</span> Services</h1>
+                    <p class="service-hero-description">
+                        NEXA Advisory provides comprehensive corporate advisory solutions to help businesses navigate complex regulatory environments, optimize structures, and achieve strategic growth objectives.
+                    </p>
+                    
+                </div>
+                <div class="service-hero-image" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Corporate Advisory">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Stats -->
+    <div class="container">
+        <div class="service-stats">
+            <div class="service-stat" data-aos="fade-up">
+                <div class="number">500+</div>
+                <div class="label">Companies Advised</div>
+            </div>
+            <div class="service-stat" data-aos="fade-up" data-aos-delay="100">
+                <div class="number">15+</div>
+                <div class="label">Years Experience</div>
+            </div>
+            <div class="service-stat" data-aos="fade-up" data-aos-delay="200">
+                <div class="number">98%</div>
+                <div class="label">Client Satisfaction</div>
+            </div>
+            <div class="service-stat" data-aos="fade-up" data-aos-delay="300">
+                <div class="number">25+</div>
+                <div class="label">Industry Experts</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Description Section 1 -->
+    <section class="product-section">
+        <div class="container">
+            <div class="product-container">
+                <div class="product-content" data-aos="fade-right">
+                    <h2>What is <span>Corporate Advisory</span>?</h2>
+                    <p>Corporate advisory encompasses a range of strategic services designed to help businesses at every stage of their lifecycle. From startup formation to expansion and restructuring, we provide expert guidance to navigate complex business challenges.</p>
+                    <p>At NEXA Advisory, we combine deep industry knowledge with practical experience to deliver solutions that drive sustainable growth and create long-term value for your business.</p>
+                    
+                    <h3>Why Choose Our Corporate Advisory?</h3>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> <strong>Expert Guidance:</strong> Access to experienced advisors with diverse industry backgrounds</li>
+                        <li><i class="fas fa-check"></i> <strong>Regulatory Compliance:</strong> Ensure your business meets all legal requirements</li>
+                        <li><i class="fas fa-check"></i> <strong>Strategic Growth:</strong> Develop and execute strategies for sustainable expansion</li>
+                        <li><i class="fas fa-check"></i> <strong>Risk Management:</strong> Identify and mitigate potential business risks</li>
+                    </ul>
+                    
+                    <a href="javascript:void(0);" onclick="emailForPricing('Corporate Advisory')" class="pricing-contact">
+                        <i class="fas fa-envelope"></i> Contact for Pricing
+                    </a>
+                </div>
+                <div class="product-image" data-aos="fade-left">
+                    <div class="badge">Strategic Partner</div>
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Corporate Advisory Importance">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="product-section" style="background: var(--gray-50);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Corporate <span>Advisory Services</span></h2>
+                <p class="section-subtitle">Comprehensive solutions for your business needs</p>
+            </div>
+            
+            <div class="offerings-grid">
+                <div class="offering-card" data-aos="fade-up">
+                    <div class="offering-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="offering-content">
+                        <h3>Business Registration</h3>
+                        <p>Complete assistance with company registration, including name reservation, document preparation, and PAN registration.</p>
+                        <div class="offering-tags">
+                            <span class="offering-tag">Private Limited</span>
+                            <span class="offering-tag">Public Limited</span>
+                            <span class="offering-tag">Partnership</span>
+                            <span class="offering-tag">Sole Proprietorship</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="offering-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="offering-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <div class="offering-content">
+                        <h3>Company Formation</h3>
+                        <p>End-to-end support for setting up your business, from entity selection to incorporation and operational setup.</p>
+                        <div class="offering-tags">
+                            <span class="offering-tag">Entity Selection</span>
+                            <span class="offering-tag">Incorporation</span>
+                            <span class="offering-tag">Operational Setup</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="offering-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="offering-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="offering-content">
+                        <h3>Corporate Restructuring</h3>
+                        <p>Expert guidance on mergers, acquisitions, demergers, and business reorganization to improve efficiency and competitiveness.</p>
+                        <div class="offering-tags">
+                            <span class="offering-tag">Mergers</span>
+                            <span class="offering-tag">Acquisitions</span>
+                            <span class="offering-tag">Demergers</span>
+                            <span class="offering-tag">Reorganization</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="offering-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="offering-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="offering-content">
+                        <h3>Regulatory Compliance</h3>
+                        <p>Ensure your business meets all regulatory requirements, including company law compliance, ROC filings, and statutory obligations.</p>
+                        <div class="offering-tags">
+                            <span class="offering-tag">ROC Filings</span>
+                            <span class="offering-tag">Statutory Compliance</span>
+                            <span class="offering-tag">Board Meetings</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="offering-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="offering-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="offering-content">
+                        <h3>Strategic Planning</h3>
+                        <p>Develop robust business strategies aligned with your vision, market opportunities, and competitive landscape.</p>
+                        <div class="offering-tags">
+                            <span class="offering-tag">Business Strategy</span>
+                            <span class="offering-tag">Market Entry</span>
+                            <span class="offering-tag">Growth Planning</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="offering-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="offering-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="offering-content">
+                        <h3>Joint Ventures & Partnerships</h3>
+                        <p>Assistance with forming strategic alliances, joint ventures, and partnership agreements to expand your business reach.</p>
+                        <div class="offering-tags">
+                            <span class="offering-tag">Joint Ventures</span>
+                            <span class="offering-tag">Strategic Alliances</span>
+                            <span class="offering-tag">Partnerships</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;" data-aos="fade-up">
+                <a href="javascript:void(0);" onclick="emailForPricing('Corporate Advisory')" class="pricing-contact">
+                    <i class="fas fa-envelope"></i> Get Detailed Pricing
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Advisory <span>Process</span></h2>
+                <p class="section-subtitle">A systematic approach to delivering strategic solutions</p>
+            </div>
+            
+            <div class="process-grid">
+                <div class="process-step" data-aos="fade-up">
+                    <div class="step-number">1</div>
+                    <h3>Discovery</h3>
+                    <p>We understand your business goals, challenges, and requirements through detailed consultation.</p>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">2</div>
+                    <h3>Analysis</h3>
+                    <p>Our experts analyze your situation, market conditions, and regulatory requirements.</p>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">3</div>
+                    <h3>Strategy</h3>
+                    <p>We develop customized strategies and solutions tailored to your specific needs.</p>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">4</div>
+                    <h3>Implementation</h3>
+                    <p>We guide you through implementation, ensuring smooth execution and compliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section style="background: var(--gray-50); padding: 60px 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Benefits of <span>Corporate Advisory</span></h2>
+                <p class="section-subtitle">Why partner with NEXA for your strategic needs</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Save Time & Resources</h3>
+                    <p>Focus on your core business while we handle complex regulatory and strategic matters.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Risk Mitigation</h3>
+                    <p>Identify and address potential risks before they impact your business.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Strategic Growth</h3>
+                    <p>Develop and execute strategies that drive sustainable business growth.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Regulatory Peace of Mind</h3>
+                    <p>Stay compliant with all legal and regulatory requirements.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Expert Guidance</h3>
+                    <p>Access to experienced advisors with deep industry knowledge.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="benefit-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Competitive Advantage</h3>
+                    <p>Gain an edge with strategic insights and optimized business structures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section style="padding: 60px 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">What Our <span>Clients Say</span></h2>
+                <p class="section-subtitle">Trusted by businesses across Nepal</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"NEXA's corporate advisory team guided us through a complex restructuring process with expertise and professionalism. Their strategic insights were invaluable to our business."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info">
+                            <h4>Rajesh Khadka</h4>
+                            <p>CEO, Mountain Hardware</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Thanks to NEXA, our company registration was smooth and hassle-free. They handled everything efficiently and ensured we were compliant from day one."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PS</div>
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Founder, TechNepal Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+                <p class="section-subtitle">Common questions about our corporate advisory services</p>
+            </div>
+            
+            <div class="faq-accordion" data-aos="fade-up">
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>How long does company registration take in Nepal?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Company registration in Nepal typically takes 5-7 working days with proper documentation. We expedite the process through our relationships with regulatory authorities and ensure all documents are prepared correctly.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>What types of companies can be registered?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>You can register various entities including Private Limited, Public Limited, Partnerships, Sole Proprietorships, and Non-Government Organizations (NGOs). We'll help you choose the right structure for your business.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>Do you help with foreign company registration in Nepal?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Yes, we assist foreign companies with branch office registration, liaison office setup, and subsidiary formation in Nepal, ensuring compliance with FDI regulations and all legal requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>What is corporate restructuring and when is it needed?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Corporate restructuring involves mergers, acquisitions, demergers, and business reorganization to improve efficiency, reduce costs, or adapt to market changes. It's often needed during growth phases, ownership changes, or strategic shifts.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-accordion-header" onclick="toggleFaq(this)">
+                        <h4>Do you offer ongoing compliance support?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-accordion-content">
+                        <p>Yes, we provide ongoing compliance support including annual ROC filings, board meeting documentation, statutory register maintenance, and advisory on regulatory changes affecting your business.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container" data-aos="fade-up">
+                <div class="newsletter-icon">
+                    <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <h2>Subscribe to Our <span>Newsletter</span></h2>
+                <p>Stay updated with the latest corporate regulations, business insights, and strategic tips from our experts.</p>
+                
+                <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                    <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+                
+                <p class="newsletter-note">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Let our corporate advisory experts help you navigate the complexities of business and achieve your strategic goals.</p>
+                <div class="cta-buttons">
+                    <a href="javascript:void(0);" onclick="emailForConsultation()" class="cta-btn-primary">Schedule Consultation</a>
+                    <a href="javascript:void(0);" onclick="emailForPricing('Corporate Advisory')" class="cta-btn-secondary">Request Pricing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section style="padding: 60px 0; background: white;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Related <span>Services</span></h2>
+                <p class="section-subtitle">Explore our other business solutions</p>
+            </div>
+            
+            <div class="services-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Management Consulting</h3>
+                    <p>Expert guidance to optimize operations, improve efficiency, and drive business growth.</p>
+                    <a href="management-consulting.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="service-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>NFRS/IFRS Implementation</h3>
+                    <p>Expert guidance in adopting and implementing Nepal Financial Reporting Standards.</p>
+                    <a href="ifrs-services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Outsourcing Services</h3>
+                    <p>Comprehensive outsourcing solutions for your business operations.</p>
+                    <a href="outsourcing-portal.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- First Column - Banner and About -->
+                <div>
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="footer-logo-img">
+                    <p class="footer-about">Premier business advisory and consulting firm in Nepal, registered under Companies Act, 2063. Providing comprehensive solutions across Accounting, Tax, Corporate Advisory, and Training.</p>
+                    
+                    <!-- Social Icons in Square Round Rectangles -->
+                    <div class="social-links-footer">
+                        <a href="#" class="social-link-footer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Second Column - Important Links -->
+                <div>
+                    <h4>Important Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="outsourcing-portal.html">Outsourcing</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Column - Our Services Links -->
+                <div>
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="accounting-services.html">Accounting Services</a></li>
+                        <li><a href="tax-return-filing.html">Tax Return Filing</a></li>
+                        <li><a href="corporate-advisory.html">Corporate Advisory</a></li>
+                        <li><a href="taxation.html">Taxation Services</a></li>
+                        <li><a href="management-consulting.html">Management Consulting</a></li>
+                        <li><a href="nfrs-ifrs-implementation.html">NFRS/IFRS Implementation</a></li>
+                        <li><a href="training-and-courses.html">Training & Courses</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column - Payment We Accept -->
+                <div>
+                    <h4>Payment We Accept</h4>
+                    <div class="payment-methods">
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/pv0TC3Nh/LOGO-BLOCK-W-png.png" alt="eSewa">
+                        </div>
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/jkRdtxRk/idk-Kc-Pp-TJV-1773766149624.png" alt="Khalti">
+                        </div>
+                        <div class="payment-item bank">
+                            <img src="https://i.ibb.co/LzdxtLS3/Bank-Transfer-logo-1200x600.png" alt="Bank Transfer">
+                        </div>
+                    </div>
+                    <p style="color: var(--gray-500); margin-top: 1.5rem; font-size: 0.9rem;">
+                        <i class="fas fa-lock" style="color: var(--secondary); margin-right: 0.5rem;"></i>
+                        Secure payments processed in Nepal
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom with Copyright, Terms, Privacy, Disclaimer -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 NEXA Advisory & Consulting. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html>

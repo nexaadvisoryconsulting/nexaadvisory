@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - NEXA Advisory & Consulting</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Terms of Service for NEXA Advisory & Consulting. Please read these terms carefully before using our website and services.">
+    <meta name="keywords" content="terms of service, terms and conditions, legal agreement, NEXA Advisory">
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Move to Top Button -->
+    <button class="move-to-top" id="moveToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info-top">
+                <span><i class="fas fa-envelope"></i> info@nexaadvisory.com.np</span>
+                <span><i class="fas fa-phone-alt"></i> +977 9869553322</span>
+            </div>
+            <div class="social-icons-top">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-banner">
+                <a href="index.html">
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="banner-logo-img">
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="outsourcing-portal.html" class="nav-link">Outsourcing</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                
+                <!-- Search Icon -->
+                <div class="search-wrapper">
+                    <button class="search-icon-btn" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-dropdown" id="searchDropdown">
+                        <div class="search-input-wrapper">
+                            <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="search-results" id="searchResults"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Progress Bar -->
+    <div class="terms-progress">
+        <div class="container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="termsProgressFill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms Hero -->
+    <section class="terms-hero">
+        <div class="container">
+            <div class="terms-hero-content" data-aos="fade-up">
+                <h1 class="terms-hero-title">Terms of <span>Service</span></h1>
+                <p class="terms-hero-description">
+                    Please read these terms and conditions carefully before using our website and services. 
+                    By accessing or using our services, you agree to be bound by these terms.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Last Updated -->
+    <div class="last-updated">
+        <div class="container">
+            <i class="fas fa-calendar-alt"></i>
+            Last Updated: <strong id="currentDate">March 18, 2024</strong>
+        </div>
+    </div>
+
+    <!-- Terms Content -->
+    <section class="terms-content">
+        <div class="container">
+            <div class="terms-container">
+                <!-- Table of Contents -->
+                <div class="terms-toc">
+                    <h3>
+                        <i class="fas fa-list"></i>
+                        Table of Contents
+                    </h3>
+                    <div class="terms-toc-grid">
+                        <a href="#section-1" class="terms-toc-item" onclick="scrollToSection('section-1')">
+                            <i class="fas fa-gavel"></i>
+                            1. Acceptance of Terms
+                        </a>
+                        <a href="#section-2" class="terms-toc-item" onclick="scrollToSection('section-2')">
+                            <i class="fas fa-globe"></i>
+                            2. Use of Website
+                        </a>
+                        <a href="#section-3" class="terms-toc-item" onclick="scrollToSection('section-3')">
+                            <i class="fas fa-briefcase"></i>
+                            3. Services
+                        </a>
+                        <a href="#section-4" class="terms-toc-item" onclick="scrollToSection('section-4')">
+                            <i class="fas fa-user"></i>
+                            4. User Accounts
+                        </a>
+                        <a href="#section-5" class="terms-toc-item" onclick="scrollToSection('section-5')">
+                            <i class="fas fa-credit-card"></i>
+                            5. Fees & Payments
+                        </a>
+                        <a href="#section-6" class="terms-toc-item" onclick="scrollToSection('section-6')">
+                            <i class="fas fa-copyright"></i>
+                            6. Intellectual Property
+                        </a>
+                        <a href="#section-7" class="terms-toc-item" onclick="scrollToSection('section-7')">
+                            <i class="fas fa-user-secret"></i>
+                            7. Privacy
+                        </a>
+                        <a href="#section-8" class="terms-toc-item" onclick="scrollToSection('section-8')">
+                            <i class="fas fa-ban"></i>
+                            8. Prohibited Activities
+                        </a>
+                        <a href="#section-9" class="terms-toc-item" onclick="scrollToSection('section-9')">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            9. Limitation of Liability
+                        </a>
+                        <a href="#section-10" class="terms-toc-item" onclick="scrollToSection('section-10')">
+                            <i class="fas fa-handshake"></i>
+                            10. Indemnification
+                        </a>
+                        <a href="#section-11" class="terms-toc-item" onclick="scrollToSection('section-11')">
+                            <i class="fas fa-power-off"></i>
+                            11. Termination
+                        </a>
+                        <a href="#section-12" class="terms-toc-item" onclick="scrollToSection('section-12')">
+                            <i class="fas fa-gavel"></i>
+                            12. Governing Law
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Terms Body -->
+                <div class="terms-body">
+                    <!-- Print Button -->
+                    <div style="display: flex; justify-content: flex-end; margin-bottom: 2rem;">
+                        <button class="print-btn" onclick="printTerms()">
+                            <i class="fas fa-print"></i>
+                            Print Terms
+                        </button>
+                    </div>
+
+                    <!-- Section 1 -->
+                    <div id="section-1" class="terms-section">
+                        <h2>
+                            <span class="section-number">1</span>
+                            <i class="fas fa-gavel"></i>
+                            Acceptance of Terms
+                        </h2>
+                        <p>
+                            By accessing or using the website, services, or any content provided by NEXA Advisory & Consulting 
+                            ("Company", "we", "us", or "our"), you agree to be bound by these Terms of Service ("Terms"). 
+                            If you do not agree to all of these Terms, you may not access or use our services.
+                        </p>
+                        
+                        <div class="info-box">
+                            <h4>
+                                <i class="fas fa-info-circle"></i>
+                                Important Notice
+                            </h4>
+                            <p>
+                                These Terms constitute a legally binding agreement between you and NEXA Advisory & Consulting. 
+                                Please read them carefully before proceeding.
+                            </p>
+                        </div>
+
+                        <h3>1.1 Eligibility</h3>
+                        <p>
+                            By using our services, you represent and warrant that:
+                        </p>
+                        <ul>
+                            <li>You are at least 18 years of age</li>
+                            <li>You have the legal capacity to enter into a binding agreement</li>
+                            <li>You are not located in a country that is subject to a U.S. government embargo</li>
+                            <li>You will comply with all applicable laws and regulations</li>
+                        </ul>
+
+                        <h3>1.2 Modifications</h3>
+                        <p>
+                            We reserve the right to modify these Terms at any time. We will provide notice of significant 
+                            changes by posting the updated Terms on this page and updating the "Last Updated" date. Your 
+                            continued use of our services after such modifications constitutes your acceptance of the revised Terms.
+                        </p>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <div id="section-2" class="terms-section">
+                        <h2>
+                            <span class="section-number">2</span>
+                            <i class="fas fa-globe"></i>
+                            Use of Website
+                        </h2>
+                        
+                        <h3>2.1 License</h3>
+                        <p>
+                            Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, 
+                            and revocable license to access and use our website for your internal business purposes or personal use.
+                        </p>
+
+                        <h3>2.2 Restrictions</h3>
+                        <p>
+                            You agree not to:
+                        </p>
+                        <ul>
+                            <li>Copy, modify, or distribute any content from our website without our written consent</li>
+                            <li>Use any automated means to access our website</li>
+                            <li>Attempt to gain unauthorized access to our systems</li>
+                            <li>Interfere with or disrupt the integrity or performance of our website</li>
+                            <li>Use our website for any illegal purpose</li>
+                        </ul>
+
+                        <h3>2.3 Accuracy of Information</h3>
+                        <p>
+                            We strive to provide accurate and up-to-date information on our website, but we do not warrant 
+                            the completeness, reliability, or accuracy of this information. Any reliance you place on such 
+                            information is strictly at your own risk.
+                        </p>
+                    </div>
+
+                    <!-- Section 3 -->
+                    <div id="section-3" class="terms-section">
+                        <h2>
+                            <span class="section-number">3</span>
+                            <i class="fas fa-briefcase"></i>
+                            Services
+                        </h2>
+
+                        <h3>3.1 Description of Services</h3>
+                        <p>
+                            NEXA Advisory & Consulting provides business advisory and consulting services, including but not 
+                            limited to:
+                        </p>
+                        <ul>
+                            <li>Accounting and bookkeeping services</li>
+                            <li>Tax planning and filing assistance</li>
+                            <li>Corporate advisory services</li>
+                            <li>Management consulting</li>
+                            <li>Training and professional development</li>
+                        </ul>
+                        <p>
+                            <strong>Note:</strong> We expressly exclude audit services from our scope of work.
+                        </p>
+
+                        <h3>3.2 Engagement Terms</h3>
+                        <p>
+                            Specific services will be governed by separate engagement letters or service agreements that 
+                            supplement these Terms. In the event of a conflict, the engagement letter will control.
+                        </p>
+
+                        <h3>3.3 No Professional-Client Relationship</h3>
+                        <p>
+                            Use of our website or initial consultations does not create a professional-client relationship. 
+                            Such a relationship is only formed upon execution of a formal engagement agreement.
+                        </p>
+
+                        <div class="highlight-box">
+                            <p>
+                                "Our services are provided on an "as is" and "as available" basis. We do not guarantee that 
+                                our services will meet your specific requirements or that they will be uninterrupted, timely, 
+                                secure, or error-free."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Section 4 -->
+                    <div id="section-4" class="terms-section">
+                        <h2>
+                            <span class="section-number">4</span>
+                            <i class="fas fa-user"></i>
+                            User Accounts
+                        </h2>
+
+                        <h3>4.1 Account Creation</h3>
+                        <p>
+                            To access certain features of our services, you may be required to create an account. You agree to:
+                        </p>
+                        <ul>
+                            <li>Provide accurate, current, and complete information</li>
+                            <li>Maintain and promptly update your account information</li>
+                            <li>Keep your password secure and confidential</li>
+                            <li>Notify us immediately of any unauthorized access</li>
+                        </ul>
+
+                        <h3>4.2 Account Responsibility</h3>
+                        <p>
+                            You are responsible for all activities that occur under your account. We are not liable for any 
+                            loss or damage arising from your failure to comply with these security obligations.
+                        </p>
+
+                        <h3>4.3 Account Termination</h3>
+                        <p>
+                            We reserve the right to suspend or terminate your account at any time for any reason, including 
+                            violation of these Terms or applicable laws.
+                        </p>
+                    </div>
+
+                    <!-- Section 5 -->
+                    <div id="section-5" class="terms-section">
+                        <h2>
+                            <span class="section-number">5</span>
+                            <i class="fas fa-credit-card"></i>
+                            Fees & Payments
+                        </h2>
+
+                        <h3>5.1 Fees</h3>
+                        <p>
+                            Fees for our services will be as set forth in the applicable engagement letter or as otherwise 
+                            agreed upon in writing. All fees are non-refundable except as expressly provided in your engagement 
+                            agreement.
+                        </p>
+
+                        <h3>5.2 Payment Terms</h3>
+                        <p>
+                            Unless otherwise agreed, invoices are due upon receipt. We accept the following payment methods:
+                        </p>
+                        <ul>
+                            <li>Bank transfer</li>
+                            <li>eSewa</li>
+                            <li>Khalti</li>
+                        </ul>
+
+                        <h3>5.3 Late Payments</h3>
+                        <p>
+                            If payment is not received by the due date, we reserve the right to suspend services and charge 
+                            interest on overdue amounts at the rate of 1.5% per month or the maximum rate permitted by law.
+                        </p>
+
+                        <h3>5.4 Taxes</h3>
+                        <p>
+                            You are responsible for all taxes associated with your use of our services. We will charge applicable 
+                            taxes as required by law.
+                        </p>
+                    </div>
+
+                    <!-- Section 6 -->
+                    <div id="section-6" class="terms-section">
+                        <h2>
+                            <span class="section-number">6</span>
+                            <i class="fas fa-copyright"></i>
+                            Intellectual Property
+                        </h2>
+
+                        <h3>6.1 Ownership</h3>
+                        <p>
+                            All content on our website, including text, graphics, logos, images, and software, is the property 
+                            of NEXA Advisory & Consulting or its content suppliers and is protected by copyright and other 
+                            intellectual property laws.
+                        </p>
+
+                        <h3>6.2 Trademarks</h3>
+                        <p>
+                            "NEXA Advisory & Consulting", the NEXA logo, and all related names, logos, product and service names, 
+                            designs, and slogans are trademarks of NEXA Advisory & Consulting. You may not use such marks without 
+                            our prior written permission.
+                        </p>
+
+                        <h3>6.3 User Content</h3>
+                        <p>
+                            By submitting content to us (including feedback, suggestions, or ideas), you grant us a worldwide, 
+                            royalty-free, perpetual, irrevocable license to use, reproduce, modify, and distribute such content 
+                            for any purpose.
+                        </p>
+                    </div>
+
+                    <!-- Section 7 -->
+                    <div id="section-7" class="terms-section">
+                        <h2>
+                            <span class="section-number">7</span>
+                            <i class="fas fa-user-secret"></i>
+                            Privacy
+                        </h2>
+
+                        <p>
+                            Your use of our services is also governed by our Privacy Policy, which is incorporated by reference 
+                            into these Terms. Please review our Privacy Policy to understand our practices regarding the collection 
+                            and use of your information.
+                        </p>
+
+                        <div class="info-box">
+                            <h4>
+                                <i class="fas fa-shield-alt"></i>
+                                Data Protection
+                            </h4>
+                            <p>
+                                We implement reasonable security measures to protect your personal information. However, no method 
+                                of transmission over the Internet or electronic storage is 100% secure.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Section 8 -->
+                    <div id="section-8" class="terms-section">
+                        <h2>
+                            <span class="section-number">8</span>
+                            <i class="fas fa-ban"></i>
+                            Prohibited Activities
+                        </h2>
+
+                        <p>
+                            You may not use our services for any illegal or unauthorized purpose. Prohibited activities include:
+                        </p>
+                        <ul>
+                            <li>Violating any applicable laws or regulations</li>
+                            <li>Infringing on intellectual property rights</li>
+                            <li>Transmitting malware or harmful code</li>
+                            <li>Attempting to interfere with our services</li>
+                            <li>Impersonating any person or entity</li>
+                            <li>Collecting information about other users</li>
+                            <li>Engaging in fraudulent activities</li>
+                        </ul>
+                    </div>
+
+                    <!-- Section 9 -->
+                    <div id="section-9" class="terms-section">
+                        <h2>
+                            <span class="section-number">9</span>
+                            <i class="fas fa-exclamation-triangle"></i>
+                            Limitation of Liability
+                        </h2>
+
+                        <p>
+                            To the maximum extent permitted by law, NEXA Advisory & Consulting shall not be liable for any:
+                        </p>
+                        <ul>
+                            <li>Indirect, incidental, special, consequential, or punitive damages</li>
+                            <li>Loss of profits, revenue, data, or goodwill</li>
+                            <li>Business interruption</li>
+                            <li>Damages arising from your use of or inability to use our services</li>
+                        </ul>
+
+                        <h3>9.1 Cap on Liability</h3>
+                        <p>
+                            Our total liability to you for any claims arising out of or relating to these Terms or our services 
+                            shall not exceed the amount you paid to us during the twelve months preceding the claim.
+                        </p>
+
+                        <h3>9.2 Exclusions</h3>
+                        <p>
+                            Some jurisdictions do not allow the exclusion of certain warranties or the limitation of liability 
+                            for incidental or consequential damages, so the above limitations may not apply to you.
+                        </p>
+                    </div>
+
+                    <!-- Section 10 -->
+                    <div id="section-10" class="terms-section">
+                        <h2>
+                            <span class="section-number">10</span>
+                            <i class="fas fa-handshake"></i>
+                            Indemnification
+                        </h2>
+
+                        <p>
+                            You agree to indemnify, defend, and hold harmless NEXA Advisory & Consulting, its officers, directors, 
+                            employees, and agents from and against any claims, liabilities, damages, losses, and expenses arising 
+                            from:
+                        </p>
+                        <ul>
+                            <li>Your use of our services</li>
+                            <li>Your violation of these Terms</li>
+                            <li>Your violation of any third-party rights</li>
+                            <li>Any content you submit</li>
+                        </ul>
+                    </div>
+
+                    <!-- Section 11 -->
+                    <div id="section-11" class="terms-section">
+                        <h2>
+                            <span class="section-number">11</span>
+                            <i class="fas fa-power-off"></i>
+                            Termination
+                        </h2>
+
+                        <h3>11.1 Termination by You</h3>
+                        <p>
+                            You may terminate your account and stop using our services at any time by contacting us.
+                        </p>
+
+                        <h3>11.2 Termination by Us</h3>
+                        <p>
+                            We may suspend or terminate your access to our services at any time, with or without cause, with 
+                            or without notice, effective immediately.
+                        </p>
+
+                        <h3>11.3 Effect of Termination</h3>
+                        <p>
+                            Upon termination, your right to use our services will immediately cease. Sections that by their nature 
+                            should survive termination shall survive, including but not limited to intellectual property provisions, 
+                            warranty disclaimers, and limitations of liability.
+                        </p>
+                    </div>
+
+                    <!-- Section 12 -->
+                    <div id="section-12" class="terms-section">
+                        <h2>
+                            <span class="section-number">12</span>
+                            <i class="fas fa-gavel"></i>
+                            Governing Law
+                        </h2>
+
+                        <h3>12.1 Jurisdiction</h3>
+                        <p>
+                            These Terms shall be governed by and construed in accordance with the laws of Nepal, without regard 
+                            to its conflict of law provisions. Any disputes arising under or in connection with these Terms shall 
+                            be subject to the exclusive jurisdiction of the courts in Kathmandu, Nepal.
+                        </p>
+
+                        <h3>12.2 Dispute Resolution</h3>
+                        <p>
+                            Before filing a claim, you agree to attempt to resolve any dispute informally by contacting us. If 
+                            we are unable to resolve the dispute within 30 days, either party may pursue formal proceedings.
+                        </p>
+
+                        <h3>12.3 Waiver and Severability</h3>
+                        <p>
+                            Our failure to enforce any right or provision of these Terms will not be considered a waiver of those 
+                            rights. If any provision of these Terms is held to be invalid or unenforceable, the remaining provisions 
+                            will remain in full force and effect.
+                        </p>
+                    </div>
+
+                    <!-- Agreement Section -->
+                    <div class="agreement-section">
+                        <p>
+                            <i class="fas fa-check-circle" style="color: var(--secondary); margin-right: 0.5rem;"></i>
+                            By using our services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
+                        </p>
+                        <div class="agreement-buttons">
+                            <button class="agreement-btn agreement-btn-primary" onclick="acceptTerms()">
+                                <i class="fas fa-check"></i>
+                                I Accept
+                            </button>
+                            <button class="agreement-btn agreement-btn-secondary" onclick="declineTerms()">
+                                <i class="fas fa-times"></i>
+                                I Decline
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--gray-200);">
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">Questions About These Terms?</h3>
+                        <p style="color: var(--gray-600);">
+                            If you have any questions about these Terms of Service, please contact us:
+                        </p>
+                        <ul style="margin-top: 1rem; color: var(--gray-600);">
+                            <li><i class="fas fa-envelope" style="color: var(--secondary); width: 25px;"></i> <strong>Email:</strong> legal@nexaadvisory.com.np</li>
+                            <li><i class="fas fa-phone-alt" style="color: var(--secondary); width: 25px;"></i> <strong>Phone:</strong> +977 1-5550123</li>
+                            <li><i class="fas fa-map-marker-alt" style="color: var(--secondary); width: 25px;"></i> <strong>Address:</strong> Putalisadak, Kathmandu, Nepal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- First Column - Banner and About -->
+                <div>
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="footer-logo-img">
+                    <p class="footer-about">Premier business advisory and consulting firm in Nepal, registered under Companies Act, 2063. Providing comprehensive solutions across Accounting, Tax, Corporate Advisory, and Training.</p>
+                    
+                    <!-- Social Icons in Square Round Rectangles -->
+                    <div class="social-links-footer">
+                        <a href="#" class="social-link-footer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Second Column - Important Links -->
+                <div>
+                    <h4>Important Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="outsourcing-portal.html">Outsourcing</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Column - Our Services Links -->
+                <div>
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                         <li><a href="accounting-services.html">Accounting Services</a></li>
+                        <li><a href="tax-return-filing.html">Tax Return Filing</a></li>
+                        <li><a href="corporate-advisory.html">Corporate Advisory</a></li>
+                        <li><a href="taxation.html">Taxation Services</a></li>
+                        <li><a href="management-consulting.html">Management Consulting</a></li>
+                        <li><a href="nfrs-ifrs-implementation.html">NFRS/IFRS Implementation</a></li>
+                        <li><a href="training-and-courses.html">Training & Courses</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column - Payment We Accept -->
+                <div>
+                    <h4>Payment We Accept</h4>
+                    <div class="payment-methods">
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/pv0TC3Nh/LOGO-BLOCK-W-png.png" alt="eSewa">
+                        </div>
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/jkRdtxRk/idk-Kc-Pp-TJV-1773766149624.png" alt="Khalti">
+                        </div>
+                        <div class="payment-item bank">
+                            <img src="https://i.ibb.co/LzdxtLS3/Bank-Transfer-logo-1200x600.png" alt="Bank Transfer">
+                        </div>
+                    </div>
+                    <p style="color: var(--gray-500); margin-top: 1.5rem; font-size: 0.9rem;">
+                        <i class="fas fa-lock" style="color: var(--secondary); margin-right: 0.5rem;"></i>
+                        Secure payments processed in Nepal
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom with Copyright, Terms, Privacy, Disclaimer -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 NEXA Advisory & Consulting. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+               <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html>

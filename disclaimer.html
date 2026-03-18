@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disclaimer - NEXA Advisory & Consulting</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Important legal information, terms of use, and disclaimers for NEXA Advisory & Consulting website and services.">
+    <meta name="keywords" content="disclaimer, legal notice, terms of use, privacy policy, NEXA Advisory">
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Move to Top Button -->
+    <button class="move-to-top" id="moveToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info-top">
+                <span><i class="fas fa-envelope"></i> info@nexaadvisory.com.np</span>
+                <span><i class="fas fa-phone-alt"></i> +977 9869553322</span>
+            </div>
+            <div class="social-icons-top">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-banner">
+                <a href="index.html">
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="banner-logo-img">
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="outsourcing-portal.html" class="nav-link">Outsourcing</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                
+                <!-- Search Icon -->
+                <div class="search-wrapper">
+                    <button class="search-icon-btn" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-dropdown" id="searchDropdown">
+                        <div class="search-input-wrapper">
+                            <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="search-results" id="searchResults"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Progress Bar -->
+    <div class="disclaimer-progress">
+        <div class="container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Disclaimer Hero -->
+    <section class="disclaimer-hero">
+        <div class="container">
+            <div class="disclaimer-hero-content" data-aos="fade-up">
+              
+                <h1 class="disclaimer-hero-title">Important <span>Disclaimer</span></h1>
+                <p class="disclaimer-hero-description">
+                    Please read this disclaimer carefully before using our website and services. 
+                    This document outlines the terms, conditions, and limitations of liability.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Last Updated -->
+    <div class="last-updated">
+        <div class="container">
+            <i class="fas fa-calendar-alt"></i>
+            Last Updated: <strong id="currentDate">March 18, 2024</strong>
+        </div>
+    </div>
+
+    <!-- Disclaimer Content -->
+    <section class="disclaimer-content" id="disclaimerContent">
+        <div class="container">
+            <div class="disclaimer-container">
+                <!-- Tabs Navigation -->
+                <div class="disclaimer-tabs">
+                    <div class="disclaimer-tab active" onclick="switchDisclaimerTab('general')">
+                        <i class="fas fa-info-circle"></i>
+                        General Disclaimer
+                    </div>
+                    <div class="disclaimer-tab" onclick="switchDisclaimerTab('services')">
+                        <i class="fas fa-briefcase"></i>
+                        Services Disclaimer
+                    </div>
+                    <div class="disclaimer-tab" onclick="switchDisclaimerTab('financial')">
+                        <i class="fas fa-chart-line"></i>
+                        Financial & Tax
+                    </div>
+                    <div class="disclaimer-tab" onclick="switchDisclaimerTab('thirdparty')">
+                        <i class="fas fa-link"></i>
+                        Third Party Links
+                    </div>
+                    <div class="disclaimer-tab" onclick="switchDisclaimerTab('limitations')">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Limitations
+                    </div>
+                </div>
+
+                <!-- Tab Content -->
+                <div class="disclaimer-tab-content">
+                    <!-- Print Button -->
+                    <div class="print-btn" onclick="printDisclaimer()">
+                        <i class="fas fa-print"></i>
+                        Print this page
+                    </div>
+
+                    <!-- General Disclaimer Section -->
+                    <div id="general" class="disclaimer-section active">
+                        <h2>
+                            <i class="fas fa-info-circle"></i>
+                            General Disclaimer
+                        </h2>
+                        
+                        <div class="info-box">
+                            <h4>
+                                <i class="fas fa-gavel"></i>
+                                Important Notice
+                            </h4>
+                            <p>
+                                The information provided on this website is for general informational purposes only 
+                                and does not constitute professional advice. While we strive to keep the information 
+                                accurate and up-to-date, we make no representations or warranties of any kind.
+                            </p>
+                        </div>
+
+                        <p>
+                            NEXA Advisory & Consulting ("we", "us", or "our") operates the website located at 
+                            www.nexaadvisory.com.np (the "Site"). This page informs you of our policies regarding 
+                            the disclaimer of warranties and limitations of liability for the use of our Site and services.
+                        </p>
+
+                        <p>
+                            By accessing or using our Site, you agree to be bound by this Disclaimer. If you disagree 
+                            with any part of this disclaimer, you must not use our Site or services.
+                        </p>
+
+                        <h3>No Professional-Client Relationship</h3>
+                        <p>
+                            Your use of this Site does not create a professional-client relationship between you and 
+                            NEXA Advisory & Consulting. The information provided on this Site is not a substitute for 
+                            professional advice tailored to your specific circumstances. You should not act or refrain 
+                            from acting based on any information on this Site without seeking appropriate professional advice.
+                        </p>
+
+                        <h3>Accuracy of Information</h3>
+                        <p>
+                            While we make reasonable efforts to ensure that the information on our Site is accurate and 
+                            up-to-date, we make no guarantees or warranties about the completeness, reliability, or 
+                            accuracy of this information. Any reliance you place on such information is strictly at your 
+                            own risk.
+                        </p>
+
+                        <div class="highlight-box">
+                            <p>
+                                "The information contained in this website is for general information purposes only. 
+                                The information is provided by NEXA Advisory & Consulting and while we endeavor to keep 
+                                the information up to date and correct, we make no representations or warranties of any 
+                                kind, express or implied, about the completeness, accuracy, reliability, suitability or 
+                                availability with respect to the website or the information, products, services, or related 
+                                graphics contained on the website for any purpose."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Services Disclaimer Section -->
+                    <div id="services" class="disclaimer-section">
+                        <h2>
+                            <i class="fas fa-briefcase"></i>
+                            Services Disclaimer
+                        </h2>
+
+                        <p>
+                            NEXA Advisory & Consulting provides business advisory and consulting services, excluding audit 
+                            services. The following disclaimers apply specifically to our services:
+                        </p>
+
+                        <h3>Scope of Services</h3>
+                        <p>
+                            Our services are limited to the specific scope agreed upon in our engagement letter or service 
+                            agreement. Any advice or recommendations provided are based on the information available at 
+                            the time and may be subject to change based on new developments or information.
+                        </p>
+
+                        <h3>No Guarantee of Results</h3>
+                        <p>
+                            While we strive to provide excellent service and valuable insights, we do not guarantee any 
+                            specific results or outcomes from our services. Business outcomes depend on numerous factors 
+                            beyond our control, including market conditions, management decisions, and economic factors.
+                        </p>
+
+                        <h3>Limitation of Services</h3>
+                        <p>
+                            NEXA Advisory & Consulting expressly excludes audit services from its scope of work. We do not 
+                            provide:
+                        </p>
+                        <ul>
+                            <li><strong>Audit Services:</strong> We do not perform statutory audits or any form of assurance services.</li>
+                            <li><strong>Legal Advice:</strong> We are not a law firm and do not provide legal opinions or advice.</li>
+                            <li><strong>Investment Advice:</strong> We do not provide investment recommendations or portfolio management.</li>
+                        </ul>
+
+                        <table class="disclaimer-table">
+                            <thead>
+                                <tr>
+                                    <th>Service Category</th>
+                                    <th>Included</th>
+                                    <th>Excluded</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Accounting Services</td>
+                                    <td>Bookkeeping, Financial Statements</td>
+                                    <td>Statutory Audit</td>
+                                </tr>
+                                <tr>
+                                    <td>Tax Services</td>
+                                    <td>Tax Planning, Filing Assistance</td>
+                                    <td>Legal Tax Opinions</td>
+                                </tr>
+                                <tr>
+                                    <td>Corporate Advisory</td>
+                                    <td>Business Strategy, Registration</td>
+                                    <td>Legal Advice</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Financial & Tax Disclaimer Section -->
+                    <div id="financial" class="disclaimer-section">
+                        <h2>
+                            <i class="fas fa-chart-line"></i>
+                            Financial & Tax Disclaimer
+                        </h2>
+
+                        <div class="info-box">
+                            <h4>
+                                <i class="fas fa-exclamation-circle"></i>
+                                Important Financial Notice
+                            </h4>
+                            <p>
+                                The financial and tax information provided on this website or through our services is for 
+                                informational purposes only and should not be construed as financial, tax, or investment advice.
+                            </p>
+                        </div>
+
+                        <h3>Tax Advice Limitation</h3>
+                        <p>
+                            While we provide tax planning and filing assistance, we are not a tax authority. Tax laws and 
+                            regulations are complex and subject to change. We recommend that clients:
+                        </p>
+                        <ul>
+                            <li>Consult with qualified tax professionals for specific tax advice</li>
+                            <li>Verify all tax information with relevant tax authorities</li>
+                            <li>Not rely solely on our tax guidance for making financial decisions</li>
+                        </ul>
+
+                        <h3>Financial Projections</h3>
+                        <p>
+                            Any financial projections, forecasts, or forward-looking statements provided are based on 
+                            assumptions that may or may not prove accurate. Actual results may vary materially from 
+                            those projected. We make no representations or warranties about the accuracy of such projections.
+                        </p>
+
+                        <h3>Currency and Pricing</h3>
+                        <p>
+                            All prices, fees, and financial figures mentioned on this website are subject to change without 
+                            notice. Currency conversions are for reference only and may not reflect actual exchange rates.
+                        </p>
+                    </div>
+
+                    <!-- Third Party Links Section -->
+                    <div id="thirdparty" class="disclaimer-section">
+                        <h2>
+                            <i class="fas fa-link"></i>
+                            Third Party Links
+                        </h2>
+
+                        <p>
+                            Our website may contain links to third-party websites or services that are not owned or 
+                            controlled by NEXA Advisory & Consulting.
+                        </p>
+
+                        <h3>No Endorsement</h3>
+                        <p>
+                            The inclusion of any links does not necessarily imply a recommendation or endorse the views 
+                            expressed within them. We have no control over the content, privacy policies, or practices 
+                            of any third-party websites and accept no responsibility for them.
+                        </p>
+
+                        <h3>External Links Disclaimer</h3>
+                        <p>
+                            When you click on links to external sites, you will be leaving our website. We are not 
+                            responsible for:
+                        </p>
+                        <ul>
+                            <li>The content or accuracy of external websites</li>
+                            <li>The privacy practices of external websites</li>
+                            <li>Any damages or losses arising from your use of external websites</li>
+                        </ul>
+
+                        <div class="highlight-box">
+                            <p>
+                                "We strongly advise you to read the terms and conditions and privacy policies of any 
+                                third-party websites that you visit."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Limitations Section -->
+                    <div id="limitations" class="disclaimer-section">
+                        <h2>
+                            <i class="fas fa-exclamation-triangle"></i>
+                            Limitations of Liability
+                        </h2>
+
+                        <h3>Disclaimer of Warranties</h3>
+                        <p>
+                            To the fullest extent permitted by applicable law, NEXA Advisory & Consulting disclaims all 
+                            warranties, express or implied, including but not limited to:
+                        </p>
+                        <ul>
+                            <li>Implied warranties of merchantability and fitness for a particular purpose</li>
+                            <li>Warranties of title and non-infringement</li>
+                            <li>Warranties that the website will be uninterrupted, timely, secure, or error-free</li>
+                        </ul>
+
+                        <h3>Limitation of Liability</h3>
+                        <p>
+                            In no event shall NEXA Advisory & Consulting, its directors, employees, partners, or affiliates 
+                            be liable for any indirect, incidental, special, consequential, or punitive damages, including 
+                            without limitation:
+                        </p>
+                        <ul>
+                            <li>Loss of profits, data, use, goodwill, or other intangible losses</li>
+                            <li>Business interruption</li>
+                            <li>Personal injury or property damage</li>
+                            <li>Any damages arising from your use of or inability to use our website or services</li>
+                        </ul>
+
+                        <h3>Indemnification</h3>
+                        <p>
+                            You agree to indemnify, defend, and hold harmless NEXA Advisory & Consulting and its officers, 
+                            directors, employees, and agents from and against any and all claims, liabilities, damages, 
+                            losses, costs, expenses, or fees (including reasonable attorneys' fees) that arise from:
+                        </p>
+                        <ul>
+                            <li>Your violation of this disclaimer</li>
+                            <li>Your use of our website or services</li>
+                            <li>Your violation of any rights of any third party</li>
+                        </ul>
+
+                        <h3>Governing Law</h3>
+                        <p>
+                            This disclaimer shall be governed by and construed in accordance with the laws of Nepal, 
+                            without regard to its conflict of law provisions. Any disputes arising under or in connection 
+                            with this disclaimer shall be subject to the exclusive jurisdiction of the courts in Kathmandu, Nepal.
+                        </p>
+
+                        <div class="info-box">
+                            <h4>
+                                <i class="fas fa-clock"></i>
+                                Changes to This Disclaimer
+                            </h4>
+                            <p>
+                                We reserve the right to modify this disclaimer at any time. Changes will be effective immediately 
+                                upon posting to this page. Your continued use of our website following the posting of changes 
+                                constitutes your acceptance of such changes. We encourage you to periodically review this page 
+                                for the latest information.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--gray-200);">
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">Contact Us</h3>
+                        <p style="color: var(--gray-600);">
+                            If you have any questions about this disclaimer, please contact us:
+                        </p>
+                        <ul style="margin-top: 1rem; color: var(--gray-600);">
+                            <li><strong>Email:</strong> legal@nexaadvisory.com.np</li>
+                            <li><strong>Phone:</strong> +977 1-5550123</li>
+                            <li><strong>Address:</strong> Putalisadak, Kathmandu, Nepal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- First Column - Banner and About -->
+                <div>
+                    <img src="https://i.ibb.co/pjLC2xXD/Banner.png" alt="NEXA Advisory" class="footer-logo-img">
+                    <p class="footer-about">Premier business advisory and consulting firm in Nepal, registered under Companies Act, 2063. Providing comprehensive solutions across Accounting, Tax, Corporate Advisory, and Training.</p>
+                    
+                    <!-- Social Icons in Square Round Rectangles -->
+                    <div class="social-links-footer">
+                        <a href="#" class="social-link-footer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link-footer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Second Column - Important Links -->
+                <div>
+                    <h4>Important Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="outsourcing-portal.html">Outsourcing</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Column - Our Services Links -->
+                <div>
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                         <li><a href="accounting-services.html">Accounting Services</a></li>
+                        <li><a href="tax-return-filing.html">Tax Return Filing</a></li>
+                        <li><a href="corporate-advisory.html">Corporate Advisory</a></li>
+                        <li><a href="taxation.html">Taxation Services</a></li>
+                        <li><a href="management-consulting.html">Management Consulting</a></li>
+                        <li><a href="nfrs-ifrs-implementation.html">NFRS/IFRS Implementation</a></li>
+                        <li><a href="training-and-courses.html">Training & Courses</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column - Payment We Accept -->
+                <div>
+                    <h4>Payment We Accept</h4>
+                    <div class="payment-methods">
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/pv0TC3Nh/LOGO-BLOCK-W-png.png" alt="eSewa">
+                        </div>
+                        <div class="payment-item">
+                            <img src="https://i.ibb.co/jkRdtxRk/idk-Kc-Pp-TJV-1773766149624.png" alt="Khalti">
+                        </div>
+                        <div class="payment-item bank">
+                            <img src="https://i.ibb.co/LzdxtLS3/Bank-Transfer-logo-1200x600.png" alt="Bank Transfer">
+                        </div>
+                    </div>
+                    <p style="color: var(--gray-500); margin-top: 1.5rem; font-size: 0.9rem;">
+                        <i class="fas fa-lock" style="color: var(--secondary); margin-right: 0.5rem;"></i>
+                        Secure payments processed in Nepal
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom with Copyright, Terms, Privacy, Disclaimer -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 NEXA Advisory & Consulting. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html>
