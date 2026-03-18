@@ -416,44 +416,56 @@
                 </div>
                 
                 <div class="contact-form">
-                    <form id="contactForm" onsubmit="handleContactSubmit(event)">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" placeholder="First Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" placeholder="Last Name" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="email" placeholder="Email Address" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="tel" placeholder="Phone Number">
-                        </div>
-                        
-                        <div class="form-group">
-                            <select>
-                                <option>Select Service Interest</option>
-                                <option>Accounting Services</option>
-                                <option>Tax Services</option>
-                                <option>Corporate Advisory</option>
-                                <option>Management Consulting</option>
-                                <option>Training & Courses</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <textarea rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-                    </form>
-                </div>
+    <form id="contactForm" action="https://formspree.io/f/mpqyodko" method="POST">
+        
+        <!-- First & Last Name -->
+        <div class="form-row">
+            <div class="form-group icon-input">
+                <i class="fas fa-user"></i>
+                <input type="text" name="firstName" placeholder="First Name" required>
             </div>
+            <div class="form-group icon-input">
+                <i class="fas fa-user"></i>
+                <input type="text" name="lastName" placeholder="Last Name" required>
+            </div>
+        </div>
+        
+        <!-- Email -->
+        <div class="form-group icon-input">
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="email" placeholder="Email Address" required>
+        </div>
+        
+        <!-- Phone -->
+        <div class="form-group icon-input">
+            <i class="fas fa-phone"></i>
+            <input type="tel" name="phone" placeholder="Phone Number">
+        </div>
+        
+        <!-- Service -->
+        <div class="form-group icon-input">
+            <i class="fas fa-briefcase"></i>
+            <select name="service">
+                <option>Select Service Interest</option>
+                <option>Accounting Services</option>
+                <option>Tax Services</option>
+                <option>Corporate Advisory</option>
+                <option>Management Consulting</option>
+                <option>Training & Courses</option>
+                <option>Other</option>
+            </select>
+        </div>
+        
+        <!-- Message -->
+        <div class="form-group icon-input">
+            <i class="fas fa-comment-dots"></i>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+    </form>
+</div>
+
         </div>
     </section>
 
