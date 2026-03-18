@@ -298,7 +298,7 @@ body {
 }
 
 .btn-primary {
-    background: var(--gradient-primary);
+    background: var(--secondary);
     color: white;
 }
 
