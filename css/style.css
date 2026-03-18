@@ -1305,6 +1305,25 @@ padding: 10px;
         justify-content: center;
     }
 }
+.icon-input {
+    position: relative;
+}
+
+.icon-input i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 14px;
+}
+
+.icon-input input,
+.icon-input select,
+.icon-input textarea {
+    padding-left: 40px !important;
+}
+
 /* ==================== ABOUT PAGE DISTINCTIVE STYLES ==================== */
 
 /* About Hero with Nepal Flag Element */
